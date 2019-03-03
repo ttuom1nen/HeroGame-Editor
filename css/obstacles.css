@@ -1,0 +1,12 @@
+/***
+*   TREES
+*
+***/
+
+.trees_green{
+    background-image: url(../images/obstacles/trees_green.png)
+}
+
+.trees_barren{
+    background-image: url(../images/obstacles/trees_barren.png)    
+}

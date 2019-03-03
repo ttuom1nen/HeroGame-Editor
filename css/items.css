@@ -1,0 +1,37 @@
+.item-icon{
+    height: 64px;
+    width: 64px;
+    background-position: 0px 0px;
+    background-color: whitesmoke;
+    position: absolute;  
+}
+
+.armor-icons{
+    /*background-image: url(../images/gear/armor_icons.png);*/
+}
+
+.gear-small{
+    position: absolute;
+    height: 32px;
+    width: 32px;
+}
+
+.armor{
+    background-image: url(../images/gear/armors.png);
+}
+
+.onehander{    
+    background-image: url(../images/gear/1handers.png);
+}
+
+.item-slot{
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+    background-position: 0 0;
+    background-color: antiquewhite;
+    border: 2px solid rosybrown;
+    display: inline-block;
+    margin: 2px;
+    border-radius: 3px;    
+}

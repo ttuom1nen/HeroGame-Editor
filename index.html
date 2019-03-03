@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>EDITOR</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/animation.css">
+		<link rel="stylesheet" type="text/css" href="css/obstacles.css">
+		<link rel="stylesheet" type="text/css" href="css/units.css">
+		<link rel="stylesheet" type="text/css" href="css/tiles.css">
+		<link rel="stylesheet" type="text/css" href="css/sprite.css">
+		<link rel="stylesheet" type="text/css" href="css/items.css">
+		<link rel="stylesheet" type="text/css" href="editor/editor.css">
+		<script src="scripts/utility.js"></script>
+		<script src="scripts/board.js"></script>
+		<script src="scripts/collections.js"></script>
+		<script src="scripts/stats.js"></script>
+		<script src="scripts/pieces.js"></script>
+		<script src="scripts/actions.js"></script>
+		<script src="scripts/ai.js"></script>
+		<script src="scripts/items.js"></script>
+	</head>
+<body>
+
+	<div id="editor_container">
+
+		<div id="editor_header">
+			
+			<div class="header_section" id="header_logo">
+				EDITOR
+			</div>
+			<div class="header_section" id="header_team">
+				Team:
+				<select id="teamlist"></select>
+				<input type="button" value="Toggle game mode" onclick="game.toggleMode()" />
+			</div>
+			<div class="header_section" id="header_buttons">
+				<input type="button" class="editbtn btn-flip" value="Flip" onclick="game.selectedUnit.flip()" />
+				<input type="button" class="editbtn btn-move" value="Move" onclick="Editor.setMode('move')" />
+				<input type="button" class="editbtn btn-del" value="Delete" onclick="" />
+			</div>
+
+		</div>
+
+		<div id="container">
+			<div id="topbar" class="panel">
+				<div id="turntext"></div>
+			</div>
+			<div id="gamearea"></div>
+			<div id="controls" class="panel">
+				<div id="endturn" class="btn end"><p>END TURN</p></div>
+			</div>		
+		</div>
+
+		<div id="editor_panel">
+
+			<div id="tabs_buttons"></div>
+
+			<div id="tabs_container">
+	
+				<div id="tab0" class="tab" name="Units">
+					<div class="tab-leftdiv">
+						<select id="racelist"></select>
+					</div>
+					<div id="tab0-content" class="tab-rightdiv"></div>
+				</div>
+
+				<div id="tab1" class="tab" name="Tiles">
+					<div class="tab-leftdiv"></div>
+					<div id="tab1-content" class="tab-rightdiv"></div>
+				</div>
+
+				<div id="tab2" class="tab" name="Obstacles">
+					<div class="tab-leftdiv">
+						<select id="obslist"></select>
+						<select id="obssublist"></select>
+					</div>
+					<div id="tab2-content" class="tab-rightdiv"></div>
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+	<script src="scripts/main.js"></script>
+	<script src="editor/editor.js"></script>
+	<script src="editor/editor_ui.js"></script>
+	<script src="scripts/ui/ui.js"></script>
+</html>

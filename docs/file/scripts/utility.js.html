@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">scripts/utility.js | gg_domtest</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  </ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">scripts/utility.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**********************
+*   Utility Functions
+*
+**********************/
+
+/**
+ * Get a random number between values
+ * @param {int} min 
+ * @param {int} max 
+ */
+function randomBetween(min,max){
+    return Math.floor(Math.random()*(max-min+1)+min);
+}
+
+/**
+ * Get distance between two points
+ * @param {int} x1 
+ * @param {int} y1 
+ * @param {int} x2 
+ * @param {int} y2 
+ */
+function getDistance(x1,y1,x2,y2){
+    var a = x1 - x2;
+    var b = y1 - y2;
+    var c = Math.sqrt( a*a + b*b );
+
+    return c;
+}
+
+/**
+ * Get angle between two points
+ * @param {int} x1 
+ * @param {int} y1 
+ * @param {int} x2 
+ * @param {int} y2 
+ */
+function getAngle(x1,y1,x2,y2){
+    var angleDeg = Math.floor(Math.atan2(y2 - y1, x2 - x1) * 180 / Math.PI);
+    return angleDeg
+}
+
+/**
+ * Check line between two points and check
+ * if tiles along that line are occupied.
+ * @param {object} startCoordinates {x,y}
+ * @param {object} endCoordinates {x,y}
+ * @todo combine with brasenhamLine function
+ */
+function lineofsight(startCoordinates, endCoordinates){
+
+    var coordinatesArray = new Array();
+    // Translate coordinates
+    var x1 = startCoordinates.left;
+    var y1 = startCoordinates.top;
+    var x2 = endCoordinates.left;
+    var y2 = endCoordinates.top;
+    // Define differences and error check
+    var dx = Math.abs(x2 - x1);
+    var dy = Math.abs(y2 - y1);
+    var sx = (x1 &lt; x2) ? 1 : -1;
+    var sy = (y1 &lt; y2) ? 1 : -1;
+    var err = dx - dy;
+
+    while (!((x1 == x2) &amp;&amp; (y1 == y2))) {
+        var e2 = err &lt;&lt; 1;
+        if (e2 &gt; -dy) {
+            err -= dy;
+            x1 += sx;
+        }
+        if (e2 &lt; dx) {
+            err += dx;
+            y1 += sy;
+        }
+
+        if(board.layout[x1][y1].occupied){
+
+            return false;
+
+            /*
+            if(x1 == endCoordinates.left &amp;&amp; y1 == endCoordinates.top){
+                return true;
+            }else{
+                return false;
+                break;
+            }*/
+
+        }else{
+            return true; 
+        }
+
+    }
+
+}
+/**
+ * Uses the Brasenham line algorithm to check a staggered path along a grid
+ * @param {object} startCoordinates 
+ * @param {object} endCoordinates 
+ * @todo Combine with lineofsight function
+ */
+function bresenhamLine(startCoordinates, endCoordinates) {
+    //console.log(&apos;Bresenham&apos;)
+    var coordinatesArray = new Array();
+    // Translate coordinates
+    var x1 = startCoordinates.left;
+    var y1 = startCoordinates.top;
+    var x2 = endCoordinates.left;
+    var y2 = endCoordinates.top;
+    // Define differences and error check
+    var dx = Math.abs(x2 - x1);
+    var dy = Math.abs(y2 - y1);
+    var sx = (x1 &lt; x2) ? 1 : -1;
+    var sy = (y1 &lt; y2) ? 1 : -1;
+    var err = dx - dy;
+    // Set first coordinates
+    /*var linemarker = document.createElement(&apos;div&apos;)
+    if(!board.layout[x1][y1].occupied){
+        linemarker.classList.add(&apos;indicator&apos;, &apos;lnmark_green&apos;)
+      }else{
+        linemarker.classList.add(&apos;indicator&apos;, &apos;lnmark_red&apos;)
+      }
+    board.layout[x1][y1].dom.appendChild(linemarker)
+    coordinatesArray.push(board.layout[x1][y1]);*/
+    // Main loop
+    while (!((x1 == x2) &amp;&amp; (y1 == y2))) {
+        var e2 = err &lt;&lt; 1;
+        if (e2 &gt; -dy) {
+            err -= dy;
+            x1 += sx;
+        }
+        if (e2 &lt; dx) {
+            err += dx;
+            y1 += sy;
+        }
+
+        var linemarker = document.createElement(&apos;div&apos;)
+        var pctmarker = document.createElement(&apos;div&apos;)
+        pctmarker.classList.add(&apos;pctmarker&apos;, &apos;indicator&apos;)
+
+        if(!board.layout[x1][y1].occupied){
+            linemarker.classList.add(&apos;indicator&apos;, &apos;lnmark_green&apos;)
+        }else{
+
+            if(board.layout[x1][y1].occupant.stats.height &gt;= 3){
+                pctmarker.innerText = &apos;100%&apos;
+                board.layout[x1][y1].dom.appendChild(pctmarker)
+                break;
+            }
+
+            linemarker.classList.add(&apos;indicator&apos;, &apos;lnmark_red&apos;)
+        }
+
+        //board.layout[x1][y1].dom.appendChild(linemarker)
+        coordinatesArray.push(board.layout[x1][y1]);
+
+    }
+
+    // Return the result
+    return coordinatesArray;
+}
+
+/**
+ * Tweens between two points
+ * @param {object} elem 
+ * @param {int} x 
+ * @param {int} y 
+ */
+function translate(elem, x, y) {
+    //elem.style.transition = &quot;left, top 2s ease-in&quot;;
+
+    var left = parseInt( css( elem, &apos;left&apos; ), 10 ),
+        top = parseInt( css( elem, &apos;top&apos; ), 10 ),
+        dx = left - x,
+        dy = top - y
+        i = 1,
+        count = 20,
+        delay = 20;
+
+    function loop() {
+        if ( i &gt;= count ) { document.getElementById(&quot;gamearea&quot;).removeChild(elem); return; }
+        i += 1;
+        elem.style.left = ( left - ( dx * i / count ) ).toFixed( 0 ) + &apos;px&apos;;
+        elem.style.top = ( top - ( dy * i / count ) ).toFixed( 0 ) + &apos;px&apos;;
+        setTimeout( loop, delay );
+    }
+
+    loop();
+}
+
+function css(element, property) {
+    return window.getComputedStyle( element, null ).getPropertyValue( property );
+}</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

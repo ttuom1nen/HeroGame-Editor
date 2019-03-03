@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">scripts/pieces.js | gg_domtest</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  </ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">scripts/pieces.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * Entity is a super class for all pieces on the board
+ */
+class Entity{
+
+    constructor(){
+        this.flipped = 1
+    }
+
+    /**
+     * Flips the sprite of the piece
+     * @param {int} direction 
+     */
+    flip(direction){
+
+        if(direction === undefined){
+
+            if(this.flipped == 1){
+                this.flipped = -1
+            }else{
+                this.flipped = 1
+            }
+
+        }else{
+            console.log(direction)
+
+            if(Math.abs(direction) &gt; 90){
+                this.flipped = -1
+            }else{
+                this.flipped = 1
+            }
+
+        }
+
+        this.sprite.style.transform = &apos;scaleX(&apos;+this.flipped+&apos;)&apos;;
+        
+        return this.flipped
+    }
+
+}
+
+/**
+ * Piece is any piece on the board. It is a super class for heris, units and obstacles
+ * @extends {Entity}
+ */
+class Piece extends Entity{
+
+    constructor(){
+        super()
+
+        var _this = this
+        this.tile
+        this.stats
+        this.meta
+        this.alive = true
+        this.disabled = false
+        this.target = false
+        this.mvmrkrs = []
+        this.sprite = document.createElement(&apos;div&apos;)
+        this.sprite.classList.add(&apos;sprite&apos;);
+        this.dom = document.createElement(&apos;div&apos;)
+        this.dom.classList.add(&apos;clkzone&apos;);
+        this.hpbar = document.createElement(&apos;div&apos;)
+        this.hpbar.className = &apos;progress&apos;;
+        this.hpbarbg = document.createElement(&apos;div&apos;)
+        this.hpbarbg.className = &apos;progressbg&apos;;
+        this.hpbarbg.appendChild(this.hpbar)
+        this.hpbarbg.style.display = &apos;block&apos;
+        this.dom.appendChild(this.hpbarbg)
+        this.dom.appendChild(this.sprite)
+    
+        this.dom.obj = this
+
+        this.dom.addEventListener(&quot;mousedown&quot;, function(evt) {
+            console.log(evt.target.obj)
+
+            var obj = evt.target.obj
+
+            if(evt.target.classList.contains(&apos;clkzone&apos;)){
+                game.selectedPiece = obj
+
+                if(game.gamemode){
+
+                    if(obj.type == &apos;unit&apos;){
+
+                        if(obj == game.selectedUnit){
+                            console.log(&apos;second click&apos;)
+                        }else{
+
+                            if(obj.team.id == game.whosturn){
+                                game.selectedUnit = obj
+                                delIndicators()
+                                seekTarget(obj)
+
+                                if(obj.checkMoves() &amp;&amp; obj.alive &amp;&amp; !obj.disabled){
+                                    createMoveArea(obj)
+                                }
+
+                            }else{
+
+                                if(game.selectedUnit.checkMoves()){
+                                    if(obj.target){
+                                        attack(game.selectedUnit, obj)
+                                    }
+                                }
+
+                            }
+                        
+                        }
+
+                    }else if(evt.target.type == &apos;obstacle&apos;){
+                        //game.selectObstacle(evt.target.obj)
+                    }
+                }else{
+
+                    if(obj.type == &apos;unit&apos;){
+                        game.selectedUnit = obj
+                    }else{
+                        game.selectedObs = obj
+                    }
+
+                }
+            }
+            
+        });
+
+    }
+
+    /**
+     * Piece takes damage
+     * @param {int} dmg 
+     */
+    takeDmg(dmg){
+
+        this.stats.hp = this.stats.hp-dmg
+        var hp_pct = (this.stats.hp/this.stats.hp_max)*100
+        var hpbar = this.hpbar
+
+        createDmgMarker(this.pxpos_x, this.pxpos_y-32, dmg);
+        hpbar.setAttribute(&quot;style&quot;, &quot;width:&quot;+((this.stats.hp/this.stats.hp_max)*100)+&quot;%;&quot;);
+        
+        if(hp_pct &lt;= 60 &amp;&amp; hp_pct &gt; 20){
+            hpbar.classList.add(&quot;progress_orange&quot;);
+        }else if(hp_pct &lt;= 20){
+            hpbar.classList.remove(&quot;progress_orange&quot;);
+            hpbar.classList.add(&quot;progress_red&quot;);
+        }
+
+        if(this.stats.hp &lt;= 0){
+            this.tile.occupied = false;
+            this.dom.classList.add(&quot;unit_dead&quot;);
+            this.dom.classList.add(this.type+&quot;_dead&quot;);
+            this.dom.style.transform = &apos;rotate(&apos;+randomBetween(-15,15)+&apos;deg) rotateX(&apos;+randomBetween(-45,45)+&apos;deg)&apos;
+            this.hpbarbg.style.visibility = &quot;hidden&quot;
+            this.alive = false;
+            this.disabled = true;
+            this.dom.style.zIndex = &quot;0&quot;;
+            this.target = false
+            var target = this.dom.getElementsByClassName(&apos;atkmarker&apos;)[0]
+            target.parentNode.removeChild(target)
+            //this.team.deleteFromList(this.id)
+        }
+    }
+
+    /**
+     * Exports the object for saving
+    */
+    export(){
+        var xprt = {
+            &apos;flipped&apos;: this.flipped,
+            &apos;meta&apos;: this.meta,
+            &apos;info&apos;: this.info,
+            &apos;loc&apos;: {
+                &apos;tilex&apos;: this.tileindex_x,
+                &apos;tiley&apos;: this.tileindex_y
+            }
+        }
+
+        return xprt
+    }
+
+    disable(){
+        this.disabled = true
+        return this.disabled
+    }
+}
+
+/**
+ * Unit pieces
+ * @extends {Piece}
+ */
+class Unit extends Piece{
+
+    constructor(){
+        super()
+        this.type = &apos;unit&apos;
+        this.skills = []
+        this.imgpoints = {}
+    }
+
+    /**
+     * Handle functions related to turn end
+     */
+    endturn(){
+        //game.selectedUnit = null
+        delIndicators()
+    }
+
+    /**
+     * Check the unit&apos;s moves
+     * @return {boolean}
+     */
+    checkMoves(){
+        if(this.stats.moves &gt; 0){
+            return true
+        }else{
+            return false
+        }
+    }
+
+    /**
+     * Updates the unit&apos;s moves after an action
+     * @param {int} value 
+     */
+    updateMoves(value){
+
+        if(value &lt; 0){
+            var value = Math.abs(value)
+            this.stats.moves = this.stats.moves-value
+        }else{
+            this.stats.moves = this.stats.moves+value
+        }
+
+        if(!this.checkMoves()){
+            this.endturn()
+        }
+
+    }
+
+    /**
+     * Move unit to tile
+     * @param {int} apcost 
+     * @param {int} tile_indexx 
+     * @param {int} tile_indexy 
+     */
+    move(apcost, tile_indexx, tile_indexy){
+
+        this.updateMoves(apcost)
+        var targetTile = board.layout[tile_indexx][tile_indexy]
+        var angle = getAngle(this.pxpos_x,this.pxpos_y,targetTile.px_x,targetTile.px_y)
+        
+        if(!targetTile.occupied){
+            
+            this.flip(angle)
+
+            this.tile.occupied = false;
+            this.tile.occupant = {};
+            this.dom.style.left = targetTile.px_x;
+            this.dom.style.top = targetTile.px_y;
+            this.dom.style.zIndex = targetTile.y;
+            this.pxpos_x = targetTile.px_x;
+            this.pxpos_y = targetTile.px_y;
+
+            targetTile.occupied = true;
+            targetTile.occupant = this;
+            this.tile = targetTile;
+ 
+            delIndicators()
+
+            if(this.stats.moves &gt; 0){
+                createMoveArea(this)
+                seekTarget(this)
+            } 
+
+        }
+
+    }
+
+}
+
+/**
+ * Soldiers are the normal army units
+ * @extends {Unit}
+ */
+class Soldier extends Unit{
+    
+    constructor(race, faction, type){
+        super()
+
+        var statobj = new UnitStats()
+        var stats = statobj.getStats(race, faction, type)
+
+        this.info = {&apos;race&apos;: race, &apos;faction&apos;: faction, &apos;type&apos;: type}
+        this.meta = stats.meta
+        this.stats = stats.stats
+        this.subtype = type
+        this.sprite.classList.add(&apos;sprite&apos;, races[race][faction][&apos;sheet-cls&apos;], faction+&apos;_&apos;+type)
+    }
+
+}
+
+/**
+ * Heros are different
+ * @extends {Unit}
+ */
+class Hero extends Unit{
+
+    constructor(cls, sex, sheetxy){
+        super()
+        this.items = []
+        this.gear = []
+        this.equipped = []
+        this.gearpoints = {
+            &apos;hair&apos;: {&apos;x&apos;:0,&apos;y&apos;:0, &apos;occupied&apos;: false},
+            &apos;head&apos;: {&apos;x&apos;:0,&apos;y&apos;:0, &apos;occupied&apos;: false},
+            &apos;torso&apos;: {&apos;x&apos;: 16,&apos;y&apos;: 45, &apos;occupied&apos;: false},
+            &apos;handl&apos;: {&apos;x&apos;: 37, &apos;y&apos;: 39, &apos;occupied&apos;: false},
+            &apos;handr&apos;: {&apos;x&apos;: -12, &apos;y&apos;: 29, &apos;occupied&apos;: false},
+            &apos;legs&apos;: {&apos;x&apos;:0,&apos;y&apos;:0, &apos;occupied&apos;: false},
+            &apos;boots&apos;: {&apos;x&apos;:0,&apos;y&apos;:0, &apos;occupied&apos;: false},
+            &apos;ring1&apos;: {&apos;x&apos;:0,&apos;y&apos;:0, &apos;occupied&apos;: false},
+            &apos;ring2&apos;: {&apos;x&apos;:0,&apos;y&apos;:0, &apos;occupied&apos;: false}
+        }
+
+        var statobj = new HeroStats()
+        var stats = statobj.getStats(cls, sex)
+        this.info = {&apos;cls&apos;: cls, &apos;sex&apos;: sex, &apos;sheetxy&apos;: sheetxy}
+        this.meta = stats.meta
+        this.stats = stats.stats
+        this.sprite.classList.add(&apos;sprite&apos;, stats.meta[&apos;sheet-cls&apos;])
+
+    }
+
+    /**
+     * Equip the hero with an item
+     * @param {Object} item 
+     */
+    equip(item){
+
+        if(this.gearpoints[item.slot].occupied){
+            
+            if(item.slot == &apos;handr&apos; &amp;&amp; this.gearpoints.handl.occupied == false){
+                item.slot = &apos;handl&apos;
+                item.flip()
+            }else{
+                this.unEquip()
+            }
+
+        }
+
+        this.gearpoints[item.slot].occupied = true
+        item.sprite.style.marginLeft = this.gearpoints[item.slot].x
+        item.sprite.style.marginTop = this.gearpoints[item.slot].y
+
+        this.sprite.appendChild(item.sprite)
+
+    }
+
+    /**
+     * Unequip item
+     */
+    unEquip(){
+        console.log(&apos;unEquip()&apos;)
+        this.gearpoints[item.slot].occupied = false
+    }
+
+}
+
+/*
+var hero = new Hero(&apos;war&apos;, &apos;male&apos;)
+*/
+
+/**
+ * Obstacles are stuff like trees and stones
+ * @extends {Piece}
+ */
+class Obstacle extends Piece{
+
+    constructor(type, subtype, bgpos){
+        super()
+
+        var bgx = bgpos.bgx
+        var bgy = bgpos.bgy
+        
+        var stats = getObsStats(type, subtype)
+
+        this.meta = stats.meta
+        this.info = {&apos;type&apos;: type, &apos;subtype&apos;: subtype, &apos;bgpos&apos;:{&apos;bgx&apos;: bgx, &apos;bgy&apos;: bgy}}
+        this.stats = stats.stats
+        this.cls = this.meta[&quot;sheet-cls&quot;]
+        this.dom.obj = this
+        this.type = &apos;obstacle&apos;
+        this.sprite.classList.add(&apos;sprite&apos;, this.cls)
+        this.sprite.style.backgroundPosition = bgx+&apos;px &apos;+bgy+&apos;px&apos;
+        this.hpbarbg.style.display = &apos;none&apos;
+    }
+
+}</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

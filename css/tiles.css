@@ -1,0 +1,64 @@
+/*** TILES ***/
+
+.column_div{
+    float: left;
+    display: block;
+    height: 100%;
+}
+
+.tile{
+    height: 64px;
+    width: 64px;
+    background-color: #b8e484;
+}
+
+.tile_btn{
+    cursor: pointer;
+    display: inline-block;
+    margin: 1px;
+}
+
+/*
+.tile_btn:hover{
+    border: 1px solid rgb(255, 199, 77);
+    border-block-start: 0vw;
+}
+*/
+
+/*** Grass tiles ***/
+
+.tile_grass {
+    background-image: url(../images/tiles_grass.jpg);
+    background-repeat: no-repeat;
+}
+.tile_grass0 {
+    background-position: 0 0;
+}
+.tile_grass1 {
+    background-position: -64px 0;
+}
+.tile_grass2 {
+    background-position: -128px 0;
+}
+.tile_grass3 {
+    background-position: 0 -64px;
+}
+.tile_grass4 {
+    background-position: -64px -64px;
+}
+.tile_grass5 {
+    background-position: -128px -64px;
+}
+.tile_grass6 {
+    background-position: 0 -128px;
+}
+.tile_grass7 {
+    background-position: -64px -128px;
+}
+.tile_grass8 {
+    background-position: -128px -128px;
+}
+.tile_grass9 {
+    background-position: -192px 0;
+}
+

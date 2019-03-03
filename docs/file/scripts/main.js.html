@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">scripts/main.js | gg_domtest</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  </ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">scripts/main.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">var Game = function(){
+    var _this = this
+    this.gamemode = false
+    this.teamlist = []
+    this.obslist = []
+    this.teams = new Map()
+    this.selectedTeam
+    this.selectedUnit
+    this.selectedPiece
+    this.selectedObs
+    this.whosturn = &apos;T0&apos;
+    this.teamindex = 0
+    this.paused = false
+
+    this.addTeam = function(amount){
+
+        if(amount === undefined){
+            amount = 1
+        }
+
+        for(var i = 0; i&lt;amount; i++){
+            var teamid = &apos;T&apos;+_this.teamlist.length
+            var teamobj = new Team(teamid, &apos;teamname&apos;, false)
+            _this.teamlist.push(teamid)
+            _this.teams.set(teamid, teamobj)
+            _this.selectedTeam = teamobj
+        }
+
+        return _this.teams
+
+    }
+
+    this.removeTeam = function(id){
+        _this.teams.delete(id)
+    }
+
+    this.selectTeam = function(id){
+        _this.selectedTeam = _this.teams.get(id)
+        return _this.selectedTeam
+    }
+
+    this.selectUnit = function(obj){
+        this.selectedUnit = obj
+        this.selectedPiece = obj
+        return obj
+    }
+
+    this.addObstacle = function(obj){
+        _this.obslist.push(obj)
+        return obslist
+    }
+
+    this.export = function(){
+
+        var exported = {
+            &apos;teams&apos;: [],
+            &apos;obstacles&apos;: [],
+            &apos;board&apos;: {
+                &apos;layout&apos;: []
+            }
+        }
+        
+        _this.teams.forEach(function(team, teamid, map){
+    
+            if(team.list.length &gt; 0){
+                var teamobj  = {&apos;id&apos;: teamid, &apos;name&apos;: team.name, &apos;units&apos;: []}
+    
+                team.objects.forEach(function(unit){
+                    teamobj.units.push(unit.export())
+                })
+    
+                exported.teams.push(teamobj)
+            }
+    
+        })
+    
+        _this.obslist.forEach(function(obstacle){
+            exported.obstacles.push(obstacle.export())
+        })
+    
+        exported.board.layout = board.export()
+    
+        console.log(exported)
+    
+        return JSON.stringify(exported)
+    
+    }
+
+    this.save = function(){
+        sessionStorage.setItem(&apos;save&apos;, _this.export())
+    }
+
+    this.load = function(){
+
+        if(sessionStorage.getItem(&apos;save&apos;)){
+
+            var imported = JSON.parse(sessionStorage.getItem(&apos;save&apos;))
+            board.setBoard(imported.board.layout)
+    
+            console.log(imported)
+    
+            for(var i = 0; i &lt; imported.teams.length; i++){
+                _this.selectTeam(imported.teams[i].id)
+    
+                for(var k = 0; k &lt; imported.teams[i].units.length; k++){
+    
+                    var curunit = imported.teams[i].units[k]
+                    console.log(curunit)
+    
+                    var newunit = new Soldier(curunit.info.race, curunit.info.faction, curunit.info.type)
+                    newunit.team = _this.selectedTeam
+                    newunit.id = imported.teams[i].id+&apos;U&apos;+newunit.team.list.length
+                    newunit.dom.id = imported.teams[i].id+&apos;U&apos;+newunit.team.list.length
+                    
+                    if(curunit.flipped == -1){
+                        newunit.flip()
+                    }
+
+                    newunit.team.add(newunit)
+    
+                    board.placeOnBoard(newunit, curunit.loc.tilex, curunit.loc.tiley)
+    
+                }
+    
+            }
+
+            for(var i = 0; i &lt; imported.obstacles.length; i++){
+                var curobs = imported.obstacles[i]
+                var newobs = new Obstacle(curobs.info.type, curobs.info.subtype, curobs.info.bgpos)
+                _this.addObstacle(newobs)
+                board.placeOnBoard(newobs, curobs.loc.tilex, curobs.loc.tiley)
+            }
+
+        }
+    
+        game.selectedTeam = game.teams.get(game.teamlist[0])
+    }
+
+    this.toggleMode = function(){
+        this.gamemode = !this.gamemode
+
+        return this.gamemode
+    }
+
+}
+
+var game = new Game()
+
+initGame()
+
+function initGame(){
+    board.initBoard(12, 8);
+}
+
+function setTurn(){
+    game.teamindex++
+
+    if(game.teamindex &gt;= game.teamlist.length){
+        game.teamindex = 0
+    }
+
+    var index = game.teamindex
+
+    game.selectedTeam = game.teams.get(game.teamlist[game.teamindex])
+    game.whosturn = game.teamlist[game.teamindex]
+    game.selectedUnit = null
+
+    for(var k = 0; k &lt; game.selectedTeam.list.length; k++){
+        var curunit = game.selectedTeam.objects.get(game.selectedTeam.list[k])
+
+        if(curunit.alive){
+            curunit.stats.moves = curunit.stats.moves_max
+        }
+        
+    }
+
+    delIndicators()
+    updateTurnText()
+
+}
+
+function updateTurnText(){
+    var turntext = document.getElementById(&apos;turntext&apos;)
+    turntext.innerText = &apos;Turn: &apos;+ game.selectedTeam.name
+}
+
+document.getElementById(&apos;controls&apos;).addEventListener(&quot;click&quot;, function(e){
+
+    if(e.target.id == &apos;endturn&apos;){
+        setTurn()
+    }
+
+});
+
+function endGame(){
+    if(game.selectedTeam.list.length == 0){
+        return true
+    }else{
+        return false
+    }
+}
+
+
+/*
+function incrementInterval(){
+    if(interval_index &lt; current_team.units.size){
+
+        var unitid = current_team.unitlist[interval_index].id;
+        current_unit = current_team.units.get(unitid);
+
+        console.log(&quot;--- info ---&quot;);
+        console.log(&quot;interval_index: &quot;+interval_index);
+        console.log(&quot;unitid: &quot;+unitid);
+        console.log(&quot;unitlist.length: &quot;+current_team.unitlist.length);
+        console.log(current_unit.dom);
+        
+        if(current_unit.stats.alive){
+            console.log(&quot;UNIT ALIVE&quot;);
+            executeTurn();
+        }else{
+            console.log(&quot;UNIT IS NOT ALIVE!&quot;);
+        }
+
+        console.log(&quot;&quot;);
+        interval_index++;
+    }else{
+        interval_index = 0;
+        setTurn();
+    }
+}
+*/</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

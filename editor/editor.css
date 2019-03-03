@@ -1,0 +1,152 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(214, 214, 214);
+    margin: 0px;
+}
+
+#editor_container{
+    position: relative;
+    height: 100%;
+}
+
+#editor_panel{
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-color: whitesmoke;
+    border-top: 3px ridge silver; 
+}
+
+#editor_header{
+    height: 39px;
+    position: static;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* height: auto; */
+    /* z-index: 100; */
+    background-color: whitesmoke;
+    border-bottom: 1px ridge silver;
+    margin-bottom: 2px;  
+}
+
+.header_section{
+   display: inline-block;
+}
+
+#header_logo{
+    color: white;
+    font-weight: bold;
+    background-color: #363636;
+    height: 100%;
+    width: 90px;
+    font-size: 14pt;
+    line-height: 24pt;
+    text-align: center;
+}
+
+#header_buttons{
+    position: absolute;
+    width: 140px;
+    left: 42%;
+    padding-top: 3px;
+}
+
+.objimg{
+    pointer-events: none;
+}
+
+.unitbtn{
+    height: 128px;
+    width: 64px;
+    display: inline-block;
+}
+
+.piece-btn{
+    display:inline-block;
+}
+
+.editbtn{
+    color: #363636;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #363636;
+    height: 32px;
+    /*width: 32px;*/
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*
+.btn-flip{
+    background-image: url(images/icon-flip.png);
+}
+.btn-move{
+    background-image: url(images/icon-move.png);
+}
+.btn-del{
+    background-image: url(images/icon-delete.png);
+}*/
+
+.obj-btn{
+    margin-left: 2px;
+}
+
+.disabled{
+    /*pointer-events: none;*/
+}
+
+/****
+*    TABS
+*
+****/
+
+.tab{
+    overflow: scroll;
+    display: none;
+    height: 100%;
+    width: 100%;
+    max-height: 400px;
+    min-height: 300px;
+    background-color: whitesmoke;
+    position: absolute;
+}
+
+#tabs_container{
+
+}
+
+#tabs_buttons{
+    border-bottom: 1px solid silver;
+    font-size: 12pt;
+}
+
+#tabs_buttons span{
+    cursor: pointer;
+    margin: 5px;
+}
+
+#tabs_buttons span:hover{
+    color: orange;
+}
+
+.selected_tab{
+    text-decoration: underline;
+}
+
+.tab-leftdiv{
+    padding: 2px;
+    border-bottom: 3px ridge silver;
+    min-width: 200px;
+    width: 100%;
+    height: 35px;
+    display: inline-block;
+}
+
+.tab-rightdiv{
+    min-width: 200px;
+    height: 100%;
+    display: inline-block;
+}

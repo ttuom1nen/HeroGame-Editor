@@ -1,0 +1,81 @@
+.unit_dead{
+    filter: contrast(40%) grayscale(100%);
+}
+
+/***
+*    HEROES
+*
+***/
+
+.hero_main_war_male{
+    background-image: url(../images/heroes/hero_main_war_male.png);
+}
+
+/***
+*    HUMAN
+*
+***/
+
+/*--- Human Military ---*/
+.human_military_blue{
+    background-image: url(../images/units/human_military.png);
+}
+.military_militia{
+    background-position: 0px 0px;
+}
+.military_herbalist{
+    background-position: -64px 0px;
+}
+.military_woodsman{
+    background-position: -128px 0px
+}
+.military_archer{
+    background-position: -192px 0px
+}
+.military_soldier{
+    background-position: 0px -128px
+}
+.military_pikeman{
+    background-position: -64px -128px
+}
+.military_priest{
+    background-position: -128px -128px
+}
+.military_cavalry{
+    background-position: -192px -128px
+}
+
+/*--- Human Imperium ---*/
+
+/***
+*    UNDEAD
+*
+***/
+
+.undead_legion{
+    background-image: url(../images/units/undead_legion.png);
+}
+.legion_zombie{
+    background-position: 0px 0px;
+}
+.legion_bombie{
+    background-position: -64px 0px;
+}
+.legion_bambie{
+    background-position: -128px 0px
+}
+.legion_undead1{
+    background-position: -192px 0px
+}
+.legion_undead2{
+    background-position: 0px -128px
+}
+.legion_undead3{
+    background-position: -64px -128px
+}
+.legion_undead4{
+    background-position: -128px -128px
+}
+.legion_undead5{
+    background-position: -192px -128px
+}

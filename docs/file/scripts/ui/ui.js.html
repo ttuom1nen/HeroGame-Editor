@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">scripts/ui/ui.js | gg_domtest</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  </ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">scripts/ui/ui.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/*
+class UiElement{
+
+    constructor(){
+        this.type = &quot;uielm&quot;
+        this.disabled = false
+        this.elm
+        this.visible = true
+    }
+
+    show(){
+        this.visible = true
+        this.elm.style.visibility = &apos;visible&apos;        
+    }
+
+    hide(){
+        this.visible = false
+        this.elm.style.visibility = &apos;hidden&apos;
+    }
+
+    toggle(){
+
+    }
+
+    setContent(){
+
+    }
+
+    appendContent(){
+
+    }
+
+    export(){
+
+    }
+
+}
+
+class ModalWin extends UiElement(){
+
+    constructor(){
+        super()
+
+        this.modalbg = document.createElement(&apos;div&apos;)
+        this.modalbg.classList.add(&apos;modal-bg&apos;)
+        this.modalwin = document.createElement(&apos;div&apos;)
+        this.modalwin.classList.add(&apos;modal-window&apos;)
+        this.header = document.createElement(&apos;div&apos;)
+        this.header.classList.add(&apos;modal-header&apos;)
+        this.content = document.createElement(&apos;div&apos;)
+        this.content.classList.add(&apos;modal-content&apos;)
+        this.footer = document.createElement(&apos;div&apos;)
+        this.footer.classList.add(&apos;modal-footer&apos;)
+        this.closebtn = document.createElement(&apos;input&apos;)
+        this.closebtn.type = &apos;button&apos;
+        this.closebtn.classList.add(&apos;modal-closebtn&apos;)
+        this.closebtn.value = &apos;Sulje&apos;
+    
+        this.footer.appendChild(this.closebtn)
+        this.modalwin.appendChild(this.header)
+        this.modalwin.appendChild(this.content)
+        this.modalwin.appendChild(this.footer)
+        this.modalbg.appendChild(this.modalwin)
+
+        this.elm = this.modalbg
+    }
+
+}*/
+
+/**
+*   ModalWindow
+*
+**/
+
+/*
+function ModalWindow(container){
+    var _this = this
+    this.visible = false
+
+    this.modalbg = document.createElement(&apos;div&apos;)
+    this.modalbg.classList.add(&apos;modal-bg&apos;)
+
+    this.modalwin = document.createElement(&apos;div&apos;)
+    this.modalwin.classList.add(&apos;modal-window&apos;)
+
+    this.header = document.createElement(&apos;div&apos;)
+    this.header.classList.add(&apos;modal-header&apos;)
+
+    this.content = document.createElement(&apos;div&apos;)
+    this.content.classList.add(&apos;modal-content&apos;)
+
+    this.footer = document.createElement(&apos;div&apos;)
+    this.footer.classList.add(&apos;modal-footer&apos;)
+
+    this.closebtn = document.createElement(&apos;input&apos;)
+    this.closebtn.type = &apos;button&apos;
+    this.closebtn.classList.add(&apos;modal-closebtn&apos;)
+    this.closebtn.value = &apos;Sulje&apos;
+
+    this.footer.appendChild(this.closebtn)
+    this.modalwin.appendChild(this.header)
+    this.modalwin.appendChild(this.content)
+    this.modalwin.appendChild(this.footer)
+    this.modalbg.appendChild(this.modalwin)
+
+    this.show = function(){
+        _this.visible = true
+        _this.modalbg.style.visibility = &apos;visible&apos;
+    }
+
+    this.hide = function(){
+        _this.visible = false
+        _this.modalbg.style.visibility = &apos;hidden&apos;
+    }
+
+    this.toggle = function(){
+        _this.visible = !_this.visible
+
+        if(_this.visible){
+            _this.show()
+        }else{
+            _this.hide()
+        }
+
+    }
+
+    this.setContent = function(obj){
+
+        if(obj.hasOwnProperty(&apos;header&apos;)){
+            _this.header.innerHTML = obj.header
+        }
+        if(obj.hasOwnProperty(&apos;content&apos;)){
+            _this.content.innerHTML = obj.content
+        }
+
+    }
+
+    this.appendContent = function(obj){
+
+        if(typeof(obj) == &apos;object&apos;){
+            if(obj.hasOwnProperty(&apos;content&apos;)){
+                _this.content.innerHTML += obj.content
+            }
+        }else{
+            _this.content.innerHTML += obj
+        }
+
+    }
+
+    this.appendElmToContent = function(elm){
+        _this.content.appendChild(elm)
+    }
+
+    this.modalbg.addEventListener(&apos;mousedown&apos;, function(evt){
+        if(evt.target.classList.contains(&apos;modal-bg&apos;)){
+            _this.hide()
+        }
+    })
+
+    this.closebtn.addEventListener(&apos;mousedown&apos;, function(evt){
+        _this.hide()
+    })
+
+    container.appendChild(this.modalbg)
+
+}*/
+
+//var modalwin = new ModalWin()</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

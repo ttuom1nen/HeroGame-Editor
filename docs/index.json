@@ -1,0 +1,3481 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "scripts/.external-ecmascript.js",
+    "static": true,
+    "longname": "scripts/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "scripts/actions.js",
+    "content": "/**\r\n * This function is used for attacking a target\r\n * @param {object} attacker \r\n * @param {object} victim \r\n */\r\nfunction attack(attacker, victim){\r\n\r\n    if(attacker.checkMoves()){\r\n\r\n        var dmgmin = attacker.stats['dmg'];\r\n        var dmgAmount = victim.stats.def-dmgmin;\r\n        var angle = getAngle(attacker.pxpos_x, attacker.pxpos_y, victim.pxpos_x, victim.pxpos_y)\r\n        var victim_x = victim.pxpos_x;\r\n        var victim_y = victim.pxpos_y;\r\n        var anglevar = 0;\r\n\r\n        attacker.flip(angle)\r\n\r\n        if(dmgAmount >= 0){\r\n            dmgAmount = -1;\r\n        }\r\n\r\n        if(angle == 0){\r\n            anglevar = 0;\r\n        }else if(angle == 180 || angle == -180){\r\n            anglevar = 180;\r\n        }else if(angle == 90){\r\n            anglevar = 90;\r\n        }else if(angle == -90){\r\n            anglevar = -90;\r\n        }\r\n        else if(angle > -90 && angle < 0){\r\n            anglevar = -45;\r\n        }\r\n        else if(angle < 90 && angle > 0){\r\n            anglevar = 45;\r\n        }\r\n        else if(angle < -90 && angle > -180){\r\n            anglevar = -135;\r\n        }\r\n        else if(angle < 180 && angle > 90){\r\n            anglevar = 135;\r\n        }\r\n\r\n        if(this.subtype == \"archer\"){\r\n            var projectile = document.createElement(\"div\");\r\n            projectile.className = \"arrow\";\r\n            projectile.setAttribute(\"style\", \"transform: rotate(\"+angle+\"deg); z-index: \"+(victim.dom.style.zIndex+1)+\"; top: \"+(this.pxpos_y-32)+\"px; left: \"+this.pxpos_x+\"px;\");\r\n            document.getElementById(\"gamearea\").appendChild(projectile)\r\n            translate(projectile,victim_x,victim_y-32)\r\n        }\r\n\r\n        attacker.updateMoves(-1)\r\n        attacker.dom.classList.remove('attack_0','attack_180','attack_45','attack_-45','attack_90','attack_-90','attack_135','attack_-135');\r\n        void attacker.dom.offsetWidth;\r\n        attacker.dom.classList.add('attack_'+anglevar);\r\n        victim.takeDmg(dmgmin)\r\n        createMoveArea(attacker)\r\n    }\r\n}\r\n\r\n/**\r\n * Loops through all enemy teams and looks for targets\r\n * @param {object} attacker \r\n */\r\nfunction seekTarget(attacker){\r\n    var distance = 0;\r\n    var closest = 9999;\r\n    targets = {\"in_range\":[], \"not_in_range\":[], \"closest\": [], \"atkareas\": []};\r\n\r\n    game.teams.forEach(function (team, key, map) {\r\n        if(key != game.whosturn){\r\n\r\n            team.objects.forEach(function (enemy) {\r\n                if(enemy.alive){\r\n                    distance = getDistance(attacker.pxpos_x, attacker.pxpos_y, enemy.pxpos_x, enemy.pxpos_y)\r\n\r\n                    if(distance <= attacker.stats.range*64){ \r\n\r\n                        targets[\"in_range\"].push({\"victim\": enemy, \"distance\": distance, \"angle\": getAngle(attacker.pxpos_x, attacker.pxpos_y, enemy.pxpos_x, enemy.pxpos_y)});\r\n                        //createAtkMarkers(value); //value.dom.style.border = '1px solid red'\r\n        \r\n                        var atkmarker = document.createElement('div')\r\n                        atkmarker.classList.add('atkmarker', 'indicator')\r\n                        atkmarker.style.left = enemy.pxpos_x;\r\n                        atkmarker.style.top = enemy.pxpos_y;\r\n                        atkmarker.target = enemy\r\n                        enemy.target = true\r\n\r\n                        //document.getElementById('gamearea').appendChild(atkmarker)\r\n                        enemy.dom.appendChild(atkmarker)\r\n        \r\n                        //console.log({'left': attacker.tile.x,'top': attacker.tile.y}, {'left': value.tileindex_x,'top': value.tileindex_y})\r\n        \r\n                        if(attacker.stats.range > 1.5){\r\n                            bresenhamLine({'left': attacker.tile.x,'top': attacker.tile.y}, {'left': enemy.tile.x,'top': enemy.tile.y})\r\n                        }\r\n        \r\n                        //attacker.targets.atkareas.push(atkmarker)\r\n                    }else{\r\n                        enemy.target = false\r\n                        targets[\"not_in_range\"].push({\"victim\": enemy, \"distance\": distance, \"angle\": getAngle(attacker.pxpos_x, attacker.pxpos_y, enemy.pxpos_x, enemy.pxpos_y)});\r\n                    }\r\n                    \r\n                }\r\n            })\r\n\r\n        }\r\n    })\r\n\r\n    return targets\r\n}\r\n\r\n/**\r\n * Creates a move area around the selected unit\r\n * @param {object} unitobj \r\n */\r\nfunction createMoveArea(unitobj){\r\n    var unitx = unitobj.tile.x;\r\n    var unity = unitobj.tile.y;\r\n    var areax = unitx-unitobj.stats.moves;\r\n    var areay = unity-unitobj.stats.moves;\r\n    var corr = (unitobj.stats.moves > 1) ? 1:0;\r\n    var areas = []\r\n    delMoveArea()\r\n\r\n    for(var y = 0; y < (3*unitobj.stats.moves)-corr; y++){\r\n\r\n        for(var x = 0; x < (3*unitobj.stats.moves)-corr; x++){\r\n\r\n            if(areax != unitx || areay != unity){\r\n                if(board.layout[areax] != undefined){\r\n                    if(board.layout[areax][areay] != undefined){\r\n\r\n                        var targetTile = board.layout[areax][areay];\r\n\r\n                        if(!targetTile.occupied){\r\n                            var dist = getDistance(unitx,unity,areax,areay)\r\n\r\n                            if(dist < 2.1){\r\n                                var movemarker = document.createElement('div');\r\n                                movemarker.classList.add('movemarker', 'indicator');\r\n                                movemarker.style.zIndex = 1\r\n                                \r\n                                if(dist > 1 || unitobj.stats.moves == 1){\r\n\r\n                                    if(lineofsight({'left': unitx, 'top': unity}, {'left': areax, 'top': areay})){\r\n                                        movemarker.classList.add('mvmrkr-orange');\r\n                                        movemarker.apcost = -2;\r\n                                        areas.push(movemarker)\r\n                                    }\r\n                                    \r\n                                }else{\r\n                                    movemarker.classList.add('mvmrkr-green');\r\n                                    movemarker.apcost = -1;\r\n                                    areas.push(movemarker)\r\n                                }\r\n\r\n                                movemarker.tile = targetTile;\r\n                                movemarker.addEventListener('mousedown', function(evt){\r\n                                    game.selectedUnit.move(evt.target.apcost, evt.target.tile.x, evt.target.tile.y);\r\n                                })\r\n\r\n                                targetTile.dom.appendChild(movemarker);\r\n                                \r\n                            }\r\n                        }\r\n\r\n                    }\r\n                }\r\n            }\r\n            areax++;\r\n        }\r\n\r\n        areax = unitx-unitobj.stats.moves;\r\n        areay++;\r\n    }\r\n\r\n    unitobj.mvmrkrs = areas\r\n    return areas\r\n}\r\n\r\n/**\r\n * Deletes current move area\r\n */\r\nfunction delMoveArea(){\r\n    var markers = document.querySelectorAll('.movemarker');\r\n\r\n    if(markers.length > 0){\r\n        for(i=0; i<markers.length; i++){\r\n            var elem = markers[i];\r\n            elem.parentNode.removeChild(elem);\r\n        }\r\n    }\r\n    \r\n    /*\r\n    if(game.selectedUnit.mvmrkrs.length > 0){\r\n        for(var i = 0; i < game.selectedUnit.mvmrkrs.length; i++){\r\n            game.selectedUnit.mvmrkrs[i].parentNode.removeChild(game.selectedUnit.mvmrkrs[i]);\r\n        }\r\n\r\n        game.selectedUnit.mvmrkrs = []\r\n\r\n        return true\r\n    }else{\r\n        return false\r\n    }*/\r\n}\r\n\r\n/**\r\n * Delete indicators\r\n */\r\nfunction delIndicators(){\r\n    var markers = document.querySelectorAll('.indicator');\r\n\r\n    if(markers.length > 0){\r\n        for(i=0; i<markers.length; i++){\r\n            var elem = markers[i];\r\n            elem.parentNode.removeChild(elem);\r\n        }\r\n    }\r\n}\r\n\r\n/**\r\n * Creates a dmg marker / blood\r\n * @param {int} bloodx \r\n * @param {int} bloody \r\n * @param {int} dmg \r\n */\r\nfunction createDmgMarker(bloodx, bloody, dmg){\r\n\r\n    var bloodsplat = document.createElement('div');\r\n    bloodsplat.classList.add('bloodsplat');\r\n    bloodsplat.style.zIndex = 99;\r\n    bloodsplat.style.left = bloodx;\r\n    bloodsplat.style.top = bloody;\r\n\r\n    var dmgtext = document.createElement('p');\r\n    dmgtext.className = \"dmgtext\";\r\n    dmgtext.innerHTML = dmg;\r\n    dmgtext.style.top = '0px';\r\n    bloodsplat.appendChild(dmgtext);\r\n\r\n    var inttime = 0;\r\n\r\n    var fadeEffect = setInterval(function () {\r\n\r\n        if(inttime > 5){\r\n            clearInterval(fadeEffect);\r\n            document.getElementById(\"gamearea\").removeChild(bloodsplat);\r\n        }else{\r\n            inttime++;\r\n        }\r\n\r\n    }, 100);\r\n\r\n    document.getElementById(\"gamearea\").appendChild(bloodsplat);\r\n\r\n}\r\n\r\n/**\r\n * Shows unit information\r\n * @param {object} unitobj \r\n */\r\nfunction showUnitInfo(unitobj){\r\n\r\n    document.getElementById(\"modal-header\").innerText = \"Unit information\";\r\n\r\n    var modalinfo = document.getElementById(\"modal-info\");\r\n    modalinfo.innerHTML = \"\";\r\n\r\n    var leftside = document.createElement(\"div\");\r\n    leftside.classList.add(\"unit_infoleft\");\r\n    leftside.id = \"infoleft\";\r\n\r\n    var unit_portrait = document.createElement(\"div\");\r\n    unit_portrait.classList.add(\"unit\", unitobj.stats.classname);\r\n\r\n    leftside.appendChild(unit_portrait);\r\n\r\n    var rightside = document.createElement(\"div\");\r\n    rightside.classList.add(\"unit_inforight\");\r\n    rightside.id = \"inforight\";\r\n\r\n    for (var key in unitobj.stats) {\r\n        \r\n        if(key != \"imgpoint\" && key != \"midpoint\" && key != \"classname\" && key != \"alive\"){\r\n            var infoblock = document.createElement(\"div\");\r\n            var div_left = document.createElement(\"div\");\r\n            div_left.classList.add(\"infoblock_left\");\r\n            var div_right = document.createElement(\"div\");\r\n            div_right.classList.add(\"infoblock_right\");\r\n\r\n            div_left.innerText = key;\r\n            div_right.innerText = unitobj.stats[key];\r\n\r\n            infoblock.appendChild(div_left);\r\n            infoblock.appendChild(div_right);\r\n            infoblock.classList.add(\"unit_infoblock\");\r\n\r\n            rightside.appendChild(infoblock);\r\n        }\r\n    }\r\n\r\n    modalinfo.appendChild(leftside);\r\n    modalinfo.appendChild(rightside);\r\n    document.getElementById(\"modal\").style.visibility = \"visible\";\r\n\r\n}",
+    "static": true,
+    "longname": "F:/Projects/2D/gg_domtest/scripts/actions.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "function",
+    "name": "attack",
+    "memberof": "scripts/actions.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "scripts/actions.js~attack",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/actions.js",
+    "importStyle": null,
+    "description": "This function is used for attacking a target",
+    "lineNumber": 6,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "attacker",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "victim",
+        "description": ""
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 50,
+    "kind": "function",
+    "name": "seekTarget",
+    "memberof": "scripts/actions.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "scripts/actions.js~seekTarget",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/actions.js",
+    "importStyle": null,
+    "description": "Loops through all enemy teams and looks for targets",
+    "lineNumber": 66,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "attacker",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 51,
+    "kind": "function",
+    "name": "createMoveArea",
+    "memberof": "scripts/actions.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "scripts/actions.js~createMoveArea",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/actions.js",
+    "importStyle": null,
+    "description": "Creates a move area around the selected unit",
+    "lineNumber": 118,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "unitobj",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 52,
+    "kind": "function",
+    "name": "delMoveArea",
+    "memberof": "scripts/actions.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "scripts/actions.js~delMoveArea",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/actions.js",
+    "importStyle": null,
+    "description": "Deletes current move area",
+    "lineNumber": 186,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 53,
+    "kind": "function",
+    "name": "delIndicators",
+    "memberof": "scripts/actions.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "scripts/actions.js~delIndicators",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/actions.js",
+    "importStyle": null,
+    "description": "Delete indicators",
+    "lineNumber": 213,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 54,
+    "kind": "function",
+    "name": "createDmgMarker",
+    "memberof": "scripts/actions.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "scripts/actions.js~createDmgMarker",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/actions.js",
+    "importStyle": null,
+    "description": "Creates a dmg marker / blood",
+    "lineNumber": 230,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "bloodx",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "bloody",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "dmg",
+        "description": ""
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 55,
+    "kind": "function",
+    "name": "showUnitInfo",
+    "memberof": "scripts/actions.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "scripts/actions.js~showUnitInfo",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/actions.js",
+    "importStyle": null,
+    "description": "Shows unit information",
+    "lineNumber": 265,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "unitobj",
+        "description": ""
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 56,
+    "kind": "file",
+    "name": "scripts/ai.js",
+    "content": "/**\r\n * AI closure\r\n */\r\nvar AI = (function(){\r\n\r\n    var obj = {}\r\n    var selunit\r\n    var turn = false\r\n\r\n    return{\r\n\r\n        setUnit: function(obj){\r\n            selunit = obj\r\n        },\r\n        getUnit: function(){\r\n            return selunit\r\n        },\r\n        setTurn: function(value){\r\n            turn = value\r\n        },\r\n        getTurn: function(){\r\n            return turn\r\n        }\r\n\r\n    }\r\n\r\n})()\r\n\r\nvar intval_index = 0\r\n\r\n/**\r\n * Main action for AI. This function gets called when the current player is AI\r\n */\r\nfunction doAI(){\r\n\r\n    var cur_team = game.selectedTeam\r\n    var cur_unit\r\n    intval_index = 0\r\n\r\n    console.log(cur_team)\r\n\r\n    //for(var i = 0; i < cur_team.list.length; i++){\r\n\r\n    executeTurn(cur_team.objects.get(cur_team.list[0]))\r\n\r\n    var timer = setInterval(function(){\r\n        console.log('interval!')\r\n\r\n        if(intval_index < cur_team.list.length){\r\n            cur_unit = cur_team.objects.get(cur_team.list[intval_index])\r\n            executeTurn(cur_unit)\r\n\r\n            //intval_index++\r\n        }else{\r\n            interval_index = 0\r\n            clearTimeout(timer);\r\n            setTurn()\r\n        }\r\n\r\n    }, 500)\r\n\r\n    //}\r\n\r\n}\r\n\r\n/**\r\n * Executes a series of actions for the current AI unit\r\n * @param {object} unit \r\n */\r\nfunction executeTurn(unit){\r\n\r\n    console.log('--- Executing Turn ---')\r\n    console.log(unit.dom)\r\n\r\n    delIndicators()\r\n\r\n    var current_unit = unit\r\n    var targets = seekTarget(current_unit)\r\n    var areas = createMoveArea(current_unit)\r\n\r\n    console.log(areas)\r\n\r\n    if(targets[\"in_range\"].length > 0){\r\n        attack(current_unit, targets[\"in_range\"][0][\"victim\"]);\r\n    \r\n    }else{\r\n        var closest = getClosestMove(areas)\r\n        console.log(closest)\r\n        current_unit.move(closest.apcost, closest.area.tile.x, closest.area.tile.y)\r\n    }\r\n\r\n    if(unit.stats.moves <= 0){\r\n        intval_index++\r\n    }    \r\n}\r\n\r\n/**\r\n * Pick the movement area that is closest to an enemy unit\r\n * @param {Array} areas \r\n */\r\nfunction getClosestMove(areas){\r\n    var closest = 9999\r\n    var distance = 0\r\n    var closest_area\r\n\r\n    for(var i = 0; i<areas.length;i++){\r\n\r\n        var curarea = areas[i]\r\n        distance = Math.floor(getDistance(curarea.tile.px_x, curarea.tile.px_y, targets.not_in_range[0].victim.pxpos_x, targets.not_in_range[0].victim.pxpos_y,))\r\n\r\n        curarea.innerText = distance\r\n\r\n        if(distance < closest){\r\n            closest = distance\r\n            closest_area = curarea\r\n        }\r\n\r\n    }\r\n\r\n    return {'area': closest_area, 'apcost': closest_area.apcost}\r\n}",
+    "static": true,
+    "longname": "F:/Projects/2D/gg_domtest/scripts/ai.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 57,
+    "kind": "variable",
+    "name": "AI",
+    "memberof": "scripts/ai.js",
+    "static": true,
+    "longname": "scripts/ai.js~AI",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/ai.js",
+    "importStyle": null,
+    "description": "AI closure",
+    "lineNumber": 4,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 58,
+    "kind": "variable",
+    "name": "intval_index",
+    "memberof": "scripts/ai.js",
+    "static": true,
+    "longname": "scripts/ai.js~intval_index",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/ai.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 29,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 59,
+    "kind": "function",
+    "name": "doAI",
+    "memberof": "scripts/ai.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "scripts/ai.js~doAI",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/ai.js",
+    "importStyle": null,
+    "description": "Main action for AI. This function gets called when the current player is AI",
+    "lineNumber": 34,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 60,
+    "kind": "function",
+    "name": "executeTurn",
+    "memberof": "scripts/ai.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "scripts/ai.js~executeTurn",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/ai.js",
+    "importStyle": null,
+    "description": "Executes a series of actions for the current AI unit",
+    "lineNumber": 70,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "unit",
+        "description": ""
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 61,
+    "kind": "function",
+    "name": "getClosestMove",
+    "memberof": "scripts/ai.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "scripts/ai.js~getClosestMove",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/ai.js",
+    "importStyle": null,
+    "description": "Pick the movement area that is closest to an enemy unit",
+    "lineNumber": 101,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "areas",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"area\": *, \"apcost\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 62,
+    "kind": "file",
+    "name": "scripts/board.js",
+    "content": "/**\n * Board is the main game area that holds all of the tiles\n */\nvar board = function(){\n\n    var this_table = this;\n    this_table.layout = [];\n    this_table.occupied_tiles = [];\n    this_table.unoccupied_tiles = [];\n    this_table.tileCountX = 0;\n    this_table.tileCountY = 0;\n    this_table.board_width = 0;\n    this_table.board_height = 0;\n\n    /**\n     * Initiates the board with x and y size parameters\n     * @param {int} sizex\n     * @param {int} sizey\n     */\n    this.initBoard = function(sizex,sizey){\n        this_table.layout = [];\n        this_table.unoccupied_tiles = [];\n\n        document.getElementById(\"gamearea\").innerHTML = \"\";\n\n        for(x=0;x<sizex;x++){\n            this_table.layout[x] = [];\n            var columndiv = document.createElement(\"div\");\n            columndiv.classList.add(\"column_div\");\n            this_table.tileCountX = sizex;\n            this_table.board_width = sizex*64;\n            \n            for(y=0;y<sizey;y++){\n                var newtile = new tile(x, y, 'tile_grass');\n                this_table.layout[x][y] = newtile;\n                //this_table.unOccupiedTiles(x,y);\n                columndiv.appendChild(newtile.dom);           \n            }\n            \n            document.getElementById(\"gamearea\").appendChild(columndiv);\n        }\n\n        this_table.tileCountY = this_table.layout[0].length;\n        this_table.board_height = 64*this_table.layout[0].length;\n        document.getElementById(\"gamearea\").style.height = this_table.board_height;\n        document.getElementById(\"container\").style.width = this_table.board_width;\n\n        //this_table.createObstacles();\n    }\n\n    /**\n     * Sets board from a 2 dimensional array\n     * @param {Array} table\n     */\n    this.setBoard = function(table){\n        console.log(table)\n        //this_table.layout = table;\n        //this_table.unoccupied_tiles = [];\n\n        var sizex = table.length\n        var sizey = table[0].length\n\n        //document.getElementById(\"gamearea\").innerHTML = \"\";\n\n        for(var x = 0; x < sizex; x++){\n            \n            /*var columndiv = document.createElement(\"div\");\n            columndiv.classList.add(\"column_div\");\n            this_table.tileCountX = sizex;\n            this_table.board_width = sizex*64;*/\n            \n            for(var y = 0; y < sizey; y++){\n                var layouttile = this_table.layout[x][y]\n                var loadtile = table[x][y]\n                layouttile.dom.style.backgroundPositionX = loadtile.bgx+'px'\n                layouttile.dom.style.backgroundPositionY = loadtile.bgy+'px'\n                layouttile.dom.bgx = loadtile.bgx\n                layouttile.dom.bgy = loadtile.bgy\n                /*\n                this_table.layout[x][y].dom = this_table.layout[x][y].dom;\n                this_table.layout[x][y].occupied = this_table.layout[x][y].occupied;\n                */\n               /*var newtile = new tile(x, y);\n                this_table.layout[x][y] = newtile;\n                this_table.unOccupiedTiles(x,y);\n                columndiv.appendChild(newtile.dom);*/           \n            }\n            \n            //document.getElementById(\"gamearea\").appendChild(columndiv);\n        }        \n    }\n\n    this.unOccupiedTiles = function(tablex, tabley){\n        this_table.unoccupied_tiles.push(this_table.layout[tablex][tabley]);\n    }\n\n    /**\n     * Places a piece on to the board\n     * @param {object} piece\n     * @param {int} tile_x\n     * @param {int} tile_y\n     */\n    this.placeOnBoard = function(obj, tile_x, tile_y){\n        var targetTile = board.layout[tile_x][tile_y];\n        obj.tile = targetTile;\n\n        if(targetTile.occupied){\n            return false;\n        }else{\n            //delIndicators()\n            targetTile.occupied = true\n            targetTile.occupant = obj\n            obj.tileindex_x = tile_x\n            obj.tileindex_y = tile_y\n            obj.pxpos_x = targetTile.px_x\n            obj.pxpos_y = targetTile.px_y\n            obj.dom.style.left = targetTile.px_x\n            obj.dom.style.top = targetTile.px_y\n            obj.dom.style.zIndex = targetTile.y\n            \n            console.log(obj.dom)\n            document.getElementById('gamearea').appendChild(obj.dom)\n            return true\n        }    \n        \n    }\n\n    this.removeFromBoard = function(obj){\n        obj.currentTile.occupied = false\n        obj.currentTile.occupant = null\n        obj.meta.disabled = true\n        document.getElementById('gamearea').removeChild(document.getElementById(obj.dom.id))\n    }\n\n    this.showBoardStatus = function(){\n        var curtile, curstatusdiv;\n\n        for(x=0; x<this_table.layout.length ;x++){\n\n            for(y=0;y<this_table.layout[x].length;y++){\n                curtile = this_table.layout[x][y];\n                curstatusdiv = document.getElementById(\"status_\"+x+y);\n\n                curstatusdiv.setAttribute(\"style\",\"color: black;\");\n\n                if(curtile.dom.occupied){\n                    curstatusdiv.setAttribute(\"style\",\"color: red;\");\n                }else if(!curtile.dom.occupied){\n                    curstatusdiv.setAttribute(\"style\",\"color: green;\");                    \n                }else{\n                    curstatusdiv.setAttribute(\"style\",\"color: orange;\"); \n                }\n\n                curstatusdiv.innerText = curtile.dom.occupied;                \n            }\n\n        }\n\n    }\n\n    /**\n     * Exports the board for saving\n     */\n    this.export = function(){\n        var expboard = []\n\n        for(x = 0 ; x<this_table.layout.length ; x++){\n            expboard[x] = []\n\n            for(y=0;y<this_table.layout[x].length;y++){\n\n                expboard[x][y] = \n                {\n                    'cls': this_table.layout[x][y].cls,\n                    'bgx': this_table.layout[x][y].dom.bgx,\n                    'bgy': this_table.layout[x][y].dom.bgy,\n                    'occupied': this_table.layout[x][y].occupied\n                }\n            }\n\n        }\n        \n        return expboard\n    }\n\n}\n\n/**\n * Tiles\n * @param {int} column\n * @param {int} row\n * @param {string} sheet\n */\nvar tile = function(column, row, sheet){\n    var this_tile = this;\n    var randomtile = Math.floor(Math.random()*10);\n\n    if(sheet === undefined){\n        sheet = 'tile_grass'\n    }\n\n    this_tile.x = column;\n    this_tile.y = row;\n    this_tile.px_x = 64*column;\n    this_tile.px_y = 64*row;\n    this_tile.occupied = false;\n    this_tile.occupant = null;\n    this_tile.cls = 'tile '+sheet\n    this_tile.dom = document.createElement('div');\n    this_tile.dom.bgx = 0\n    this_tile.dom.bgy = 0\n    this_tile.dom.id = 'x'+column+'y'+row;\n    this_tile.dom.className = 'tile '+sheet\n    this_tile.dom.style.zIndex = \"0\";\n    this_tile.dom.style.backgroundPosition = '0px 0px'\n\n    //this_tile.dom.innerHTML = \"<div style='position: absolute; color: gray;'>\"+column+\",\"+row+\"</div>\";\n\n    this_tile.dom.addEventListener(\"click\", function(evt) {\n        if(!game.gamemode){\n            var editormode = Editor.getMode()\n            var editobj = Editor.getObj()\n\n            if(editormode == 'tile'){\n\n                if(evt.target.classList.contains('tile')){\n                    evt.target.style.backgroundPosition = editobj.bgx+' '+editobj.bgy\n                    this_tile.dom.bgx = editobj.bgx\n                    this_tile.dom.bgy = editobj.bgy\n                }\n            \n            }else if(editormode == 'unit'){\n\n                if(evt.target.classList.contains('tile')){\n\n                    if(!this_tile.occupied){\n                        var newunit = new Soldier(editobj.race, editobj.faction, editobj.type)\n                        newunit.team = game.selectedTeam\n                        newunit.id = newunit.team.id+'U'+newunit.team.list.length\n                        game.selectedTeam.add(newunit)\n                        game.selectUnit(newunit)\n                        board.placeOnBoard(newunit, this_tile.x, this_tile.y)\n\n                    }else{\n                        console.log('tile is occupied!')\n                    }\n                }\n\n            }else if(editormode == 'move'){\n                game.selectedPiece.tile.occupied = false\n                board.placeOnBoard(game.selectedPiece, this_tile.x, this_tile.y)\n\n            }else if(editormode == 'obstacle'){\n                \n                if(!this_tile.occupied){\n                    var newobs = new Obstacle(editobj.type, editobj.subtype, {'bgx': editobj.bgpos.bgx, 'bgy': editobj.bgpos.bgy})\n                    game.addObstacle(newobs)\n\n                    board.placeOnBoard(newobs, this_tile.x, this_tile.y)\n                }\n            \n            }\n        }\n    });\n\n    /*var tilestatus_div = document.createElement(\"div\");\n    tilestatus_div.classList.add(\"tilestatus_div\");\n    tilestatus_div.id = \"status_\"+column+row;\n    tilestatus_div.innerText = this_tile.dom.occupied;\n    this_tile.dom.appendChild(tilestatus_div);*/\n}\n\n/*\nvar moveMarker = function(tile){\n    var this_marker = this\n    this_marker.posx = tile.dom.px_x\n    this_marker.posy = tile.dom.px_y\n    this_marker.indexx = tile.dom.x\n    this_marker.indexy = tile.dom.y\n    this_marker.tile = tile\n\n    this.create = function(tile){\n        this_marker.dom = document.createElement('div');\n        this_marker.dom.classList.add('movemarker');\n        tile.appendChild(this_marker.dom);\n    }\n\n}*/\n\nvar board = new board();",
+    "static": true,
+    "longname": "F:/Projects/2D/gg_domtest/scripts/board.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 63,
+    "kind": "function",
+    "name": "board",
+    "memberof": "scripts/board.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "scripts/board.js~board",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/board.js",
+    "importStyle": null,
+    "description": "Board is the main game area that holds all of the tiles",
+    "lineNumber": 4,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 64,
+    "kind": "function",
+    "name": "tile",
+    "memberof": "scripts/board.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "scripts/board.js~tile",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/board.js",
+    "importStyle": null,
+    "description": "Tiles",
+    "lineNumber": 194,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "column",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "row",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sheet",
+        "description": ""
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 65,
+    "kind": "variable",
+    "name": "board",
+    "memberof": "scripts/board.js",
+    "static": true,
+    "longname": "scripts/board.js~board",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/board.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 290,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 66,
+    "kind": "file",
+    "name": "scripts/collections.js",
+    "content": "class Group{\n\n    constructor(){\n        this.list = []\n        this.objects = new Map()\n        this.selectedObject\n    }\n\n    add(obj){\n        this.list.push(obj.id)\n        this.objects.set(obj.id, obj)\n    }\n\n    selectObject(id){\n        this.selectedObject = this.objects.get(id)\n        return this.selectedObject\n    }\n\n    deleteFromList(id){\n        for(var i = 0; i<this.list.length; i++){\n            if(this.list[i] == id){\n                this.list.splice(i,1)\n                return this.list\n            }\n        }\n    }\n\n    export(){\n        var arr = []\n\n        this.objects.forEach(function(obj,key,map){\n            if(!obj.meta.disabled){\n                arr.push(obj.export())\n            }\n        })\n\n        return arr\n    }\n\n}\n\nclass Team extends Group{\n\n    constructor(id, name, ai){\n        super()\n        \n        this.id = id\n        this.name = name \n        this.ai = ai\n    }\n\n    setName(name){\n        this.name = name\n        return name\n    }\n\n    toggleAI(set){\n\n        if(set !== undefined){\n            if(set){\n                this.ai = true\n            }else{\n                this.ai = false\n            }\n        }else{\n            this.ai = !this.ai\n        }\n\n        if(this.ai){\n            doAIsequence()\n        }\n\n        return this.ai\n    }\n\n}\n\nclass Obstacles extends Group{\n\n    constructor(obj){\n        super()\n\n        this.name = 'obs'\n        this.info = obj\n    }\n\n}\n\n/**********************\n*    Collection\n*\n*********************\n\nvar Collection = function(){\n    var this = this\n\n    this.list = []\n    this.objects = new Map()\n    this.selectedObject\n    this.name = 'collection'\n\n    this.add = function(obj){\n        obj.id = this.name+''+this.list.length\n        this.list.push(obj.id)\n        this.objects.set(obj.id, obj)\n    }\n\n    this.selectObject = function(id){\n        this.selectedObject = this.objects.get('id')\n        return this.selectedObject\n    }\n\n    this.deleteFromList = function(id){\n        for(var i = 0; i<this.list.length; i++){\n            if(this.list[i] == id){\n                this.list[i].splice(i,1)\n                break\n            }\n        }\n    }\n\n    this.export = function(){\n        var arr = []\n\n        this.objects.forEach(function(obj,key,map){\n            if(!obj.meta.disabled){\n                arr.push(obj.export())\n            }\n        })\n\n        return arr\n    }\n\n}\n\nvar Obstacles = function(obj){\n    Collection.call(this)\n    var this = this;\n    this.name = 'obs'\n    this.info = obj\n}\n\nvar Team = function(obj){\n    Collection.call(this)\n    var this = this;\n    this.info = obj\n    this.ai = false\n\n    this.toggleAI = function(set){\n\n        if(set !== undefined){\n            if(set){\n                this.ai = true\n            }else{\n                this.ai = false\n            }\n        }else{\n            this.ai = !this.ai\n        }\n\n        if(this.ai){\n            doAIsequence()\n        }\n\n        return this.ai\n    }\n*/\n    /*this_team.unitlist = []\n    this_team.units = new Map()\n    this_team.dead_units = new Map()\n\n    this.addUnit = function(obj){\n        this_team.unitlist.push(obj.id)\n        this_team.units.set(obj.id, obj)\n    }\n\n    this.removeUnit = function(obj){}\n\n    this.export = function(){\n\n        this_team.units.forEach(function(value,key,map){\n            if(!value.meta.disabled){\n                console.log(value)\n            }\n        })\n\n    }\n*/\n/*    \n    this.killUnit = function(Unit){\n        var unitToKill;\n\n        for(i=0; i<this_team.unitlist.length;i++){\n            unitToKill = this_team.unitlist[i]\n\n            if(unitToKill.id == Unit.id){\n                this_team.unitlist.splice(i, 1)\n                break;\n            }\n        }\n\n        this_team.dead_units.set(Unit.id, Unit)\n        this_team.units.delete(Unit.id)\n\n    }\n\n    this.populateTeam = function(roster){\n        for(i = 0; i<roster.length; i++){\n            this_team.addUnit(new unit(roster[i][\"race\"], roster[i][\"subtype\"], this_team, i)) \n        }\n    }\n*/\n/*\n    this.placeUnit = function(unit, targetx, targety){\n\n        unit.setPos(targetx, targety)\n        this_team.units.set(unit.id, this_team.unitlist[i])\n\n    }\n*/\n/*\n    this.placeUnits = function(placement_type, set_id){\n        var randnum = 0;\n        var randtile = 0;\n\n        if(placement_type == \"pre\"){\n            this_team.unitlist[0].setPos(0,0)\n        }\n        else if(placement_type == \"random\"){\n\n                for(i = 0; i<this_team.unitlist.length; i++){\n\n                    document.getElementById('gamearea').appendChild(this_team.unitlist[i].dom);\n                    randnum = Math.floor(Math.random() * board.unoccupied_tiles.length);\n                    randtile = board.unoccupied_tiles[randnum];\n\n                    this_team.unitlist[i].setPos(randtile.x, randtile.y);\n                    this_team.units.set(this_team.unitlist[i].id, this_team.unitlist[i]);\n                    board.unoccupied_tiles.splice(randnum, 1);\n                }\n            \n        }\n    }\n\n}*/\n",
+    "static": true,
+    "longname": "F:/Projects/2D/gg_domtest/scripts/collections.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 67,
+    "kind": "class",
+    "name": "Group",
+    "memberof": "scripts/collections.js",
+    "static": true,
+    "longname": "scripts/collections.js~Group",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/collections.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 68,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "scripts/collections.js~Group",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/collections.js~Group#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true
+  },
+  {
+    "__docId__": 69,
+    "kind": "member",
+    "name": "list",
+    "memberof": "scripts/collections.js~Group",
+    "static": false,
+    "longname": "scripts/collections.js~Group#list",
+    "access": "public",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    }
+  },
+  {
+    "__docId__": 70,
+    "kind": "member",
+    "name": "objects",
+    "memberof": "scripts/collections.js~Group",
+    "static": false,
+    "longname": "scripts/collections.js~Group#objects",
+    "access": "public",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 71,
+    "kind": "method",
+    "name": "add",
+    "memberof": "scripts/collections.js~Group",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/collections.js~Group#add",
+    "access": "public",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "params": [
+      {
+        "name": "obj",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 72,
+    "kind": "method",
+    "name": "selectObject",
+    "memberof": "scripts/collections.js~Group",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/collections.js~Group#selectObject",
+    "access": "public",
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 73,
+    "kind": "member",
+    "name": "selectedObject",
+    "memberof": "scripts/collections.js~Group",
+    "static": false,
+    "longname": "scripts/collections.js~Group#selectedObject",
+    "access": "public",
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 74,
+    "kind": "method",
+    "name": "deleteFromList",
+    "memberof": "scripts/collections.js~Group",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/collections.js~Group#deleteFromList",
+    "access": "public",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 75,
+    "kind": "method",
+    "name": "export",
+    "memberof": "scripts/collections.js~Group",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/collections.js~Group#export",
+    "access": "public",
+    "description": null,
+    "lineNumber": 28,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 76,
+    "kind": "class",
+    "name": "Team",
+    "memberof": "scripts/collections.js",
+    "static": true,
+    "longname": "scripts/collections.js~Team",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/collections.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 42,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "Group"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 77,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "scripts/collections.js~Team",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/collections.js~Team#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 44,
+    "undocument": true
+  },
+  {
+    "__docId__": 78,
+    "kind": "member",
+    "name": "id",
+    "memberof": "scripts/collections.js~Team",
+    "static": false,
+    "longname": "scripts/collections.js~Team#id",
+    "access": "public",
+    "description": null,
+    "lineNumber": 47,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 79,
+    "kind": "member",
+    "name": "name",
+    "memberof": "scripts/collections.js~Team",
+    "static": false,
+    "longname": "scripts/collections.js~Team#name",
+    "access": "public",
+    "description": null,
+    "lineNumber": 48,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 80,
+    "kind": "member",
+    "name": "ai",
+    "memberof": "scripts/collections.js~Team",
+    "static": false,
+    "longname": "scripts/collections.js~Team#ai",
+    "access": "public",
+    "description": null,
+    "lineNumber": 49,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 81,
+    "kind": "method",
+    "name": "setName",
+    "memberof": "scripts/collections.js~Team",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/collections.js~Team#setName",
+    "access": "public",
+    "description": null,
+    "lineNumber": 52,
+    "undocument": true,
+    "params": [
+      {
+        "name": "name",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 83,
+    "kind": "method",
+    "name": "toggleAI",
+    "memberof": "scripts/collections.js~Team",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/collections.js~Team#toggleAI",
+    "access": "public",
+    "description": null,
+    "lineNumber": 57,
+    "undocument": true,
+    "params": [
+      {
+        "name": "set",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 87,
+    "kind": "class",
+    "name": "Obstacles",
+    "memberof": "scripts/collections.js",
+    "static": true,
+    "longname": "scripts/collections.js~Obstacles",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/collections.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 78,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "Group"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 88,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "scripts/collections.js~Obstacles",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/collections.js~Obstacles#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 80,
+    "undocument": true
+  },
+  {
+    "__docId__": 89,
+    "kind": "member",
+    "name": "name",
+    "memberof": "scripts/collections.js~Obstacles",
+    "static": false,
+    "longname": "scripts/collections.js~Obstacles#name",
+    "access": "public",
+    "description": null,
+    "lineNumber": 83,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 90,
+    "kind": "member",
+    "name": "info",
+    "memberof": "scripts/collections.js~Obstacles",
+    "static": false,
+    "longname": "scripts/collections.js~Obstacles#info",
+    "access": "public",
+    "description": null,
+    "lineNumber": 84,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 91,
+    "kind": "file",
+    "name": "scripts/items.js",
+    "content": "class Item extends Entity{\r\n\r\n    constructor(type, slot){\r\n        super()\r\n        var _this = this\r\n        this.elm\r\n        this.name\r\n        this.slot = slot\r\n\r\n        /* World Sprite */\r\n        this.sprite = document.createElement('div')\r\n        this.sprite.classList.add('gear-'+type.size, type.cls)\r\n        this.sprite.style.backgroundPositionX = type.bgpos_x\r\n        this.sprite.style.backgroundPositionY = type.bgpos_y \r\n        \r\n    }\r\n\r\n    delete(){\r\n        this.elm = null\r\n        this.sprite = null\r\n        return true\r\n    }\r\n\r\n}\r\n\r\n/*\r\nvar armor = new Item(\r\n    {'cls': 'armor', 'size': 'small', 'bgpos_x': 0, 'bgpos_y': 0},\r\n    'torso')\r\n\r\nvar sword = new Item(\r\n    {'cls': 'onehander', 'size': 'small', 'flip': false, 'bgpos_x': 0, 'bgpos_y': 0},\r\n    'handr')\r\n\r\nvar flail = new Item(\r\n    {'cls': 'onehander', 'size': 'small', 'flip': true, 'bgpos_x': '-32px', 'bgpos_y': 0},\r\n    'handr')\r\n*/\r\n\r\nclass ItemSlot {\r\n\r\n    constructor(){\r\n        var _this = this\r\n        this.occupied = false\r\n        this.item\r\n        this.elm = document.createElement('div')\r\n        this.elm.classList.add('item-slot')\r\n\r\n        this.elm.addEventListener('mousedown', function(evt){\r\n            if(_this.occupied){\r\n                game.selectedUnit.equip(_this.item)\r\n                _this.unpopulate()\r\n            }\r\n        })\r\n\r\n    }\r\n\r\n    populate(item){\r\n        this.occupied = true\r\n        this.item = item\r\n        this.elm.appendChild(item.sprite)\r\n        return item\r\n    }\r\n\r\n    unpopulate(){\r\n        this.occupied = false\r\n        this.item.delete()\r\n        this.item = null\r\n        return true\r\n    }\r\n\r\n}\r\n\r\nclass Inventory{\r\n\r\n    constructor(size, id){\r\n        this.slots = []\r\n        this.create(size)\r\n        this.render(document.getElementById(id))\r\n    }\r\n\r\n    create(size){\r\n\r\n        for(var i = 0; i < size; i++){\r\n            var slot = new ItemSlot()\r\n            this.slots.push(slot)\r\n        }\r\n\r\n        return this.slots\r\n    }\r\n\r\n    render(container){\r\n\r\n        for(var i = 0; i < this.slots.length; i++){\r\n            container.appendChild(this.slots[i].elm)\r\n        }\r\n\r\n        return true\r\n    }\r\n\r\n}",
+    "static": true,
+    "longname": "F:/Projects/2D/gg_domtest/scripts/items.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 92,
+    "kind": "class",
+    "name": "Item",
+    "memberof": "scripts/items.js",
+    "static": true,
+    "longname": "scripts/items.js~Item",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/items.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "Entity"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 93,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "scripts/items.js~Item",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/items.js~Item#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true
+  },
+  {
+    "__docId__": 94,
+    "kind": "member",
+    "name": "slot",
+    "memberof": "scripts/items.js~Item",
+    "static": false,
+    "longname": "scripts/items.js~Item#slot",
+    "access": "public",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 95,
+    "kind": "member",
+    "name": "sprite",
+    "memberof": "scripts/items.js~Item",
+    "static": false,
+    "longname": "scripts/items.js~Item#sprite",
+    "access": "public",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 96,
+    "kind": "method",
+    "name": "delete",
+    "memberof": "scripts/items.js~Item",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/items.js~Item#delete",
+    "access": "public",
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 97,
+    "kind": "member",
+    "name": "elm",
+    "memberof": "scripts/items.js~Item",
+    "static": false,
+    "longname": "scripts/items.js~Item#elm",
+    "access": "public",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 99,
+    "kind": "class",
+    "name": "ItemSlot",
+    "memberof": "scripts/items.js",
+    "static": true,
+    "longname": "scripts/items.js~ItemSlot",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/items.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 40,
+    "undocument": true,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 100,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "scripts/items.js~ItemSlot",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/items.js~ItemSlot#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 42,
+    "undocument": true
+  },
+  {
+    "__docId__": 101,
+    "kind": "member",
+    "name": "occupied",
+    "memberof": "scripts/items.js~ItemSlot",
+    "static": false,
+    "longname": "scripts/items.js~ItemSlot#occupied",
+    "access": "public",
+    "description": null,
+    "lineNumber": 44,
+    "undocument": true,
+    "type": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 102,
+    "kind": "member",
+    "name": "elm",
+    "memberof": "scripts/items.js~ItemSlot",
+    "static": false,
+    "longname": "scripts/items.js~ItemSlot#elm",
+    "access": "public",
+    "description": null,
+    "lineNumber": 46,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 103,
+    "kind": "method",
+    "name": "populate",
+    "memberof": "scripts/items.js~ItemSlot",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/items.js~ItemSlot#populate",
+    "access": "public",
+    "description": null,
+    "lineNumber": 58,
+    "undocument": true,
+    "params": [
+      {
+        "name": "item",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 105,
+    "kind": "member",
+    "name": "item",
+    "memberof": "scripts/items.js~ItemSlot",
+    "static": false,
+    "longname": "scripts/items.js~ItemSlot#item",
+    "access": "public",
+    "description": null,
+    "lineNumber": 60,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 106,
+    "kind": "method",
+    "name": "unpopulate",
+    "memberof": "scripts/items.js~ItemSlot",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/items.js~ItemSlot#unpopulate",
+    "access": "public",
+    "description": null,
+    "lineNumber": 65,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 109,
+    "kind": "class",
+    "name": "Inventory",
+    "memberof": "scripts/items.js",
+    "static": true,
+    "longname": "scripts/items.js~Inventory",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/items.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 74,
+    "undocument": true,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 110,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "scripts/items.js~Inventory",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/items.js~Inventory#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 76,
+    "undocument": true
+  },
+  {
+    "__docId__": 111,
+    "kind": "member",
+    "name": "slots",
+    "memberof": "scripts/items.js~Inventory",
+    "static": false,
+    "longname": "scripts/items.js~Inventory#slots",
+    "access": "public",
+    "description": null,
+    "lineNumber": 77,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    }
+  },
+  {
+    "__docId__": 112,
+    "kind": "method",
+    "name": "create",
+    "memberof": "scripts/items.js~Inventory",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/items.js~Inventory#create",
+    "access": "public",
+    "description": null,
+    "lineNumber": 82,
+    "undocument": true,
+    "params": [
+      {
+        "name": "size",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 113,
+    "kind": "method",
+    "name": "render",
+    "memberof": "scripts/items.js~Inventory",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/items.js~Inventory#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 92,
+    "undocument": true,
+    "params": [
+      {
+        "name": "container",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 114,
+    "kind": "file",
+    "name": "scripts/main.js",
+    "content": "var Game = function(){\n    var _this = this\n    this.gamemode = false\n    this.teamlist = []\n    this.obslist = []\n    this.teams = new Map()\n    this.selectedTeam\n    this.selectedUnit\n    this.selectedPiece\n    this.selectedObs\n    this.whosturn = 'T0'\n    this.teamindex = 0\n    this.paused = false\n\n    this.addTeam = function(amount){\n\n        if(amount === undefined){\n            amount = 1\n        }\n\n        for(var i = 0; i<amount; i++){\n            var teamid = 'T'+_this.teamlist.length\n            var teamobj = new Team(teamid, 'teamname', false)\n            _this.teamlist.push(teamid)\n            _this.teams.set(teamid, teamobj)\n            _this.selectedTeam = teamobj\n        }\n\n        return _this.teams\n\n    }\n\n    this.removeTeam = function(id){\n        _this.teams.delete(id)\n    }\n\n    this.selectTeam = function(id){\n        _this.selectedTeam = _this.teams.get(id)\n        return _this.selectedTeam\n    }\n\n    this.selectUnit = function(obj){\n        this.selectedUnit = obj\n        this.selectedPiece = obj\n        return obj\n    }\n\n    this.addObstacle = function(obj){\n        _this.obslist.push(obj)\n        return obslist\n    }\n\n    this.export = function(){\n\n        var exported = {\n            'teams': [],\n            'obstacles': [],\n            'board': {\n                'layout': []\n            }\n        }\n        \n        _this.teams.forEach(function(team, teamid, map){\n    \n            if(team.list.length > 0){\n                var teamobj  = {'id': teamid, 'name': team.name, 'units': []}\n    \n                team.objects.forEach(function(unit){\n                    teamobj.units.push(unit.export())\n                })\n    \n                exported.teams.push(teamobj)\n            }\n    \n        })\n    \n        _this.obslist.forEach(function(obstacle){\n            exported.obstacles.push(obstacle.export())\n        })\n    \n        exported.board.layout = board.export()\n    \n        console.log(exported)\n    \n        return JSON.stringify(exported)\n    \n    }\n\n    this.save = function(){\n        sessionStorage.setItem('save', _this.export())\n    }\n\n    this.load = function(){\n\n        if(sessionStorage.getItem('save')){\n\n            var imported = JSON.parse(sessionStorage.getItem('save'))\n            board.setBoard(imported.board.layout)\n    \n            console.log(imported)\n    \n            for(var i = 0; i < imported.teams.length; i++){\n                _this.selectTeam(imported.teams[i].id)\n    \n                for(var k = 0; k < imported.teams[i].units.length; k++){\n    \n                    var curunit = imported.teams[i].units[k]\n                    console.log(curunit)\n    \n                    var newunit = new Soldier(curunit.info.race, curunit.info.faction, curunit.info.type)\n                    newunit.team = _this.selectedTeam\n                    newunit.id = imported.teams[i].id+'U'+newunit.team.list.length\n                    newunit.dom.id = imported.teams[i].id+'U'+newunit.team.list.length\n                    \n                    if(curunit.flipped == -1){\n                        newunit.flip()\n                    }\n\n                    newunit.team.add(newunit)\n    \n                    board.placeOnBoard(newunit, curunit.loc.tilex, curunit.loc.tiley)\n    \n                }\n    \n            }\n\n            for(var i = 0; i < imported.obstacles.length; i++){\n                var curobs = imported.obstacles[i]\n                var newobs = new Obstacle(curobs.info.type, curobs.info.subtype, curobs.info.bgpos)\n                _this.addObstacle(newobs)\n                board.placeOnBoard(newobs, curobs.loc.tilex, curobs.loc.tiley)\n            }\n\n        }\n    \n        game.selectedTeam = game.teams.get(game.teamlist[0])\n    }\n\n    this.toggleMode = function(){\n        this.gamemode = !this.gamemode\n\n        return this.gamemode\n    }\n\n}\n\nvar game = new Game()\n\ninitGame()\n\nfunction initGame(){\n    board.initBoard(12, 8);\n}\n\nfunction setTurn(){\n    game.teamindex++\n\n    if(game.teamindex >= game.teamlist.length){\n        game.teamindex = 0\n    }\n\n    var index = game.teamindex\n\n    game.selectedTeam = game.teams.get(game.teamlist[game.teamindex])\n    game.whosturn = game.teamlist[game.teamindex]\n    game.selectedUnit = null\n\n    for(var k = 0; k < game.selectedTeam.list.length; k++){\n        var curunit = game.selectedTeam.objects.get(game.selectedTeam.list[k])\n\n        if(curunit.alive){\n            curunit.stats.moves = curunit.stats.moves_max\n        }\n        \n    }\n\n    delIndicators()\n    updateTurnText()\n\n}\n\nfunction updateTurnText(){\n    var turntext = document.getElementById('turntext')\n    turntext.innerText = 'Turn: '+ game.selectedTeam.name\n}\n\ndocument.getElementById('controls').addEventListener(\"click\", function(e){\n\n    if(e.target.id == 'endturn'){\n        setTurn()\n    }\n\n});\n\nfunction endGame(){\n    if(game.selectedTeam.list.length == 0){\n        return true\n    }else{\n        return false\n    }\n}\n\n\n/*\nfunction incrementInterval(){\n    if(interval_index < current_team.units.size){\n\n        var unitid = current_team.unitlist[interval_index].id;\n        current_unit = current_team.units.get(unitid);\n\n        console.log(\"--- info ---\");\n        console.log(\"interval_index: \"+interval_index);\n        console.log(\"unitid: \"+unitid);\n        console.log(\"unitlist.length: \"+current_team.unitlist.length);\n        console.log(current_unit.dom);\n        \n        if(current_unit.stats.alive){\n            console.log(\"UNIT ALIVE\");\n            executeTurn();\n        }else{\n            console.log(\"UNIT IS NOT ALIVE!\");\n        }\n\n        console.log(\"\");\n        interval_index++;\n    }else{\n        interval_index = 0;\n        setTurn();\n    }\n}\n*/",
+    "static": true,
+    "longname": "F:/Projects/2D/gg_domtest/scripts/main.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 115,
+    "kind": "function",
+    "name": "Game",
+    "memberof": "scripts/main.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "scripts/main.js~Game",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/main.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 116,
+    "kind": "variable",
+    "name": "game",
+    "memberof": "scripts/main.js",
+    "static": true,
+    "longname": "scripts/main.js~game",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/main.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 147,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 117,
+    "kind": "function",
+    "name": "initGame",
+    "memberof": "scripts/main.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "scripts/main.js~initGame",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/main.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 151,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 118,
+    "kind": "function",
+    "name": "setTurn",
+    "memberof": "scripts/main.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "scripts/main.js~setTurn",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/main.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 155,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 119,
+    "kind": "function",
+    "name": "updateTurnText",
+    "memberof": "scripts/main.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "scripts/main.js~updateTurnText",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/main.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 182,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 120,
+    "kind": "function",
+    "name": "endGame",
+    "memberof": "scripts/main.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "scripts/main.js~endGame",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/main.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 195,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 121,
+    "kind": "file",
+    "name": "scripts/pieces.js",
+    "content": "/**\r\n * Entity is a super class for all pieces on the board\r\n */\r\nclass Entity{\r\n\r\n    constructor(){\r\n        this.flipped = 1\r\n    }\r\n\r\n    /**\r\n     * Flips the sprite of the piece\r\n     * @param {int} direction \r\n     */\r\n    flip(direction){\r\n\r\n        if(direction === undefined){\r\n\r\n            if(this.flipped == 1){\r\n                this.flipped = -1\r\n            }else{\r\n                this.flipped = 1\r\n            }\r\n\r\n        }else{\r\n            console.log(direction)\r\n\r\n            if(Math.abs(direction) > 90){\r\n                this.flipped = -1\r\n            }else{\r\n                this.flipped = 1\r\n            }\r\n\r\n        }\r\n\r\n        this.sprite.style.transform = 'scaleX('+this.flipped+')';\r\n        \r\n        return this.flipped\r\n    }\r\n\r\n}\r\n\r\n/**\r\n * Piece is any piece on the board. It is a super class for heris, units and obstacles\r\n * @extends {Entity}\r\n */\r\nclass Piece extends Entity{\r\n\r\n    constructor(){\r\n        super()\r\n\r\n        var _this = this\r\n        this.tile\r\n        this.stats\r\n        this.meta\r\n        this.alive = true\r\n        this.disabled = false\r\n        this.target = false\r\n        this.mvmrkrs = []\r\n        this.sprite = document.createElement('div')\r\n        this.sprite.classList.add('sprite');\r\n        this.dom = document.createElement('div')\r\n        this.dom.classList.add('clkzone');\r\n        this.hpbar = document.createElement('div')\r\n        this.hpbar.className = 'progress';\r\n        this.hpbarbg = document.createElement('div')\r\n        this.hpbarbg.className = 'progressbg';\r\n        this.hpbarbg.appendChild(this.hpbar)\r\n        this.hpbarbg.style.display = 'block'\r\n        this.dom.appendChild(this.hpbarbg)\r\n        this.dom.appendChild(this.sprite)\r\n    \r\n        this.dom.obj = this\r\n\r\n        this.dom.addEventListener(\"mousedown\", function(evt) {\r\n            console.log(evt.target.obj)\r\n\r\n            var obj = evt.target.obj\r\n\r\n            if(evt.target.classList.contains('clkzone')){\r\n                game.selectedPiece = obj\r\n\r\n                if(game.gamemode){\r\n\r\n                    if(obj.type == 'unit'){\r\n\r\n                        if(obj == game.selectedUnit){\r\n                            console.log('second click')\r\n                        }else{\r\n\r\n                            if(obj.team.id == game.whosturn){\r\n                                game.selectedUnit = obj\r\n                                delIndicators()\r\n                                seekTarget(obj)\r\n\r\n                                if(obj.checkMoves() && obj.alive && !obj.disabled){\r\n                                    createMoveArea(obj)\r\n                                }\r\n\r\n                            }else{\r\n\r\n                                if(game.selectedUnit.checkMoves()){\r\n                                    if(obj.target){\r\n                                        attack(game.selectedUnit, obj)\r\n                                    }\r\n                                }\r\n\r\n                            }\r\n                        \r\n                        }\r\n\r\n                    }else if(evt.target.type == 'obstacle'){\r\n                        //game.selectObstacle(evt.target.obj)\r\n                    }\r\n                }else{\r\n\r\n                    if(obj.type == 'unit'){\r\n                        game.selectedUnit = obj\r\n                    }else{\r\n                        game.selectedObs = obj\r\n                    }\r\n\r\n                }\r\n            }\r\n            \r\n        });\r\n\r\n    }\r\n\r\n    /**\r\n     * Piece takes damage\r\n     * @param {int} dmg \r\n     */\r\n    takeDmg(dmg){\r\n\r\n        this.stats.hp = this.stats.hp-dmg\r\n        var hp_pct = (this.stats.hp/this.stats.hp_max)*100\r\n        var hpbar = this.hpbar\r\n\r\n        createDmgMarker(this.pxpos_x, this.pxpos_y-32, dmg);\r\n        hpbar.setAttribute(\"style\", \"width:\"+((this.stats.hp/this.stats.hp_max)*100)+\"%;\");\r\n        \r\n        if(hp_pct <= 60 && hp_pct > 20){\r\n            hpbar.classList.add(\"progress_orange\");\r\n        }else if(hp_pct <= 20){\r\n            hpbar.classList.remove(\"progress_orange\");\r\n            hpbar.classList.add(\"progress_red\");\r\n        }\r\n\r\n        if(this.stats.hp <= 0){\r\n            this.tile.occupied = false;\r\n            this.dom.classList.add(\"unit_dead\");\r\n            this.dom.classList.add(this.type+\"_dead\");\r\n            this.dom.style.transform = 'rotate('+randomBetween(-15,15)+'deg) rotateX('+randomBetween(-45,45)+'deg)'\r\n            this.hpbarbg.style.visibility = \"hidden\"\r\n            this.alive = false;\r\n            this.disabled = true;\r\n            this.dom.style.zIndex = \"0\";\r\n            this.target = false\r\n            var target = this.dom.getElementsByClassName('atkmarker')[0]\r\n            target.parentNode.removeChild(target)\r\n            //this.team.deleteFromList(this.id)\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Exports the object for saving\r\n    */\r\n    export(){\r\n        var xprt = {\r\n            'flipped': this.flipped,\r\n            'meta': this.meta,\r\n            'info': this.info,\r\n            'loc': {\r\n                'tilex': this.tileindex_x,\r\n                'tiley': this.tileindex_y\r\n            }\r\n        }\r\n\r\n        return xprt\r\n    }\r\n\r\n    disable(){\r\n        this.disabled = true\r\n        return this.disabled\r\n    }\r\n}\r\n\r\n/**\r\n * Unit pieces\r\n * @extends {Piece}\r\n */\r\nclass Unit extends Piece{\r\n\r\n    constructor(){\r\n        super()\r\n        this.type = 'unit'\r\n        this.skills = []\r\n        this.imgpoints = {}\r\n    }\r\n\r\n    /**\r\n     * Handle functions related to turn end\r\n     */\r\n    endturn(){\r\n        //game.selectedUnit = null\r\n        delIndicators()\r\n    }\r\n\r\n    /**\r\n     * Check the unit's moves\r\n     * @return {boolean}\r\n     */\r\n    checkMoves(){\r\n        if(this.stats.moves > 0){\r\n            return true\r\n        }else{\r\n            return false\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Updates the unit's moves after an action\r\n     * @param {int} value \r\n     */\r\n    updateMoves(value){\r\n\r\n        if(value < 0){\r\n            var value = Math.abs(value)\r\n            this.stats.moves = this.stats.moves-value\r\n        }else{\r\n            this.stats.moves = this.stats.moves+value\r\n        }\r\n\r\n        if(!this.checkMoves()){\r\n            this.endturn()\r\n        }\r\n\r\n    }\r\n\r\n    /**\r\n     * Move unit to tile\r\n     * @param {int} apcost \r\n     * @param {int} tile_indexx \r\n     * @param {int} tile_indexy \r\n     */\r\n    move(apcost, tile_indexx, tile_indexy){\r\n\r\n        this.updateMoves(apcost)\r\n        var targetTile = board.layout[tile_indexx][tile_indexy]\r\n        var angle = getAngle(this.pxpos_x,this.pxpos_y,targetTile.px_x,targetTile.px_y)\r\n        \r\n        if(!targetTile.occupied){\r\n            \r\n            this.flip(angle)\r\n\r\n            this.tile.occupied = false;\r\n            this.tile.occupant = {};\r\n            this.dom.style.left = targetTile.px_x;\r\n            this.dom.style.top = targetTile.px_y;\r\n            this.dom.style.zIndex = targetTile.y;\r\n            this.pxpos_x = targetTile.px_x;\r\n            this.pxpos_y = targetTile.px_y;\r\n\r\n            targetTile.occupied = true;\r\n            targetTile.occupant = this;\r\n            this.tile = targetTile;\r\n \r\n            delIndicators()\r\n\r\n            if(this.stats.moves > 0){\r\n                createMoveArea(this)\r\n                seekTarget(this)\r\n            } \r\n\r\n        }\r\n\r\n    }\r\n\r\n}\r\n\r\n/**\r\n * Soldiers are the normal army units\r\n * @extends {Unit}\r\n */\r\nclass Soldier extends Unit{\r\n    \r\n    constructor(race, faction, type){\r\n        super()\r\n\r\n        var statobj = new UnitStats()\r\n        var stats = statobj.getStats(race, faction, type)\r\n\r\n        this.info = {'race': race, 'faction': faction, 'type': type}\r\n        this.meta = stats.meta\r\n        this.stats = stats.stats\r\n        this.subtype = type\r\n        this.sprite.classList.add('sprite', races[race][faction]['sheet-cls'], faction+'_'+type)\r\n    }\r\n\r\n}\r\n\r\n/**\r\n * Heros are different\r\n * @extends {Unit}\r\n */\r\nclass Hero extends Unit{\r\n\r\n    constructor(cls, sex, sheetxy){\r\n        super()\r\n        this.items = []\r\n        this.gear = []\r\n        this.equipped = []\r\n        this.gearpoints = {\r\n            'hair': {'x':0,'y':0, 'occupied': false},\r\n            'head': {'x':0,'y':0, 'occupied': false},\r\n            'torso': {'x': 16,'y': 45, 'occupied': false},\r\n            'handl': {'x': 37, 'y': 39, 'occupied': false},\r\n            'handr': {'x': -12, 'y': 29, 'occupied': false},\r\n            'legs': {'x':0,'y':0, 'occupied': false},\r\n            'boots': {'x':0,'y':0, 'occupied': false},\r\n            'ring1': {'x':0,'y':0, 'occupied': false},\r\n            'ring2': {'x':0,'y':0, 'occupied': false}\r\n        }\r\n\r\n        var statobj = new HeroStats()\r\n        var stats = statobj.getStats(cls, sex)\r\n        this.info = {'cls': cls, 'sex': sex, 'sheetxy': sheetxy}\r\n        this.meta = stats.meta\r\n        this.stats = stats.stats\r\n        this.sprite.classList.add('sprite', stats.meta['sheet-cls'])\r\n\r\n    }\r\n\r\n    /**\r\n     * Equip the hero with an item\r\n     * @param {Object} item \r\n     */\r\n    equip(item){\r\n\r\n        if(this.gearpoints[item.slot].occupied){\r\n            \r\n            if(item.slot == 'handr' && this.gearpoints.handl.occupied == false){\r\n                item.slot = 'handl'\r\n                item.flip()\r\n            }else{\r\n                this.unEquip()\r\n            }\r\n\r\n        }\r\n\r\n        this.gearpoints[item.slot].occupied = true\r\n        item.sprite.style.marginLeft = this.gearpoints[item.slot].x\r\n        item.sprite.style.marginTop = this.gearpoints[item.slot].y\r\n\r\n        this.sprite.appendChild(item.sprite)\r\n\r\n    }\r\n\r\n    /**\r\n     * Unequip item\r\n     */\r\n    unEquip(){\r\n        console.log('unEquip()')\r\n        this.gearpoints[item.slot].occupied = false\r\n    }\r\n\r\n}\r\n\r\n/*\r\nvar hero = new Hero('war', 'male')\r\n*/\r\n\r\n/**\r\n * Obstacles are stuff like trees and stones\r\n * @extends {Piece}\r\n */\r\nclass Obstacle extends Piece{\r\n\r\n    constructor(type, subtype, bgpos){\r\n        super()\r\n\r\n        var bgx = bgpos.bgx\r\n        var bgy = bgpos.bgy\r\n        \r\n        var stats = getObsStats(type, subtype)\r\n\r\n        this.meta = stats.meta\r\n        this.info = {'type': type, 'subtype': subtype, 'bgpos':{'bgx': bgx, 'bgy': bgy}}\r\n        this.stats = stats.stats\r\n        this.cls = this.meta[\"sheet-cls\"]\r\n        this.dom.obj = this\r\n        this.type = 'obstacle'\r\n        this.sprite.classList.add('sprite', this.cls)\r\n        this.sprite.style.backgroundPosition = bgx+'px '+bgy+'px'\r\n        this.hpbarbg.style.display = 'none'\r\n    }\r\n\r\n}",
+    "static": true,
+    "longname": "F:/Projects/2D/gg_domtest/scripts/pieces.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 122,
+    "kind": "class",
+    "name": "Entity",
+    "memberof": "scripts/pieces.js",
+    "static": true,
+    "longname": "scripts/pieces.js~Entity",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/pieces.js",
+    "importStyle": null,
+    "description": "Entity is a super class for all pieces on the board",
+    "lineNumber": 4,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 123,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "scripts/pieces.js~Entity",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/pieces.js~Entity#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true
+  },
+  {
+    "__docId__": 124,
+    "kind": "member",
+    "name": "flipped",
+    "memberof": "scripts/pieces.js~Entity",
+    "static": false,
+    "longname": "scripts/pieces.js~Entity#flipped",
+    "access": "public",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    }
+  },
+  {
+    "__docId__": 125,
+    "kind": "method",
+    "name": "flip",
+    "memberof": "scripts/pieces.js~Entity",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/pieces.js~Entity#flip",
+    "access": "public",
+    "description": "Flips the sprite of the piece",
+    "lineNumber": 14,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "direction",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 130,
+    "kind": "class",
+    "name": "Piece",
+    "memberof": "scripts/pieces.js",
+    "static": true,
+    "longname": "scripts/pieces.js~Piece",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/pieces.js",
+    "importStyle": null,
+    "description": "Piece is any piece on the board. It is a super class for heris, units and obstacles",
+    "lineNumber": 46,
+    "interface": false,
+    "extends": [
+      "Entity"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 131,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "scripts/pieces.js~Piece",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/pieces.js~Piece#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 48,
+    "undocument": true
+  },
+  {
+    "__docId__": 132,
+    "kind": "member",
+    "name": "alive",
+    "memberof": "scripts/pieces.js~Piece",
+    "static": false,
+    "longname": "scripts/pieces.js~Piece#alive",
+    "access": "public",
+    "description": null,
+    "lineNumber": 55,
+    "undocument": true,
+    "type": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 133,
+    "kind": "member",
+    "name": "disabled",
+    "memberof": "scripts/pieces.js~Piece",
+    "static": false,
+    "longname": "scripts/pieces.js~Piece#disabled",
+    "access": "public",
+    "description": null,
+    "lineNumber": 56,
+    "undocument": true,
+    "type": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 134,
+    "kind": "member",
+    "name": "target",
+    "memberof": "scripts/pieces.js~Piece",
+    "static": false,
+    "longname": "scripts/pieces.js~Piece#target",
+    "access": "public",
+    "description": null,
+    "lineNumber": 57,
+    "undocument": true,
+    "type": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 135,
+    "kind": "member",
+    "name": "mvmrkrs",
+    "memberof": "scripts/pieces.js~Piece",
+    "static": false,
+    "longname": "scripts/pieces.js~Piece#mvmrkrs",
+    "access": "public",
+    "description": null,
+    "lineNumber": 58,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    }
+  },
+  {
+    "__docId__": 136,
+    "kind": "member",
+    "name": "sprite",
+    "memberof": "scripts/pieces.js~Piece",
+    "static": false,
+    "longname": "scripts/pieces.js~Piece#sprite",
+    "access": "public",
+    "description": null,
+    "lineNumber": 59,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 137,
+    "kind": "member",
+    "name": "dom",
+    "memberof": "scripts/pieces.js~Piece",
+    "static": false,
+    "longname": "scripts/pieces.js~Piece#dom",
+    "access": "public",
+    "description": null,
+    "lineNumber": 61,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 138,
+    "kind": "member",
+    "name": "hpbar",
+    "memberof": "scripts/pieces.js~Piece",
+    "static": false,
+    "longname": "scripts/pieces.js~Piece#hpbar",
+    "access": "public",
+    "description": null,
+    "lineNumber": 63,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 139,
+    "kind": "member",
+    "name": "hpbarbg",
+    "memberof": "scripts/pieces.js~Piece",
+    "static": false,
+    "longname": "scripts/pieces.js~Piece#hpbarbg",
+    "access": "public",
+    "description": null,
+    "lineNumber": 65,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 140,
+    "kind": "method",
+    "name": "takeDmg",
+    "memberof": "scripts/pieces.js~Piece",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/pieces.js~Piece#takeDmg",
+    "access": "public",
+    "description": "Piece takes damage",
+    "lineNumber": 133,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "dmg",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 144,
+    "kind": "method",
+    "name": "export",
+    "memberof": "scripts/pieces.js~Piece",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/pieces.js~Piece#export",
+    "access": "public",
+    "description": "Exports the object for saving",
+    "lineNumber": 168,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 145,
+    "kind": "method",
+    "name": "disable",
+    "memberof": "scripts/pieces.js~Piece",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/pieces.js~Piece#disable",
+    "access": "public",
+    "description": null,
+    "lineNumber": 182,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 147,
+    "kind": "class",
+    "name": "Unit",
+    "memberof": "scripts/pieces.js",
+    "static": true,
+    "longname": "scripts/pieces.js~Unit",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/pieces.js",
+    "importStyle": null,
+    "description": "Unit pieces",
+    "lineNumber": 192,
+    "interface": false,
+    "extends": [
+      "Piece"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 148,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "scripts/pieces.js~Unit",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/pieces.js~Unit#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 194,
+    "undocument": true
+  },
+  {
+    "__docId__": 149,
+    "kind": "member",
+    "name": "type",
+    "memberof": "scripts/pieces.js~Unit",
+    "static": false,
+    "longname": "scripts/pieces.js~Unit#type",
+    "access": "public",
+    "description": null,
+    "lineNumber": 196,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 150,
+    "kind": "member",
+    "name": "skills",
+    "memberof": "scripts/pieces.js~Unit",
+    "static": false,
+    "longname": "scripts/pieces.js~Unit#skills",
+    "access": "public",
+    "description": null,
+    "lineNumber": 197,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    }
+  },
+  {
+    "__docId__": 151,
+    "kind": "member",
+    "name": "imgpoints",
+    "memberof": "scripts/pieces.js~Unit",
+    "static": false,
+    "longname": "scripts/pieces.js~Unit#imgpoints",
+    "access": "public",
+    "description": null,
+    "lineNumber": 198,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    }
+  },
+  {
+    "__docId__": 152,
+    "kind": "method",
+    "name": "endturn",
+    "memberof": "scripts/pieces.js~Unit",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/pieces.js~Unit#endturn",
+    "access": "public",
+    "description": "Handle functions related to turn end",
+    "lineNumber": 204,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 153,
+    "kind": "method",
+    "name": "checkMoves",
+    "memberof": "scripts/pieces.js~Unit",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/pieces.js~Unit#checkMoves",
+    "access": "public",
+    "description": "Check the unit's moves",
+    "lineNumber": 213,
+    "return": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 154,
+    "kind": "method",
+    "name": "updateMoves",
+    "memberof": "scripts/pieces.js~Unit",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/pieces.js~Unit#updateMoves",
+    "access": "public",
+    "description": "Updates the unit's moves after an action",
+    "lineNumber": 225,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "value",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 155,
+    "kind": "method",
+    "name": "move",
+    "memberof": "scripts/pieces.js~Unit",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/pieces.js~Unit#move",
+    "access": "public",
+    "description": "Move unit to tile",
+    "lineNumber": 246,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "apcost",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "tile_indexx",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "tile_indexy",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 156,
+    "kind": "member",
+    "name": "pxpos_x",
+    "memberof": "scripts/pieces.js~Unit",
+    "static": false,
+    "longname": "scripts/pieces.js~Unit#pxpos_x",
+    "access": "public",
+    "description": null,
+    "lineNumber": 261,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 157,
+    "kind": "member",
+    "name": "pxpos_y",
+    "memberof": "scripts/pieces.js~Unit",
+    "static": false,
+    "longname": "scripts/pieces.js~Unit#pxpos_y",
+    "access": "public",
+    "description": null,
+    "lineNumber": 262,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 158,
+    "kind": "member",
+    "name": "tile",
+    "memberof": "scripts/pieces.js~Unit",
+    "static": false,
+    "longname": "scripts/pieces.js~Unit#tile",
+    "access": "public",
+    "description": null,
+    "lineNumber": 266,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 159,
+    "kind": "class",
+    "name": "Soldier",
+    "memberof": "scripts/pieces.js",
+    "static": true,
+    "longname": "scripts/pieces.js~Soldier",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/pieces.js",
+    "importStyle": null,
+    "description": "Soldiers are the normal army units",
+    "lineNumber": 285,
+    "interface": false,
+    "extends": [
+      "Unit"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 160,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "scripts/pieces.js~Soldier",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/pieces.js~Soldier#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 287,
+    "undocument": true
+  },
+  {
+    "__docId__": 161,
+    "kind": "member",
+    "name": "info",
+    "memberof": "scripts/pieces.js~Soldier",
+    "static": false,
+    "longname": "scripts/pieces.js~Soldier#info",
+    "access": "public",
+    "description": null,
+    "lineNumber": 293,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"race\": *, \"faction\": *, \"type\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 162,
+    "kind": "member",
+    "name": "meta",
+    "memberof": "scripts/pieces.js~Soldier",
+    "static": false,
+    "longname": "scripts/pieces.js~Soldier#meta",
+    "access": "public",
+    "description": null,
+    "lineNumber": 294,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 163,
+    "kind": "member",
+    "name": "stats",
+    "memberof": "scripts/pieces.js~Soldier",
+    "static": false,
+    "longname": "scripts/pieces.js~Soldier#stats",
+    "access": "public",
+    "description": null,
+    "lineNumber": 295,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 164,
+    "kind": "member",
+    "name": "subtype",
+    "memberof": "scripts/pieces.js~Soldier",
+    "static": false,
+    "longname": "scripts/pieces.js~Soldier#subtype",
+    "access": "public",
+    "description": null,
+    "lineNumber": 296,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 165,
+    "kind": "class",
+    "name": "Hero",
+    "memberof": "scripts/pieces.js",
+    "static": true,
+    "longname": "scripts/pieces.js~Hero",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/pieces.js",
+    "importStyle": null,
+    "description": "Heros are different",
+    "lineNumber": 306,
+    "interface": false,
+    "extends": [
+      "Unit"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 166,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "scripts/pieces.js~Hero",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/pieces.js~Hero#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 308,
+    "undocument": true
+  },
+  {
+    "__docId__": 167,
+    "kind": "member",
+    "name": "items",
+    "memberof": "scripts/pieces.js~Hero",
+    "static": false,
+    "longname": "scripts/pieces.js~Hero#items",
+    "access": "public",
+    "description": null,
+    "lineNumber": 310,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    }
+  },
+  {
+    "__docId__": 168,
+    "kind": "member",
+    "name": "gear",
+    "memberof": "scripts/pieces.js~Hero",
+    "static": false,
+    "longname": "scripts/pieces.js~Hero#gear",
+    "access": "public",
+    "description": null,
+    "lineNumber": 311,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    }
+  },
+  {
+    "__docId__": 169,
+    "kind": "member",
+    "name": "equipped",
+    "memberof": "scripts/pieces.js~Hero",
+    "static": false,
+    "longname": "scripts/pieces.js~Hero#equipped",
+    "access": "public",
+    "description": null,
+    "lineNumber": 312,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    }
+  },
+  {
+    "__docId__": 170,
+    "kind": "member",
+    "name": "gearpoints",
+    "memberof": "scripts/pieces.js~Hero",
+    "static": false,
+    "longname": "scripts/pieces.js~Hero#gearpoints",
+    "access": "public",
+    "description": null,
+    "lineNumber": 313,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"hair\": *, \"head\": *, \"torso\": *, \"handl\": *, \"handr\": *, \"legs\": *, \"boots\": *, \"ring1\": *, \"ring2\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 171,
+    "kind": "member",
+    "name": "info",
+    "memberof": "scripts/pieces.js~Hero",
+    "static": false,
+    "longname": "scripts/pieces.js~Hero#info",
+    "access": "public",
+    "description": null,
+    "lineNumber": 327,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"cls\": *, \"sex\": *, \"sheetxy\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 172,
+    "kind": "member",
+    "name": "meta",
+    "memberof": "scripts/pieces.js~Hero",
+    "static": false,
+    "longname": "scripts/pieces.js~Hero#meta",
+    "access": "public",
+    "description": null,
+    "lineNumber": 328,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 173,
+    "kind": "member",
+    "name": "stats",
+    "memberof": "scripts/pieces.js~Hero",
+    "static": false,
+    "longname": "scripts/pieces.js~Hero#stats",
+    "access": "public",
+    "description": null,
+    "lineNumber": 329,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 174,
+    "kind": "method",
+    "name": "equip",
+    "memberof": "scripts/pieces.js~Hero",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/pieces.js~Hero#equip",
+    "access": "public",
+    "description": "Equip the hero with an item",
+    "lineNumber": 338,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "item",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 175,
+    "kind": "method",
+    "name": "unEquip",
+    "memberof": "scripts/pieces.js~Hero",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/pieces.js~Hero#unEquip",
+    "access": "public",
+    "description": "Unequip item",
+    "lineNumber": 362,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 176,
+    "kind": "class",
+    "name": "Obstacle",
+    "memberof": "scripts/pieces.js",
+    "static": true,
+    "longname": "scripts/pieces.js~Obstacle",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/pieces.js",
+    "importStyle": null,
+    "description": "Obstacles are stuff like trees and stones",
+    "lineNumber": 377,
+    "interface": false,
+    "extends": [
+      "Piece"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 177,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "scripts/pieces.js~Obstacle",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "scripts/pieces.js~Obstacle#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 379,
+    "undocument": true
+  },
+  {
+    "__docId__": 178,
+    "kind": "member",
+    "name": "meta",
+    "memberof": "scripts/pieces.js~Obstacle",
+    "static": false,
+    "longname": "scripts/pieces.js~Obstacle#meta",
+    "access": "public",
+    "description": null,
+    "lineNumber": 387,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 179,
+    "kind": "member",
+    "name": "info",
+    "memberof": "scripts/pieces.js~Obstacle",
+    "static": false,
+    "longname": "scripts/pieces.js~Obstacle#info",
+    "access": "public",
+    "description": null,
+    "lineNumber": 388,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"type\": *, \"subtype\": *, \"bgpos\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 180,
+    "kind": "member",
+    "name": "stats",
+    "memberof": "scripts/pieces.js~Obstacle",
+    "static": false,
+    "longname": "scripts/pieces.js~Obstacle#stats",
+    "access": "public",
+    "description": null,
+    "lineNumber": 389,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 181,
+    "kind": "member",
+    "name": "cls",
+    "memberof": "scripts/pieces.js~Obstacle",
+    "static": false,
+    "longname": "scripts/pieces.js~Obstacle#cls",
+    "access": "public",
+    "description": null,
+    "lineNumber": 390,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 182,
+    "kind": "member",
+    "name": "type",
+    "memberof": "scripts/pieces.js~Obstacle",
+    "static": false,
+    "longname": "scripts/pieces.js~Obstacle#type",
+    "access": "public",
+    "description": null,
+    "lineNumber": 392,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 183,
+    "kind": "file",
+    "name": "scripts/stats.js",
+    "content": "var human_names = [\"George\", \"Paul\", \"Joel\", \"Margaret\", \"Simo\", \"Timo\", \"Hasan\", \"Alex\", \"Tommy\", \"Jarmo\"];\n\nfunction chooseName(namearr){\n    return namearr[Math.floor(Math.random()*namearr.length)];\n}\n\n\n\n/***\n*   Heroes\n*\n***/\nfunction HeroStats(cls, sex){\n\n    var _this = this\n\n    this.stats = {\n        \"list\": [\"war\",\"wiz\",\"pal\"],\n        \"war\": {\n            \"female\": {},\n            \"male\": {\n                \"meta\": {\n                    \"disabled\": false,\n                    \"type\": \"Hero\",          \n                    \"sheet-cls\": \"hero_main_war_male\",\n                    \"sheet-size\": 256,\n                    \"width\": 64,\n                    \"height\": 128,\n                    \"flipped\": 1             \n                },\n                \"stats\": {\n                    \"alive\": true,\n                    \"lvl\": 0,\n                    \"lvl_max\": 3,\n                    \"lvl_prog\":[{\"dmg\":11},{\"hp_max\":53},{\"dex\":7}],\n                    \"exp\": 0,\n                    \"exp_max\": [100,200,300],\n                    \"name\": \"unit name\",\n                    \"moves\": 2,\n                    \"moves_max\": 2,\n                    \"hp\": 50,\n                    \"hp_max\": 50,\n                    \"mp\": 0,\n                    \"mp_max\": 0,\n                    \"def\": 0,\n                    \"dmg\": 10,\n                    \"dex\": 5,\n                    \"agi\": 2,\n                    \"int\": 10,\n                    \"range\": 1.5,\n                    \"height\": 1 \n                }\n            }       \n        }\n    }\n\n    this.getStats = function(cls, sex){\n        return _this.stats[cls][sex]\n    }\n    \n}\n\n/***\n*   Units\n*\n***/\n\nfunction UnitStats(){\n    var _this = this\n\n    this.stats = {\n        \"human\":{\n            \"military\":{\n                \"militia\":{\n                    \"meta\": {\n                        \"disabled\": false,\n                        \"type\": \"Human\",\n                        \"subtype\": \"Militia\",            \n                        \"cls\": \"militia\",\n                        \"width\": 64,\n                        \"height\": 128,\n                        \"flipped\": 1,\n                        \"imgpoint\": {\"x\":0, \"y\":64},\n                        \"midpoint\": {\"x\":32, \"y\":64}\n                    },\n                    \"stats\": {\n                        \"alive\": true,\n                        \"lvl\": 0,\n                        \"lvl_max\": 3,\n                        \"lvl_prog\":[{\"dmg\":11},{\"hp_max\":53},{\"dex\":7}],\n                        \"exp\": 0,\n                        \"exp_max\": [100,200,300],\n                        \"name\": \"unit name\",\n                        \"moves\": 2,\n                        \"moves_max\": 2,\n                        \"hp\": 50,\n                        \"hp_max\": 50,\n                        \"mp\": 0,\n                        \"mp_max\": 0,\n                        \"def\": 0,\n                        \"dmg\": 10,\n                        \"dex\": 5,\n                        \"agi\": 2,\n                        \"int\": 10,\n                        \"range\": 1.5,\n                        \"height\": 1 \n                    }\n    \n                },\n                \"herbalist\":{\n                    \"meta\": {\n                        \"disabled\": false,\n                        \"type\": \"Human\",\n                        \"subtype\": \"Herbalist\",            \n                        \"cls\": \"herbalist\",\n                        \"width\": 64,\n                        \"height\": 128,\n                        \"flipped\": 1,\n                        \"imgpoint\": {\"x\":0, \"y\":64},\n                        \"midpoint\": {\"x\":32, \"y\":64}\n                    },\n                    \"stats\": {\n                        \"alive\": true,\n                        \"lvl\": 0,\n                        \"lvl_max\": 3,\n                        \"lvl_prog\":[{\"hp_max\":55},{\"dmg\":15},{\"agi\":7}],\n                        \"exp\": 0,\n                        \"exp_max\": [100,200,300],\n                        \"name\": \"unit name\",\n                        \"moves\": 2,\n                        \"moves_max\": 2,\n                        \"hp\": 50,\n                        \"hp_max\": 50,\n                        \"mp\": 0,\n                        \"mp_max\": 0,\n                        \"def\": 0,\n                        \"dmg\": 12,\n                        \"dex\": 6,\n                        \"agi\": 5,\n                        \"int\": 10,\n                        \"range\": 1.5,\n                        \"height\": 1 \n                    }\n    \n                },        \n                \"woodsman\":{\n                    \"meta\": {\n                        \"disabled\": false,\n                        \"type\": \"Human\",\n                        \"subtype\": \"Woodsman\",            \n                        \"cls\": \"woodsman\",\n                        \"width\": 64,\n                        \"height\": 128,\n                        \"flipped\": 1,\n                        \"imgpoint\": {\"x\":0, \"y\":64},\n                        \"midpoint\": {\"x\":32, \"y\":64}\n                    },\n                    \"stats\": {\n                        \"alive\": true,\n                        \"lvl\": 0,\n                        \"lvl_max\": 3,\n                        \"lvl_prog\":[{\"hp_max\":55},{\"dmg\":15},{\"agi\":7}],\n                        \"exp\": 0,\n                        \"exp_max\": [100,200,300],\n                        \"name\": \"unit name\",\n                        \"moves\": 2,\n                        \"moves_max\": 2,\n                        \"hp\": 50,\n                        \"hp_max\": 50,\n                        \"mp\": 0,\n                        \"mp_max\": 0,\n                        \"def\": 0,\n                        \"dmg\": 12,\n                        \"dex\": 6,\n                        \"agi\": 5,\n                        \"int\": 10,\n                        \"range\": 1,\n                        \"height\": 1 \n                    }\n    \n                },\n                \"archer\":{\n                    \"meta\": {\n                        \"disabled\": false,\n                        \"type\": \"Human\",\n                        \"subtype\": \"Archer\",            \n                        \"cls\": \"archer\",\n                        \"width\": 64,\n                        \"height\": 128,\n                        \"flipped\": 1,\n                        \"imgpoint\": {\"x\":0, \"y\":64},\n                        \"midpoint\": {\"x\":32, \"y\":64}\n                    },\n                    \"stats\": {\n                        \"alive\": true,\n                        \"lvl\": 0,\n                        \"lvl_max\": 3,\n                        \"lvl_prog\":[{\"hp_max\":55},{\"dmg\":15},{\"agi\":7}],\n                        \"exp\": 0,\n                        \"exp_max\": [100,200,300],\n                        \"name\": \"unit name\",\n                        \"moves\": 2,\n                        \"moves_max\": 2,\n                        \"hp\": 50,\n                        \"hp_max\": 50,\n                        \"mp\": 0,\n                        \"mp_max\": 0,\n                        \"def\": 0,\n                        \"dmg\": 12,\n                        \"dex\": 6,\n                        \"agi\": 5,\n                        \"int\": 10,\n                        \"range\": 3.5,\n                        \"height\": 1 \n                    }\n    \n                },\n                \"soldier\":{\n                    \"meta\": {\n                        \"disabled\": false,\n                        \"type\": \"Human\",\n                        \"subtype\": \"Soldier\",            \n                        \"cls\": \"soldier\",\n                        \"width\": 64,\n                        \"height\": 128,\n                        \"flipped\": 1,\n                        \"imgpoint\": {\"x\":0, \"y\":64},\n                        \"midpoint\": {\"x\":32, \"y\":64}\n                    },\n                    \"stats\": {\n                        \"alive\": true,\n                        \"lvl\": 0,\n                        \"lvl_max\": 3,\n                        \"lvl_prog\":[{\"hp_max\":55},{\"dmg\":15},{\"agi\":7}],\n                        \"exp\": 0,\n                        \"exp_max\": [100,200,300],\n                        \"name\": \"unit name\",\n                        \"moves\": 2,\n                        \"moves_max\": 2,\n                        \"hp\": 50,\n                        \"hp_max\": 50,\n                        \"mp\": 0,\n                        \"mp_max\": 0,\n                        \"def\": 0,\n                        \"dmg\": 12,\n                        \"dex\": 6,\n                        \"agi\": 5,\n                        \"int\": 10,\n                        \"range\": 1,\n                        \"height\": 1 \n                    }\n    \n                },\n                \"pikeman\":{\n                    \"meta\": {\n                        \"disabled\": false,\n                        \"type\": \"Human\",\n                        \"subtype\": \"Pikeman\",            \n                        \"cls\": \"pikeman\",\n                        \"width\": 64,\n                        \"height\": 128,\n                        \"flipped\": 1,\n                        \"imgpoint\": {\"x\":0, \"y\":64},\n                        \"midpoint\": {\"x\":32, \"y\":64}\n                    },\n                    \"stats\": {\n                        \"alive\": true,\n                        \"lvl\": 0,\n                        \"lvl_max\": 3,\n                        \"lvl_prog\":[{\"hp_max\":55},{\"dmg\":15},{\"agi\":7}],\n                        \"exp\": 0,\n                        \"exp_max\": [100,200,300],\n                        \"name\": \"unit name\",\n                        \"moves\": 2,\n                        \"moves_max\": 2,\n                        \"hp\": 50,\n                        \"hp_max\": 50,\n                        \"mp\": 0,\n                        \"mp_max\": 0,\n                        \"def\": 0,\n                        \"dmg\": 12,\n                        \"dex\": 6,\n                        \"agi\": 5,\n                        \"int\": 10,\n                        \"range\": 1.5,\n                        \"height\": 1 \n                    }\n    \n                },\n                \"priest\":{\n                    \"meta\": {\n                        \"disabled\": false,\n                        \"type\": \"Human\",\n                        \"subtype\": \"Priest\",            \n                        \"cls\": \"priest\",\n                        \"width\": 64,\n                        \"height\": 128,\n                        \"flipped\": 1,\n                        \"imgpoint\": {\"x\":0, \"y\":64},\n                        \"midpoint\": {\"x\":32, \"y\":64}\n                    },\n                    \"stats\": {\n                        \"alive\": true,\n                        \"lvl\": 0,\n                        \"lvl_max\": 3,\n                        \"lvl_prog\":[{\"hp_max\":55},{\"dmg\":15},{\"agi\":7}],\n                        \"exp\": 0,\n                        \"exp_max\": [100,200,300],\n                        \"name\": \"unit name\",\n                        \"moves\": 2,\n                        \"moves_max\": 2,\n                        \"hp\": 50,\n                        \"hp_max\": 50,\n                        \"mp\": 0,\n                        \"mp_max\": 0,\n                        \"def\": 0,\n                        \"dmg\": 12,\n                        \"dex\": 6,\n                        \"agi\": 5,\n                        \"int\": 10,\n                        \"range\": 3.5,\n                        \"height\": 1 \n                    }\n    \n                },\n                \"cavalry\":{\n                    \"meta\": {\n                        \"disabled\": false,\n                        \"type\": \"Human\",\n                        \"subtype\": \"Cavalry\",            \n                        \"cls\": \"cavalry\",\n                        \"width\": 64,\n                        \"height\": 128,\n                        \"flipped\": 1,\n                        \"imgpoint\": {\"x\":0, \"y\":64},\n                        \"midpoint\": {\"x\":32, \"y\":64}\n                    },\n                    \"stats\": {\n                        \"alive\": true,\n                        \"lvl\": 0,\n                        \"lvl_max\": 3,\n                        \"lvl_prog\":[{\"hp_max\":55},{\"dmg\":15},{\"agi\":7}],\n                        \"exp\": 0,\n                        \"exp_max\": [100,200,300],\n                        \"name\": \"unit name\",\n                        \"moves\": 3,\n                        \"moves_max\": 3,\n                        \"hp\": 50,\n                        \"hp_max\": 50,\n                        \"mp\": 0,\n                        \"mp_max\": 0,\n                        \"def\": 0,\n                        \"dmg\": 12,\n                        \"dex\": 6,\n                        \"agi\": 5,\n                        \"int\": 10,\n                        \"range\": 1.5,\n                        \"height\": 1 \n                    }\n    \n                }             \n            }\n        },\n        \"undead\":{\n            \"legion\":{\n                \"zombie\":{\n                    \"meta\": {\n                        \"disabled\": false,\n                        \"type\": \"Undead\",\n                        \"subtype\": \"Legion\",            \n                        \"cls\": \"\",\n                        \"width\": 64,\n                        \"height\": 128,\n                        \"flipped\": 1,\n                        \"imgpoint\": {\"x\":0, \"y\":64},\n                        \"midpoint\": {\"x\":32, \"y\":64}\n                    },\n                    \"stats\": {\n                        \"alive\": true,\n                        \"lvl\": 0,\n                        \"lvl_max\": 3,\n                        \"lvl_prog\":[{\"dmg\":11},{\"hp_max\":53},{\"dex\":7}],\n                        \"exp\": 0,\n                        \"exp_max\": [100,200,300],\n                        \"name\": \"unit name\",\n                        \"moves\": 2,\n                        \"moves_max\": 2,\n                        \"hp\": 50,\n                        \"hp_max\": 50,\n                        \"mp\": 0,\n                        \"mp_max\": 0,\n                        \"def\": 0,\n                        \"dmg\": 10,\n                        \"dex\": 5,\n                        \"agi\": 2,\n                        \"int\": 10,\n                        \"range\": 1.5,\n                        \"height\": 1 \n                    }\n                },\n                \"bombie\":{\n                    \"meta\": {\n                        \"disabled\": false,\n                        \"type\": \"Undead\",\n                        \"subtype\": \"Legion\",            \n                        \"cls\": \"\",\n                        \"width\": 64,\n                        \"height\": 128,\n                        \"flipped\": 1,\n                        \"imgpoint\": {\"x\":0, \"y\":64},\n                        \"midpoint\": {\"x\":32, \"y\":64}\n                    },\n                    \"stats\": {\n                        \"alive\": true,\n                        \"lvl\": 0,\n                        \"lvl_max\": 3,\n                        \"lvl_prog\":[{\"hp_max\":55},{\"dmg\":15},{\"agi\":7}],\n                        \"exp\": 0,\n                        \"exp_max\": [100,200,300],\n                        \"name\": \"unit name\",\n                        \"moves\": 2,\n                        \"moves_max\": 2,\n                        \"hp\": 50,\n                        \"hp_max\": 50,\n                        \"mp\": 0,\n                        \"mp_max\": 0,\n                        \"def\": 0,\n                        \"dmg\": 12,\n                        \"dex\": 6,\n                        \"agi\": 5,\n                        \"int\": 10,\n                        \"range\": 1.5,\n                        \"height\": 1 \n                    }\n    \n                },        \n                \"bambie\":{\n                    \"meta\": {\n                        \"disabled\": false,\n                        \"type\": \"Undead\",\n                        \"subtype\": \"Legion\",            \n                        \"cls\": \"\",\n                        \"width\": 64,\n                        \"height\": 128,\n                        \"flipped\": 1,\n                        \"imgpoint\": {\"x\":0, \"y\":64},\n                        \"midpoint\": {\"x\":32, \"y\":64}\n                    },\n                    \"stats\": {\n                        \"alive\": true,\n                        \"lvl\": 0,\n                        \"lvl_max\": 3,\n                        \"lvl_prog\":[{\"hp_max\":55},{\"dmg\":15},{\"agi\":7}],\n                        \"exp\": 0,\n                        \"exp_max\": [100,200,300],\n                        \"name\": \"unit name\",\n                        \"moves\": 2,\n                        \"moves_max\": 2,\n                        \"hp\": 50,\n                        \"hp_max\": 50,\n                        \"mp\": 0,\n                        \"mp_max\": 0,\n                        \"def\": 0,\n                        \"dmg\": 12,\n                        \"dex\": 6,\n                        \"agi\": 5,\n                        \"int\": 10,\n                        \"range\": 1.5,\n                        \"height\": 1 \n                    }\n    \n                },\n                \"undead1\":{\n                    \"meta\": {\n                        \"disabled\": false,\n                        \"type\": \"Undead\",\n                        \"subtype\": \"Legion\",            \n                        \"cls\": \"\",\n                        \"width\": 64,\n                        \"height\": 128,\n                        \"flipped\": 1,\n                        \"imgpoint\": {\"x\":0, \"y\":64},\n                        \"midpoint\": {\"x\":32, \"y\":64}\n                    },\n                    \"stats\": {\n                        \"alive\": true,\n                        \"lvl\": 0,\n                        \"lvl_max\": 3,\n                        \"lvl_prog\":[{\"hp_max\":55},{\"dmg\":15},{\"agi\":7}],\n                        \"exp\": 0,\n                        \"exp_max\": [100,200,300],\n                        \"name\": \"unit name\",\n                        \"moves\": 2,\n                        \"moves_max\": 2,\n                        \"hp\": 50,\n                        \"hp_max\": 50,\n                        \"mp\": 0,\n                        \"mp_max\": 0,\n                        \"def\": 0,\n                        \"dmg\": 12,\n                        \"dex\": 6,\n                        \"agi\": 5,\n                        \"int\": 10,\n                        \"range\": 3.5,\n                        \"height\": 1 \n                    }\n    \n                },\n                \"undead2\":{\n                    \"meta\": {\n                        \"disabled\": false,\n                        \"type\": \"Undead\",\n                        \"subtype\": \"Soldier\",            \n                        \"cls\": \"\",\n                        \"width\": 64,\n                        \"height\": 128,\n                        \"flipped\": 1,\n                        \"imgpoint\": {\"x\":0, \"y\":64},\n                        \"midpoint\": {\"x\":32, \"y\":64}\n                    },\n                    \"stats\": {\n                        \"alive\": true,\n                        \"lvl\": 0,\n                        \"lvl_max\": 3,\n                        \"lvl_prog\":[{\"hp_max\":55},{\"dmg\":15},{\"agi\":7}],\n                        \"exp\": 0,\n                        \"exp_max\": [100,200,300],\n                        \"name\": \"unit name\",\n                        \"moves\": 2,\n                        \"moves_max\": 2,\n                        \"hp\": 50,\n                        \"hp_max\": 50,\n                        \"mp\": 0,\n                        \"mp_max\": 0,\n                        \"def\": 0,\n                        \"dmg\": 12,\n                        \"dex\": 6,\n                        \"agi\": 5,\n                        \"int\": 10,\n                        \"range\": 1,\n                        \"height\": 1 \n                    }\n    \n                },\n                \"undead3\":{\n                    \"meta\": {\n                        \"disabled\": false,\n                        \"type\": \"Undead\",\n                        \"subtype\": \"Pikeman\",            \n                        \"cls\": \"\",\n                        \"width\": 64,\n                        \"height\": 128,\n                        \"flipped\": 1,\n                        \"imgpoint\": {\"x\":0, \"y\":64},\n                        \"midpoint\": {\"x\":32, \"y\":64}\n                    },\n                    \"stats\": {\n                        \"alive\": true,\n                        \"lvl\": 0,\n                        \"lvl_max\": 3,\n                        \"lvl_prog\":[{\"hp_max\":55},{\"dmg\":15},{\"agi\":7}],\n                        \"exp\": 0,\n                        \"exp_max\": [100,200,300],\n                        \"name\": \"unit name\",\n                        \"moves\": 2,\n                        \"moves_max\": 2,\n                        \"hp\": 50,\n                        \"hp_max\": 50,\n                        \"mp\": 0,\n                        \"mp_max\": 0,\n                        \"def\": 0,\n                        \"dmg\": 12,\n                        \"dex\": 6,\n                        \"agi\": 5,\n                        \"int\": 10,\n                        \"range\": 3.5,\n                        \"height\": 1 \n                    }\n    \n                },\n                \"undead4\":{\n                    \"meta\": {\n                        \"disabled\": false,\n                        \"type\": \"Undead\",\n                        \"subtype\": \"Priest\",            \n                        \"cls\": \"\",\n                        \"width\": 64,\n                        \"height\": 128,\n                        \"flipped\": 1,\n                        \"imgpoint\": {\"x\":0, \"y\":64},\n                        \"midpoint\": {\"x\":32, \"y\":64}\n                    },\n                    \"stats\": {\n                        \"alive\": true,\n                        \"lvl\": 0,\n                        \"lvl_max\": 3,\n                        \"lvl_prog\":[{\"hp_max\":55},{\"dmg\":15},{\"agi\":7}],\n                        \"exp\": 0,\n                        \"exp_max\": [100,200,300],\n                        \"name\": \"unit name\",\n                        \"moves\": 2,\n                        \"moves_max\": 2,\n                        \"hp\": 50,\n                        \"hp_max\": 50,\n                        \"mp\": 0,\n                        \"mp_max\": 0,\n                        \"def\": 0,\n                        \"dmg\": 12,\n                        \"dex\": 6,\n                        \"agi\": 5,\n                        \"int\": 10,\n                        \"range\": 3.5,\n                        \"height\": 1 \n                    }\n    \n                },\n                \"undead5\":{\n                    \"meta\": {\n                        \"disabled\": false,\n                        \"type\": \"Undead\",\n                        \"subtype\": \"Giant\",            \n                        \"cls\": \"\",\n                        \"width\": 64,\n                        \"height\": 128,\n                        \"flipped\": 1,\n                        \"imgpoint\": {\"x\":0, \"y\":64},\n                        \"midpoint\": {\"x\":32, \"y\":64}\n                    },\n                    \"stats\": {\n                        \"alive\": true,\n                        \"lvl\": 0,\n                        \"lvl_max\": 3,\n                        \"lvl_prog\":[{\"hp_max\":55},{\"dmg\":15},{\"agi\":7}],\n                        \"exp\": 0,\n                        \"exp_max\": [100,200,300],\n                        \"name\": \"unit name\",\n                        \"moves\": 2,\n                        \"moves_max\": 2,\n                        \"hp\": 150,\n                        \"hp_max\": 150,\n                        \"mp\": 0,\n                        \"mp_max\": 0,\n                        \"def\": 0,\n                        \"dmg\": 22,\n                        \"dex\": 2,\n                        \"agi\": 2,\n                        \"int\": 2,\n                        \"range\": 1.5,\n                        \"height\": 3 \n                    }\n    \n                }             \n            }\n        }\n    }\n\n    this.getStats = function(race, faction, type){\n        return _this.stats[race][faction][type];\n    }    \n}\n\nvar races = {\n    \"racelist\": [\"human\",\"undead\"],\n    \"human\": {\n        \"name\": \"Humans\",\n        \"description\": \"\",\n        \"factionlist\": [\"military\"],\n        \"military\": {\n            \"name\": \"Human military\",\n            \"description\": \"Human military description\",\n            \"sheet-cls\": \"human_military_blue\",\n            \"sheet-size\": 256,\n            \"units\":\n            [\"militia\",\"herbalist\",\"woodsman\",\n            \"archer\",\"soldier\",\"pikeman\",\"priest\",\"cavalry\"]\n        },\n        \"imperium\": {\n            \"name\": \"Human imperium\",\n            \"description\": \"Human imperium description\",\n            \"sheet-cls\": \"\",\n            \"sheet-size\": 256\n        }\n        \n    },\n\n    \"undead\": {\n        \"name\": \"The undead\",\n        \"description\": \"The undead are scary\",\n        \"factionlist\": [\"legion\"],\n        \"legion\":{\n            \"name\": \"Undead legion\",\n            \"description\": \"Undead legion description\",\n            \"sheet-cls\": \"undead_legion\",\n            \"sheet-size\": 256,\n            \"units\":\n            [\"zombie\",\"bombie\",\"bambie\",\n            \"undead1\",\"undead2\",\"undead3\",\"undead4\",\"undead5\"]            \n        },\n        \"deathcult\":{\n            \"name\": \"Death cult\",\n            \"description\": \"Cult ruling the dead\",\n            \"sheet-cls\": \"\",\n            \"sheet-size\": 256                \n        }\n    \n    }\n\n}\n\n\n/***\n*   Obstacles\n*\n***/\n\nfunction getObsStats(type, subtype){\n    console.log('type:'+type+' subtype:'+subtype )\n    console.log(obsStats[type][subtype])\n    return obsStats[type][subtype]\n}\n\nvar obsStats = \n{\n    \"list\": [\"tree\"],\n    \"tree\":{\n        \"list\": [\"green\", \"barren\"],\n        \n        \"green\":{\n            \"meta\":{\n                \"disabled\": false,\n                \"type\": \"Tree\",          \n                \"sheet-cls\": \"trees_green\",\n                \"sheet-size\": 256,\n                \"width\": 64,\n                \"height\": 128,\n                \"flipped\": 1,\n                \"imgpoint\": {\"x\":0, \"y\":64},\n                \"midpoint\": {\"x\":32, \"y\":64}\n            },\n            \"stats\":{\n                \"hp\": 100,\n                \"hp_max\": 100,\n                \"height\": 3,\n                \"block\": 1\n            }\n        },\n        \"barren\":{\n            \"meta\":{\n                \"disabled\": false,\n                \"type\": \"Tree\",          \n                \"sheet-cls\": \"trees_barren\",\n                \"sheet-size\": 256,\n                \"width\": 64,\n                \"height\": 128,\n                \"flipped\": 1,\n                \"imgpoint\": {\"x\":0, \"y\":64},\n                \"midpoint\": {\"x\":32, \"y\":64}\n            },\n            \"stats\":{\n                \"hp\": 70,\n                \"hp_max\": 70,\n                \"height\": 3,\n                \"block\": 0.7\n            }\n        }\n    }   \n}\n",
+    "static": true,
+    "longname": "F:/Projects/2D/gg_domtest/scripts/stats.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 184,
+    "kind": "variable",
+    "name": "human_names",
+    "memberof": "scripts/stats.js",
+    "static": true,
+    "longname": "scripts/stats.js~human_names",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/stats.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 185,
+    "kind": "function",
+    "name": "chooseName",
+    "memberof": "scripts/stats.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "scripts/stats.js~chooseName",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/stats.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "namearr",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 186,
+    "kind": "function",
+    "name": "HeroStats",
+    "memberof": "scripts/stats.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "scripts/stats.js~HeroStats",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/stats.js",
+    "importStyle": null,
+    "description": "  Heroes\n\n*",
+    "lineNumber": 13,
+    "params": [
+      {
+        "name": "cls",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "sex",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 187,
+    "kind": "function",
+    "name": "UnitStats",
+    "memberof": "scripts/stats.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "scripts/stats.js~UnitStats",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/stats.js",
+    "importStyle": null,
+    "description": "  Units\n\n*",
+    "lineNumber": 68,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 188,
+    "kind": "variable",
+    "name": "races",
+    "memberof": "scripts/stats.js",
+    "static": true,
+    "longname": "scripts/stats.js~races",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/stats.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 662,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"racelist\": *, \"human\": *, \"undead\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 189,
+    "kind": "function",
+    "name": "getObsStats",
+    "memberof": "scripts/stats.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "scripts/stats.js~getObsStats",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/stats.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 716,
+    "undocument": true,
+    "params": [
+      {
+        "name": "type",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "subtype",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 190,
+    "kind": "variable",
+    "name": "obsStats",
+    "memberof": "scripts/stats.js",
+    "static": true,
+    "longname": "scripts/stats.js~obsStats",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/stats.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 722,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"list\": *, \"tree\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 191,
+    "kind": "file",
+    "name": "scripts/ui/ui.js",
+    "content": "/*\nclass UiElement{\n\n    constructor(){\n        this.type = \"uielm\"\n        this.disabled = false\n        this.elm\n        this.visible = true\n    }\n\n    show(){\n        this.visible = true\n        this.elm.style.visibility = 'visible'        \n    }\n\n    hide(){\n        this.visible = false\n        this.elm.style.visibility = 'hidden'\n    }\n\n    toggle(){\n\n    }\n\n    setContent(){\n\n    }\n\n    appendContent(){\n\n    }\n\n    export(){\n\n    }\n\n}\n\nclass ModalWin extends UiElement(){\n\n    constructor(){\n        super()\n\n        this.modalbg = document.createElement('div')\n        this.modalbg.classList.add('modal-bg')\n        this.modalwin = document.createElement('div')\n        this.modalwin.classList.add('modal-window')\n        this.header = document.createElement('div')\n        this.header.classList.add('modal-header')\n        this.content = document.createElement('div')\n        this.content.classList.add('modal-content')\n        this.footer = document.createElement('div')\n        this.footer.classList.add('modal-footer')\n        this.closebtn = document.createElement('input')\n        this.closebtn.type = 'button'\n        this.closebtn.classList.add('modal-closebtn')\n        this.closebtn.value = 'Sulje'\n    \n        this.footer.appendChild(this.closebtn)\n        this.modalwin.appendChild(this.header)\n        this.modalwin.appendChild(this.content)\n        this.modalwin.appendChild(this.footer)\n        this.modalbg.appendChild(this.modalwin)\n\n        this.elm = this.modalbg\n    }\n\n}*/\n\n/**\n*   ModalWindow\n*\n**/\n\n/*\nfunction ModalWindow(container){\n    var _this = this\n    this.visible = false\n\n    this.modalbg = document.createElement('div')\n    this.modalbg.classList.add('modal-bg')\n\n    this.modalwin = document.createElement('div')\n    this.modalwin.classList.add('modal-window')\n\n    this.header = document.createElement('div')\n    this.header.classList.add('modal-header')\n\n    this.content = document.createElement('div')\n    this.content.classList.add('modal-content')\n\n    this.footer = document.createElement('div')\n    this.footer.classList.add('modal-footer')\n\n    this.closebtn = document.createElement('input')\n    this.closebtn.type = 'button'\n    this.closebtn.classList.add('modal-closebtn')\n    this.closebtn.value = 'Sulje'\n\n    this.footer.appendChild(this.closebtn)\n    this.modalwin.appendChild(this.header)\n    this.modalwin.appendChild(this.content)\n    this.modalwin.appendChild(this.footer)\n    this.modalbg.appendChild(this.modalwin)\n\n    this.show = function(){\n        _this.visible = true\n        _this.modalbg.style.visibility = 'visible'\n    }\n\n    this.hide = function(){\n        _this.visible = false\n        _this.modalbg.style.visibility = 'hidden'\n    }\n\n    this.toggle = function(){\n        _this.visible = !_this.visible\n\n        if(_this.visible){\n            _this.show()\n        }else{\n            _this.hide()\n        }\n\n    }\n\n    this.setContent = function(obj){\n\n        if(obj.hasOwnProperty('header')){\n            _this.header.innerHTML = obj.header\n        }\n        if(obj.hasOwnProperty('content')){\n            _this.content.innerHTML = obj.content\n        }\n\n    }\n\n    this.appendContent = function(obj){\n\n        if(typeof(obj) == 'object'){\n            if(obj.hasOwnProperty('content')){\n                _this.content.innerHTML += obj.content\n            }\n        }else{\n            _this.content.innerHTML += obj\n        }\n\n    }\n\n    this.appendElmToContent = function(elm){\n        _this.content.appendChild(elm)\n    }\n\n    this.modalbg.addEventListener('mousedown', function(evt){\n        if(evt.target.classList.contains('modal-bg')){\n            _this.hide()\n        }\n    })\n\n    this.closebtn.addEventListener('mousedown', function(evt){\n        _this.hide()\n    })\n\n    container.appendChild(this.modalbg)\n\n}*/\n\n//var modalwin = new ModalWin()",
+    "static": true,
+    "longname": "F:/Projects/2D/gg_domtest/scripts/ui/ui.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 192,
+    "kind": "file",
+    "name": "scripts/utility.js",
+    "content": "/**********************\r\n*   Utility Functions\r\n*\r\n**********************/\r\n\r\n/**\r\n * Get a random number between values\r\n * @param {int} min \r\n * @param {int} max \r\n */\r\nfunction randomBetween(min,max){\r\n    return Math.floor(Math.random()*(max-min+1)+min);\r\n}\r\n\r\n/**\r\n * Get distance between two points\r\n * @param {int} x1 \r\n * @param {int} y1 \r\n * @param {int} x2 \r\n * @param {int} y2 \r\n */\r\nfunction getDistance(x1,y1,x2,y2){\r\n    var a = x1 - x2;\r\n    var b = y1 - y2;\r\n    var c = Math.sqrt( a*a + b*b );\r\n\r\n    return c;\r\n}\r\n\r\n/**\r\n * Get angle between two points\r\n * @param {int} x1 \r\n * @param {int} y1 \r\n * @param {int} x2 \r\n * @param {int} y2 \r\n */\r\nfunction getAngle(x1,y1,x2,y2){\r\n    var angleDeg = Math.floor(Math.atan2(y2 - y1, x2 - x1) * 180 / Math.PI);\r\n    return angleDeg\r\n}\r\n\r\n/**\r\n * Check line between two points and check\r\n * if tiles along that line are occupied.\r\n * @param {object} startCoordinates {x,y}\r\n * @param {object} endCoordinates {x,y}\r\n * @todo combine with brasenhamLine function\r\n */\r\nfunction lineofsight(startCoordinates, endCoordinates){\r\n\r\n    var coordinatesArray = new Array();\r\n    // Translate coordinates\r\n    var x1 = startCoordinates.left;\r\n    var y1 = startCoordinates.top;\r\n    var x2 = endCoordinates.left;\r\n    var y2 = endCoordinates.top;\r\n    // Define differences and error check\r\n    var dx = Math.abs(x2 - x1);\r\n    var dy = Math.abs(y2 - y1);\r\n    var sx = (x1 < x2) ? 1 : -1;\r\n    var sy = (y1 < y2) ? 1 : -1;\r\n    var err = dx - dy;\r\n\r\n    while (!((x1 == x2) && (y1 == y2))) {\r\n        var e2 = err << 1;\r\n        if (e2 > -dy) {\r\n            err -= dy;\r\n            x1 += sx;\r\n        }\r\n        if (e2 < dx) {\r\n            err += dx;\r\n            y1 += sy;\r\n        }\r\n\r\n        if(board.layout[x1][y1].occupied){\r\n\r\n            return false;\r\n\r\n            /*\r\n            if(x1 == endCoordinates.left && y1 == endCoordinates.top){\r\n                return true;\r\n            }else{\r\n                return false;\r\n                break;\r\n            }*/\r\n\r\n        }else{\r\n            return true; \r\n        }\r\n\r\n    }\r\n\r\n}\r\n/**\r\n * Uses the Brasenham line algorithm to check a staggered path along a grid\r\n * @param {object} startCoordinates \r\n * @param {object} endCoordinates \r\n * @todo Combine with lineofsight function\r\n */\r\nfunction bresenhamLine(startCoordinates, endCoordinates) {\r\n    //console.log('Bresenham')\r\n    var coordinatesArray = new Array();\r\n    // Translate coordinates\r\n    var x1 = startCoordinates.left;\r\n    var y1 = startCoordinates.top;\r\n    var x2 = endCoordinates.left;\r\n    var y2 = endCoordinates.top;\r\n    // Define differences and error check\r\n    var dx = Math.abs(x2 - x1);\r\n    var dy = Math.abs(y2 - y1);\r\n    var sx = (x1 < x2) ? 1 : -1;\r\n    var sy = (y1 < y2) ? 1 : -1;\r\n    var err = dx - dy;\r\n    // Set first coordinates\r\n    /*var linemarker = document.createElement('div')\r\n    if(!board.layout[x1][y1].occupied){\r\n        linemarker.classList.add('indicator', 'lnmark_green')\r\n      }else{\r\n        linemarker.classList.add('indicator', 'lnmark_red')\r\n      }\r\n    board.layout[x1][y1].dom.appendChild(linemarker)\r\n    coordinatesArray.push(board.layout[x1][y1]);*/\r\n    // Main loop\r\n    while (!((x1 == x2) && (y1 == y2))) {\r\n        var e2 = err << 1;\r\n        if (e2 > -dy) {\r\n            err -= dy;\r\n            x1 += sx;\r\n        }\r\n        if (e2 < dx) {\r\n            err += dx;\r\n            y1 += sy;\r\n        }\r\n\r\n        var linemarker = document.createElement('div')\r\n        var pctmarker = document.createElement('div')\r\n        pctmarker.classList.add('pctmarker', 'indicator')\r\n\r\n        if(!board.layout[x1][y1].occupied){\r\n            linemarker.classList.add('indicator', 'lnmark_green')\r\n        }else{\r\n\r\n            if(board.layout[x1][y1].occupant.stats.height >= 3){\r\n                pctmarker.innerText = '100%'\r\n                board.layout[x1][y1].dom.appendChild(pctmarker)\r\n                break;\r\n            }\r\n\r\n            linemarker.classList.add('indicator', 'lnmark_red')\r\n        }\r\n\r\n        //board.layout[x1][y1].dom.appendChild(linemarker)\r\n        coordinatesArray.push(board.layout[x1][y1]);\r\n\r\n    }\r\n\r\n    // Return the result\r\n    return coordinatesArray;\r\n}\r\n\r\n/**\r\n * Tweens between two points\r\n * @param {object} elem \r\n * @param {int} x \r\n * @param {int} y \r\n */\r\nfunction translate(elem, x, y) {\r\n    //elem.style.transition = \"left, top 2s ease-in\";\r\n\r\n    var left = parseInt( css( elem, 'left' ), 10 ),\r\n        top = parseInt( css( elem, 'top' ), 10 ),\r\n        dx = left - x,\r\n        dy = top - y\r\n        i = 1,\r\n        count = 20,\r\n        delay = 20;\r\n\r\n    function loop() {\r\n        if ( i >= count ) { document.getElementById(\"gamearea\").removeChild(elem); return; }\r\n        i += 1;\r\n        elem.style.left = ( left - ( dx * i / count ) ).toFixed( 0 ) + 'px';\r\n        elem.style.top = ( top - ( dy * i / count ) ).toFixed( 0 ) + 'px';\r\n        setTimeout( loop, delay );\r\n    }\r\n\r\n    loop();\r\n}\r\n\r\nfunction css(element, property) {\r\n    return window.getComputedStyle( element, null ).getPropertyValue( property );\r\n}",
+    "static": true,
+    "longname": "F:/Projects/2D/gg_domtest/scripts/utility.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 193,
+    "kind": "function",
+    "name": "randomBetween",
+    "memberof": "scripts/utility.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "scripts/utility.js~randomBetween",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/utility.js",
+    "importStyle": null,
+    "description": "Get a random number between values",
+    "lineNumber": 11,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "min",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "max",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 194,
+    "kind": "function",
+    "name": "getDistance",
+    "memberof": "scripts/utility.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "scripts/utility.js~getDistance",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/utility.js",
+    "importStyle": null,
+    "description": "Get distance between two points",
+    "lineNumber": 22,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "x1",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "y1",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "x2",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "y2",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 195,
+    "kind": "function",
+    "name": "getAngle",
+    "memberof": "scripts/utility.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "scripts/utility.js~getAngle",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/utility.js",
+    "importStyle": null,
+    "description": "Get angle between two points",
+    "lineNumber": 37,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "x1",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "y1",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "x2",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "y2",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 196,
+    "kind": "function",
+    "name": "lineofsight",
+    "memberof": "scripts/utility.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "scripts/utility.js~lineofsight",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/utility.js",
+    "importStyle": null,
+    "description": "Check line between two points and check\nif tiles along that line are occupied.",
+    "lineNumber": 49,
+    "todo": [
+      "combine with brasenhamLine function"
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "startCoordinates",
+        "description": "{x,y}"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "endCoordinates",
+        "description": "{x,y}"
+      }
+    ],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 197,
+    "kind": "function",
+    "name": "bresenhamLine",
+    "memberof": "scripts/utility.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "scripts/utility.js~bresenhamLine",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/utility.js",
+    "importStyle": null,
+    "description": "Uses the Brasenham line algorithm to check a staggered path along a grid",
+    "lineNumber": 100,
+    "todo": [
+      "Combine with lineofsight function"
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "startCoordinates",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "endCoordinates",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 198,
+    "kind": "function",
+    "name": "translate",
+    "memberof": "scripts/utility.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "scripts/utility.js~translate",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/utility.js",
+    "importStyle": null,
+    "description": "Tweens between two points",
+    "lineNumber": 167,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "elem",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "x",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "y",
+        "description": ""
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 199,
+    "kind": "function",
+    "name": "css",
+    "memberof": "scripts/utility.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "scripts/utility.js~css",
+    "access": "public",
+    "export": false,
+    "importPath": "gg_domtest/scripts/utility.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 189,
+    "undocument": true,
+    "params": [
+      {
+        "name": "element",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "property",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "kind": "index",
+    "content": "",
+    "longname": "F:\\Projects\\2D\\gg_domtest\\README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"gg_domtest\",\n  \"version\": \"1.0.0\",\n  \"description\": \"\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"watch\": \"nodemon ./start.js\"\n  },\n  \"author\": \"\",\n  \"license\": \"ISC\",\n  \"devDependencies\": {\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\"\n  },\n  \"dependencies\": {\n    \"express\": \"^4.16.4\",\n    \"mongodb\": \"^3.1.10\",\n    \"mongoose\": \"^5.3.13\"\n  }\n}\n",
+    "longname": "F:\\Projects\\2D\\gg_domtest\\package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

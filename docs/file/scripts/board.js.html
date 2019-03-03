@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">scripts/board.js | gg_domtest</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  </ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">scripts/board.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * Board is the main game area that holds all of the tiles
+ */
+var board = function(){
+
+    var this_table = this;
+    this_table.layout = [];
+    this_table.occupied_tiles = [];
+    this_table.unoccupied_tiles = [];
+    this_table.tileCountX = 0;
+    this_table.tileCountY = 0;
+    this_table.board_width = 0;
+    this_table.board_height = 0;
+
+    /**
+     * Initiates the board with x and y size parameters
+     * @param {int} sizex
+     * @param {int} sizey
+     */
+    this.initBoard = function(sizex,sizey){
+        this_table.layout = [];
+        this_table.unoccupied_tiles = [];
+
+        document.getElementById(&quot;gamearea&quot;).innerHTML = &quot;&quot;;
+
+        for(x=0;x&lt;sizex;x++){
+            this_table.layout[x] = [];
+            var columndiv = document.createElement(&quot;div&quot;);
+            columndiv.classList.add(&quot;column_div&quot;);
+            this_table.tileCountX = sizex;
+            this_table.board_width = sizex*64;
+            
+            for(y=0;y&lt;sizey;y++){
+                var newtile = new tile(x, y, &apos;tile_grass&apos;);
+                this_table.layout[x][y] = newtile;
+                //this_table.unOccupiedTiles(x,y);
+                columndiv.appendChild(newtile.dom);           
+            }
+            
+            document.getElementById(&quot;gamearea&quot;).appendChild(columndiv);
+        }
+
+        this_table.tileCountY = this_table.layout[0].length;
+        this_table.board_height = 64*this_table.layout[0].length;
+        document.getElementById(&quot;gamearea&quot;).style.height = this_table.board_height;
+        document.getElementById(&quot;container&quot;).style.width = this_table.board_width;
+
+        //this_table.createObstacles();
+    }
+
+    /**
+     * Sets board from a 2 dimensional array
+     * @param {Array} table
+     */
+    this.setBoard = function(table){
+        console.log(table)
+        //this_table.layout = table;
+        //this_table.unoccupied_tiles = [];
+
+        var sizex = table.length
+        var sizey = table[0].length
+
+        //document.getElementById(&quot;gamearea&quot;).innerHTML = &quot;&quot;;
+
+        for(var x = 0; x &lt; sizex; x++){
+            
+            /*var columndiv = document.createElement(&quot;div&quot;);
+            columndiv.classList.add(&quot;column_div&quot;);
+            this_table.tileCountX = sizex;
+            this_table.board_width = sizex*64;*/
+            
+            for(var y = 0; y &lt; sizey; y++){
+                var layouttile = this_table.layout[x][y]
+                var loadtile = table[x][y]
+                layouttile.dom.style.backgroundPositionX = loadtile.bgx+&apos;px&apos;
+                layouttile.dom.style.backgroundPositionY = loadtile.bgy+&apos;px&apos;
+                layouttile.dom.bgx = loadtile.bgx
+                layouttile.dom.bgy = loadtile.bgy
+                /*
+                this_table.layout[x][y].dom = this_table.layout[x][y].dom;
+                this_table.layout[x][y].occupied = this_table.layout[x][y].occupied;
+                */
+               /*var newtile = new tile(x, y);
+                this_table.layout[x][y] = newtile;
+                this_table.unOccupiedTiles(x,y);
+                columndiv.appendChild(newtile.dom);*/           
+            }
+            
+            //document.getElementById(&quot;gamearea&quot;).appendChild(columndiv);
+        }        
+    }
+
+    this.unOccupiedTiles = function(tablex, tabley){
+        this_table.unoccupied_tiles.push(this_table.layout[tablex][tabley]);
+    }
+
+    /**
+     * Places a piece on to the board
+     * @param {object} piece
+     * @param {int} tile_x
+     * @param {int} tile_y
+     */
+    this.placeOnBoard = function(obj, tile_x, tile_y){
+        var targetTile = board.layout[tile_x][tile_y];
+        obj.tile = targetTile;
+
+        if(targetTile.occupied){
+            return false;
+        }else{
+            //delIndicators()
+            targetTile.occupied = true
+            targetTile.occupant = obj
+            obj.tileindex_x = tile_x
+            obj.tileindex_y = tile_y
+            obj.pxpos_x = targetTile.px_x
+            obj.pxpos_y = targetTile.px_y
+            obj.dom.style.left = targetTile.px_x
+            obj.dom.style.top = targetTile.px_y
+            obj.dom.style.zIndex = targetTile.y
+            
+            console.log(obj.dom)
+            document.getElementById(&apos;gamearea&apos;).appendChild(obj.dom)
+            return true
+        }    
+        
+    }
+
+    this.removeFromBoard = function(obj){
+        obj.currentTile.occupied = false
+        obj.currentTile.occupant = null
+        obj.meta.disabled = true
+        document.getElementById(&apos;gamearea&apos;).removeChild(document.getElementById(obj.dom.id))
+    }
+
+    this.showBoardStatus = function(){
+        var curtile, curstatusdiv;
+
+        for(x=0; x&lt;this_table.layout.length ;x++){
+
+            for(y=0;y&lt;this_table.layout[x].length;y++){
+                curtile = this_table.layout[x][y];
+                curstatusdiv = document.getElementById(&quot;status_&quot;+x+y);
+
+                curstatusdiv.setAttribute(&quot;style&quot;,&quot;color: black;&quot;);
+
+                if(curtile.dom.occupied){
+                    curstatusdiv.setAttribute(&quot;style&quot;,&quot;color: red;&quot;);
+                }else if(!curtile.dom.occupied){
+                    curstatusdiv.setAttribute(&quot;style&quot;,&quot;color: green;&quot;);                    
+                }else{
+                    curstatusdiv.setAttribute(&quot;style&quot;,&quot;color: orange;&quot;); 
+                }
+
+                curstatusdiv.innerText = curtile.dom.occupied;                
+            }
+
+        }
+
+    }
+
+    /**
+     * Exports the board for saving
+     */
+    this.export = function(){
+        var expboard = []
+
+        for(x = 0 ; x&lt;this_table.layout.length ; x++){
+            expboard[x] = []
+
+            for(y=0;y&lt;this_table.layout[x].length;y++){
+
+                expboard[x][y] = 
+                {
+                    &apos;cls&apos;: this_table.layout[x][y].cls,
+                    &apos;bgx&apos;: this_table.layout[x][y].dom.bgx,
+                    &apos;bgy&apos;: this_table.layout[x][y].dom.bgy,
+                    &apos;occupied&apos;: this_table.layout[x][y].occupied
+                }
+            }
+
+        }
+        
+        return expboard
+    }
+
+}
+
+/**
+ * Tiles
+ * @param {int} column
+ * @param {int} row
+ * @param {string} sheet
+ */
+var tile = function(column, row, sheet){
+    var this_tile = this;
+    var randomtile = Math.floor(Math.random()*10);
+
+    if(sheet === undefined){
+        sheet = &apos;tile_grass&apos;
+    }
+
+    this_tile.x = column;
+    this_tile.y = row;
+    this_tile.px_x = 64*column;
+    this_tile.px_y = 64*row;
+    this_tile.occupied = false;
+    this_tile.occupant = null;
+    this_tile.cls = &apos;tile &apos;+sheet
+    this_tile.dom = document.createElement(&apos;div&apos;);
+    this_tile.dom.bgx = 0
+    this_tile.dom.bgy = 0
+    this_tile.dom.id = &apos;x&apos;+column+&apos;y&apos;+row;
+    this_tile.dom.className = &apos;tile &apos;+sheet
+    this_tile.dom.style.zIndex = &quot;0&quot;;
+    this_tile.dom.style.backgroundPosition = &apos;0px 0px&apos;
+
+    //this_tile.dom.innerHTML = &quot;&lt;div style=&apos;position: absolute; color: gray;&apos;&gt;&quot;+column+&quot;,&quot;+row+&quot;&lt;/div&gt;&quot;;
+
+    this_tile.dom.addEventListener(&quot;click&quot;, function(evt) {
+        if(!game.gamemode){
+            var editormode = Editor.getMode()
+            var editobj = Editor.getObj()
+
+            if(editormode == &apos;tile&apos;){
+
+                if(evt.target.classList.contains(&apos;tile&apos;)){
+                    evt.target.style.backgroundPosition = editobj.bgx+&apos; &apos;+editobj.bgy
+                    this_tile.dom.bgx = editobj.bgx
+                    this_tile.dom.bgy = editobj.bgy
+                }
+            
+            }else if(editormode == &apos;unit&apos;){
+
+                if(evt.target.classList.contains(&apos;tile&apos;)){
+
+                    if(!this_tile.occupied){
+                        var newunit = new Soldier(editobj.race, editobj.faction, editobj.type)
+                        newunit.team = game.selectedTeam
+                        newunit.id = newunit.team.id+&apos;U&apos;+newunit.team.list.length
+                        game.selectedTeam.add(newunit)
+                        game.selectUnit(newunit)
+                        board.placeOnBoard(newunit, this_tile.x, this_tile.y)
+
+                    }else{
+                        console.log(&apos;tile is occupied!&apos;)
+                    }
+                }
+
+            }else if(editormode == &apos;move&apos;){
+                game.selectedPiece.tile.occupied = false
+                board.placeOnBoard(game.selectedPiece, this_tile.x, this_tile.y)
+
+            }else if(editormode == &apos;obstacle&apos;){
+                
+                if(!this_tile.occupied){
+                    var newobs = new Obstacle(editobj.type, editobj.subtype, {&apos;bgx&apos;: editobj.bgpos.bgx, &apos;bgy&apos;: editobj.bgpos.bgy})
+                    game.addObstacle(newobs)
+
+                    board.placeOnBoard(newobs, this_tile.x, this_tile.y)
+                }
+            
+            }
+        }
+    });
+
+    /*var tilestatus_div = document.createElement(&quot;div&quot;);
+    tilestatus_div.classList.add(&quot;tilestatus_div&quot;);
+    tilestatus_div.id = &quot;status_&quot;+column+row;
+    tilestatus_div.innerText = this_tile.dom.occupied;
+    this_tile.dom.appendChild(tilestatus_div);*/
+}
+
+/*
+var moveMarker = function(tile){
+    var this_marker = this
+    this_marker.posx = tile.dom.px_x
+    this_marker.posy = tile.dom.px_y
+    this_marker.indexx = tile.dom.x
+    this_marker.indexy = tile.dom.y
+    this_marker.tile = tile
+
+    this.create = function(tile){
+        this_marker.dom = document.createElement(&apos;div&apos;);
+        this_marker.dom.classList.add(&apos;movemarker&apos;);
+        tile.appendChild(this_marker.dom);
+    }
+
+}*/
+
+var board = new board();</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">scripts/actions.js | gg_domtest</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  </ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">scripts/actions.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * This function is used for attacking a target
+ * @param {object} attacker 
+ * @param {object} victim 
+ */
+function attack(attacker, victim){
+
+    if(attacker.checkMoves()){
+
+        var dmgmin = attacker.stats[&apos;dmg&apos;];
+        var dmgAmount = victim.stats.def-dmgmin;
+        var angle = getAngle(attacker.pxpos_x, attacker.pxpos_y, victim.pxpos_x, victim.pxpos_y)
+        var victim_x = victim.pxpos_x;
+        var victim_y = victim.pxpos_y;
+        var anglevar = 0;
+
+        attacker.flip(angle)
+
+        if(dmgAmount &gt;= 0){
+            dmgAmount = -1;
+        }
+
+        if(angle == 0){
+            anglevar = 0;
+        }else if(angle == 180 || angle == -180){
+            anglevar = 180;
+        }else if(angle == 90){
+            anglevar = 90;
+        }else if(angle == -90){
+            anglevar = -90;
+        }
+        else if(angle &gt; -90 &amp;&amp; angle &lt; 0){
+            anglevar = -45;
+        }
+        else if(angle &lt; 90 &amp;&amp; angle &gt; 0){
+            anglevar = 45;
+        }
+        else if(angle &lt; -90 &amp;&amp; angle &gt; -180){
+            anglevar = -135;
+        }
+        else if(angle &lt; 180 &amp;&amp; angle &gt; 90){
+            anglevar = 135;
+        }
+
+        if(this.subtype == &quot;archer&quot;){
+            var projectile = document.createElement(&quot;div&quot;);
+            projectile.className = &quot;arrow&quot;;
+            projectile.setAttribute(&quot;style&quot;, &quot;transform: rotate(&quot;+angle+&quot;deg); z-index: &quot;+(victim.dom.style.zIndex+1)+&quot;; top: &quot;+(this.pxpos_y-32)+&quot;px; left: &quot;+this.pxpos_x+&quot;px;&quot;);
+            document.getElementById(&quot;gamearea&quot;).appendChild(projectile)
+            translate(projectile,victim_x,victim_y-32)
+        }
+
+        attacker.updateMoves(-1)
+        attacker.dom.classList.remove(&apos;attack_0&apos;,&apos;attack_180&apos;,&apos;attack_45&apos;,&apos;attack_-45&apos;,&apos;attack_90&apos;,&apos;attack_-90&apos;,&apos;attack_135&apos;,&apos;attack_-135&apos;);
+        void attacker.dom.offsetWidth;
+        attacker.dom.classList.add(&apos;attack_&apos;+anglevar);
+        victim.takeDmg(dmgmin)
+        createMoveArea(attacker)
+    }
+}
+
+/**
+ * Loops through all enemy teams and looks for targets
+ * @param {object} attacker 
+ */
+function seekTarget(attacker){
+    var distance = 0;
+    var closest = 9999;
+    targets = {&quot;in_range&quot;:[], &quot;not_in_range&quot;:[], &quot;closest&quot;: [], &quot;atkareas&quot;: []};
+
+    game.teams.forEach(function (team, key, map) {
+        if(key != game.whosturn){
+
+            team.objects.forEach(function (enemy) {
+                if(enemy.alive){
+                    distance = getDistance(attacker.pxpos_x, attacker.pxpos_y, enemy.pxpos_x, enemy.pxpos_y)
+
+                    if(distance &lt;= attacker.stats.range*64){ 
+
+                        targets[&quot;in_range&quot;].push({&quot;victim&quot;: enemy, &quot;distance&quot;: distance, &quot;angle&quot;: getAngle(attacker.pxpos_x, attacker.pxpos_y, enemy.pxpos_x, enemy.pxpos_y)});
+                        //createAtkMarkers(value); //value.dom.style.border = &apos;1px solid red&apos;
+        
+                        var atkmarker = document.createElement(&apos;div&apos;)
+                        atkmarker.classList.add(&apos;atkmarker&apos;, &apos;indicator&apos;)
+                        atkmarker.style.left = enemy.pxpos_x;
+                        atkmarker.style.top = enemy.pxpos_y;
+                        atkmarker.target = enemy
+                        enemy.target = true
+
+                        //document.getElementById(&apos;gamearea&apos;).appendChild(atkmarker)
+                        enemy.dom.appendChild(atkmarker)
+        
+                        //console.log({&apos;left&apos;: attacker.tile.x,&apos;top&apos;: attacker.tile.y}, {&apos;left&apos;: value.tileindex_x,&apos;top&apos;: value.tileindex_y})
+        
+                        if(attacker.stats.range &gt; 1.5){
+                            bresenhamLine({&apos;left&apos;: attacker.tile.x,&apos;top&apos;: attacker.tile.y}, {&apos;left&apos;: enemy.tile.x,&apos;top&apos;: enemy.tile.y})
+                        }
+        
+                        //attacker.targets.atkareas.push(atkmarker)
+                    }else{
+                        enemy.target = false
+                        targets[&quot;not_in_range&quot;].push({&quot;victim&quot;: enemy, &quot;distance&quot;: distance, &quot;angle&quot;: getAngle(attacker.pxpos_x, attacker.pxpos_y, enemy.pxpos_x, enemy.pxpos_y)});
+                    }
+                    
+                }
+            })
+
+        }
+    })
+
+    return targets
+}
+
+/**
+ * Creates a move area around the selected unit
+ * @param {object} unitobj 
+ */
+function createMoveArea(unitobj){
+    var unitx = unitobj.tile.x;
+    var unity = unitobj.tile.y;
+    var areax = unitx-unitobj.stats.moves;
+    var areay = unity-unitobj.stats.moves;
+    var corr = (unitobj.stats.moves &gt; 1) ? 1:0;
+    var areas = []
+    delMoveArea()
+
+    for(var y = 0; y &lt; (3*unitobj.stats.moves)-corr; y++){
+
+        for(var x = 0; x &lt; (3*unitobj.stats.moves)-corr; x++){
+
+            if(areax != unitx || areay != unity){
+                if(board.layout[areax] != undefined){
+                    if(board.layout[areax][areay] != undefined){
+
+                        var targetTile = board.layout[areax][areay];
+
+                        if(!targetTile.occupied){
+                            var dist = getDistance(unitx,unity,areax,areay)
+
+                            if(dist &lt; 2.1){
+                                var movemarker = document.createElement(&apos;div&apos;);
+                                movemarker.classList.add(&apos;movemarker&apos;, &apos;indicator&apos;);
+                                movemarker.style.zIndex = 1
+                                
+                                if(dist &gt; 1 || unitobj.stats.moves == 1){
+
+                                    if(lineofsight({&apos;left&apos;: unitx, &apos;top&apos;: unity}, {&apos;left&apos;: areax, &apos;top&apos;: areay})){
+                                        movemarker.classList.add(&apos;mvmrkr-orange&apos;);
+                                        movemarker.apcost = -2;
+                                        areas.push(movemarker)
+                                    }
+                                    
+                                }else{
+                                    movemarker.classList.add(&apos;mvmrkr-green&apos;);
+                                    movemarker.apcost = -1;
+                                    areas.push(movemarker)
+                                }
+
+                                movemarker.tile = targetTile;
+                                movemarker.addEventListener(&apos;mousedown&apos;, function(evt){
+                                    game.selectedUnit.move(evt.target.apcost, evt.target.tile.x, evt.target.tile.y);
+                                })
+
+                                targetTile.dom.appendChild(movemarker);
+                                
+                            }
+                        }
+
+                    }
+                }
+            }
+            areax++;
+        }
+
+        areax = unitx-unitobj.stats.moves;
+        areay++;
+    }
+
+    unitobj.mvmrkrs = areas
+    return areas
+}
+
+/**
+ * Deletes current move area
+ */
+function delMoveArea(){
+    var markers = document.querySelectorAll(&apos;.movemarker&apos;);
+
+    if(markers.length &gt; 0){
+        for(i=0; i&lt;markers.length; i++){
+            var elem = markers[i];
+            elem.parentNode.removeChild(elem);
+        }
+    }
+    
+    /*
+    if(game.selectedUnit.mvmrkrs.length &gt; 0){
+        for(var i = 0; i &lt; game.selectedUnit.mvmrkrs.length; i++){
+            game.selectedUnit.mvmrkrs[i].parentNode.removeChild(game.selectedUnit.mvmrkrs[i]);
+        }
+
+        game.selectedUnit.mvmrkrs = []
+
+        return true
+    }else{
+        return false
+    }*/
+}
+
+/**
+ * Delete indicators
+ */
+function delIndicators(){
+    var markers = document.querySelectorAll(&apos;.indicator&apos;);
+
+    if(markers.length &gt; 0){
+        for(i=0; i&lt;markers.length; i++){
+            var elem = markers[i];
+            elem.parentNode.removeChild(elem);
+        }
+    }
+}
+
+/**
+ * Creates a dmg marker / blood
+ * @param {int} bloodx 
+ * @param {int} bloody 
+ * @param {int} dmg 
+ */
+function createDmgMarker(bloodx, bloody, dmg){
+
+    var bloodsplat = document.createElement(&apos;div&apos;);
+    bloodsplat.classList.add(&apos;bloodsplat&apos;);
+    bloodsplat.style.zIndex = 99;
+    bloodsplat.style.left = bloodx;
+    bloodsplat.style.top = bloody;
+
+    var dmgtext = document.createElement(&apos;p&apos;);
+    dmgtext.className = &quot;dmgtext&quot;;
+    dmgtext.innerHTML = dmg;
+    dmgtext.style.top = &apos;0px&apos;;
+    bloodsplat.appendChild(dmgtext);
+
+    var inttime = 0;
+
+    var fadeEffect = setInterval(function () {
+
+        if(inttime &gt; 5){
+            clearInterval(fadeEffect);
+            document.getElementById(&quot;gamearea&quot;).removeChild(bloodsplat);
+        }else{
+            inttime++;
+        }
+
+    }, 100);
+
+    document.getElementById(&quot;gamearea&quot;).appendChild(bloodsplat);
+
+}
+
+/**
+ * Shows unit information
+ * @param {object} unitobj 
+ */
+function showUnitInfo(unitobj){
+
+    document.getElementById(&quot;modal-header&quot;).innerText = &quot;Unit information&quot;;
+
+    var modalinfo = document.getElementById(&quot;modal-info&quot;);
+    modalinfo.innerHTML = &quot;&quot;;
+
+    var leftside = document.createElement(&quot;div&quot;);
+    leftside.classList.add(&quot;unit_infoleft&quot;);
+    leftside.id = &quot;infoleft&quot;;
+
+    var unit_portrait = document.createElement(&quot;div&quot;);
+    unit_portrait.classList.add(&quot;unit&quot;, unitobj.stats.classname);
+
+    leftside.appendChild(unit_portrait);
+
+    var rightside = document.createElement(&quot;div&quot;);
+    rightside.classList.add(&quot;unit_inforight&quot;);
+    rightside.id = &quot;inforight&quot;;
+
+    for (var key in unitobj.stats) {
+        
+        if(key != &quot;imgpoint&quot; &amp;&amp; key != &quot;midpoint&quot; &amp;&amp; key != &quot;classname&quot; &amp;&amp; key != &quot;alive&quot;){
+            var infoblock = document.createElement(&quot;div&quot;);
+            var div_left = document.createElement(&quot;div&quot;);
+            div_left.classList.add(&quot;infoblock_left&quot;);
+            var div_right = document.createElement(&quot;div&quot;);
+            div_right.classList.add(&quot;infoblock_right&quot;);
+
+            div_left.innerText = key;
+            div_right.innerText = unitobj.stats[key];
+
+            infoblock.appendChild(div_left);
+            infoblock.appendChild(div_right);
+            infoblock.classList.add(&quot;unit_infoblock&quot;);
+
+            rightside.appendChild(infoblock);
+        }
+    }
+
+    modalinfo.appendChild(leftside);
+    modalinfo.appendChild(rightside);
+    document.getElementById(&quot;modal&quot;).style.visibility = &quot;visible&quot;;
+
+}</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

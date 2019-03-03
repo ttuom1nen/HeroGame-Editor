@@ -1,0 +1,150 @@
+{
+  "coverage": "28.57%",
+  "expectCount": 126,
+  "actualCount": 36,
+  "files": {
+    "scripts/actions.js": {
+      "expectCount": 7,
+      "actualCount": 7,
+      "undocumentLines": []
+    },
+    "scripts/ai.js": {
+      "expectCount": 5,
+      "actualCount": 4,
+      "undocumentLines": [
+        29
+      ]
+    },
+    "scripts/board.js": {
+      "expectCount": 3,
+      "actualCount": 2,
+      "undocumentLines": [
+        290
+      ]
+    },
+    "scripts/collections.js": {
+      "expectCount": 20,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        3,
+        4,
+        5,
+        9,
+        14,
+        15,
+        19,
+        28,
+        42,
+        44,
+        47,
+        48,
+        49,
+        52,
+        57,
+        78,
+        80,
+        83,
+        84
+      ]
+    },
+    "scripts/items.js": {
+      "expectCount": 18,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        3,
+        8,
+        11,
+        18,
+        19,
+        40,
+        42,
+        44,
+        46,
+        58,
+        60,
+        65,
+        74,
+        76,
+        77,
+        82,
+        92
+      ]
+    },
+    "scripts/main.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        147,
+        151,
+        155,
+        182,
+        195
+      ]
+    },
+    "scripts/pieces.js": {
+      "expectCount": 53,
+      "actualCount": 15,
+      "undocumentLines": [
+        6,
+        7,
+        48,
+        55,
+        56,
+        57,
+        58,
+        59,
+        61,
+        63,
+        65,
+        182,
+        194,
+        196,
+        197,
+        198,
+        261,
+        262,
+        266,
+        287,
+        293,
+        294,
+        295,
+        296,
+        308,
+        310,
+        311,
+        312,
+        313,
+        327,
+        328,
+        329,
+        379,
+        387,
+        388,
+        389,
+        390,
+        392
+      ]
+    },
+    "scripts/stats.js": {
+      "expectCount": 7,
+      "actualCount": 2,
+      "undocumentLines": [
+        1,
+        3,
+        662,
+        716,
+        722
+      ]
+    },
+    "scripts/utility.js": {
+      "expectCount": 7,
+      "actualCount": 6,
+      "undocumentLines": [
+        189
+      ]
+    }
+  }
+}

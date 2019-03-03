@@ -1,0 +1,230 @@
+/* Generic sizes for all screens */
+
+.disabled{
+    pointer-events: none;
+    touch-action: none;
+}
+
+/* Modal dark background */
+.modal-bg {
+    cursor: pointer;
+    opacity: 0;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    transition: opacity 0.5s linear;
+    transform: translateZ(65000px);
+}
+
+/* Modal window */
+.modal-window {
+    cursor: pointer;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 4px;
+    border: 1px solid #808080;
+    box-shadow: 0px 5px 10px 10px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    width: 88%;
+    max-width: 450px;
+}
+
+/* Modal header */
+.modal-header{
+    color: #e6007e;
+    font-size: 12pt;    
+    border-bottom: 1px solid silver;
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 2px !important;
+}
+
+/* Modal content */
+.modal-content{
+    font-size: 10pt;
+    word-wrap: break-word;
+    text-align: center;
+    min-height: 220px;
+    width: 100%;
+    margin-bottom: 20px;
+    max-height: 400px;
+    overflow-y: auto;    
+}
+
+.modal-contbox{
+    height: 30px;
+    border: 1px solid silver;
+}
+
+/* Modal footer */
+.modal-footer{
+    border-top: 1px solid silver;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.modal-closebtn{
+    cursor: pointer;
+    color: #e6007e;
+    font-weight: bold;
+    border: 1px solid #e6007e;
+    background-color: white;
+    border-radius: 5px;
+    margin: 0 auto;
+    height: 25px;
+}
+
+/*---------------------*/
+/* Screensize specific */
+/*---------------------*/
+
+/* Tablets and desktop */
+@media screen and (min-width: 767px){
+    .modal-content{
+        font-size: 12pt;
+        word-wrap: break-word;
+        text-align: center;
+        min-height: 220px;
+        width: 100%;
+        margin-bottom: 20px;
+        max-height: 400px;
+        overflow-y: auto;    
+    }
+
+    .modal-window {
+        margin: 10% auto;
+        padding: 8px;
+        border-radius: 5px;
+        width: 65%;
+        max-width: 550px;
+    }
+
+    .modal-header{
+        color: #e6007e;
+        font-size: 16pt;    
+        border-bottom: 1px solid silver;
+        margin-bottom: 10px;
+        text-align: left;
+        padding: 5px !important;
+        height: 30px;
+    }
+}
+
+/* Landscape mainly for tablets */
+@media (max-width: 850px) and (orientation: landscape) {
+    .modal-window {
+        margin: 1% auto;
+        padding: 4px;
+        border-radius: 5px;
+        width: 90%;
+        max-width: 530px;
+    }   
+}
+
+/* Small screens */
+@media screen and (max-width: 320px){
+    .modal-window {
+        margin: 3% auto;
+        padding: 4px;
+        border-radius: 5px;
+        width: 90%;
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-height: 360px) and (orientation: landscape){
+    .modal-window {
+        max-height: 340px !important;
+        overflow-y: auto !important;
+    }
+    .modal-content{
+        min-height: 200px;
+        max-height: 244px !important;
+    }
+}
+
+@media screen and (max-height: 411px) and (orientation: landscape){
+    .modal-window {
+        max-height: 340px !important;
+        overflow-y: auto !important;
+    }
+    .modal-content{
+        min-height: 176px;
+        max-height: 206px !important;
+    }
+}
+
+/*----------------------*/
+/* Animations for modal */
+/*----------------------*/
+
+/*--- FADEIN ---*/
+
+.fadein{
+    -webkit-animation: fadein 0.7s;
+    -moz-animation: fadein 0.7s;
+    -ms-animation: fadein 0.7s;
+    -o-animation: fadein 0.7s;
+    animation: fadein 0.7s;    
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/*--- FADEOUT ---*/
+
+.fadeout{
+    -webkit-animation: fadeout 0.7s;
+    -moz-animation: fadeout 0.7s;
+    -ms-animation: fadeout 0.7s;
+    -o-animation: fadeout 0.7s;
+    animation: fadeout 0.7s;     
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+@-moz-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+@-webkit-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+@-ms-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+@-o-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}

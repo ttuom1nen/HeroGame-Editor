@@ -1,0 +1,20 @@
+.sprite{
+    pointer-events: none;
+    position: absolute;
+    height: 128px;
+    width: 64px;
+    top: -64px;
+    background-repeat: no-repeat;
+}
+
+.bigsprite{
+    width: 128px;
+    left: -32px;
+}
+
+.clkzone{
+    position: absolute;
+    height: 64px;
+    width: 64px;
+    bottom: 0px;
+}

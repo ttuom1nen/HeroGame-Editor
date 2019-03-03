@@ -1,0 +1,258 @@
+{
+  "type": "File",
+  "start": 0,
+  "end": 3835,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 168,
+      "column": 31
+    }
+  },
+  "program": {
+    "type": "Program",
+    "start": 0,
+    "end": 3835,
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0
+      },
+      "end": {
+        "line": 168,
+        "column": 31
+      }
+    },
+    "sourceType": "module",
+    "body": [],
+    "directives": [],
+    "leadingComments": null,
+    "innerComments": [
+      {
+        "type": "CommentBlock",
+        "value": "\nclass UiElement{\n\n    constructor(){\n        this.type = \"uielm\"\n        this.disabled = false\n        this.elm\n        this.visible = true\n    }\n\n    show(){\n        this.visible = true\n        this.elm.style.visibility = 'visible'        \n    }\n\n    hide(){\n        this.visible = false\n        this.elm.style.visibility = 'hidden'\n    }\n\n    toggle(){\n\n    }\n\n    setContent(){\n\n    }\n\n    appendContent(){\n\n    }\n\n    export(){\n\n    }\n\n}\n\nclass ModalWin extends UiElement(){\n\n    constructor(){\n        super()\n\n        this.modalbg = document.createElement('div')\n        this.modalbg.classList.add('modal-bg')\n        this.modalwin = document.createElement('div')\n        this.modalwin.classList.add('modal-window')\n        this.header = document.createElement('div')\n        this.header.classList.add('modal-header')\n        this.content = document.createElement('div')\n        this.content.classList.add('modal-content')\n        this.footer = document.createElement('div')\n        this.footer.classList.add('modal-footer')\n        this.closebtn = document.createElement('input')\n        this.closebtn.type = 'button'\n        this.closebtn.classList.add('modal-closebtn')\n        this.closebtn.value = 'Sulje'\n    \n        this.footer.appendChild(this.closebtn)\n        this.modalwin.appendChild(this.header)\n        this.modalwin.appendChild(this.content)\n        this.modalwin.appendChild(this.footer)\n        this.modalbg.appendChild(this.modalwin)\n\n        this.elm = this.modalbg\n    }\n\n}",
+        "start": 0,
+        "end": 1505,
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 68,
+            "column": 3
+          }
+        }
+      },
+      {
+        "type": "CommentBlock",
+        "value": "*\n*   ModalWindow\n*\n*",
+        "start": 1507,
+        "end": 1532,
+        "loc": {
+          "start": {
+            "line": 70,
+            "column": 0
+          },
+          "end": {
+            "line": 73,
+            "column": 3
+          }
+        }
+      },
+      {
+        "type": "CommentBlock",
+        "value": "\nfunction ModalWindow(container){\n    var _this = this\n    this.visible = false\n\n    this.modalbg = document.createElement('div')\n    this.modalbg.classList.add('modal-bg')\n\n    this.modalwin = document.createElement('div')\n    this.modalwin.classList.add('modal-window')\n\n    this.header = document.createElement('div')\n    this.header.classList.add('modal-header')\n\n    this.content = document.createElement('div')\n    this.content.classList.add('modal-content')\n\n    this.footer = document.createElement('div')\n    this.footer.classList.add('modal-footer')\n\n    this.closebtn = document.createElement('input')\n    this.closebtn.type = 'button'\n    this.closebtn.classList.add('modal-closebtn')\n    this.closebtn.value = 'Sulje'\n\n    this.footer.appendChild(this.closebtn)\n    this.modalwin.appendChild(this.header)\n    this.modalwin.appendChild(this.content)\n    this.modalwin.appendChild(this.footer)\n    this.modalbg.appendChild(this.modalwin)\n\n    this.show = function(){\n        _this.visible = true\n        _this.modalbg.style.visibility = 'visible'\n    }\n\n    this.hide = function(){\n        _this.visible = false\n        _this.modalbg.style.visibility = 'hidden'\n    }\n\n    this.toggle = function(){\n        _this.visible = !_this.visible\n\n        if(_this.visible){\n            _this.show()\n        }else{\n            _this.hide()\n        }\n\n    }\n\n    this.setContent = function(obj){\n\n        if(obj.hasOwnProperty('header')){\n            _this.header.innerHTML = obj.header\n        }\n        if(obj.hasOwnProperty('content')){\n            _this.content.innerHTML = obj.content\n        }\n\n    }\n\n    this.appendContent = function(obj){\n\n        if(typeof(obj) == 'object'){\n            if(obj.hasOwnProperty('content')){\n                _this.content.innerHTML += obj.content\n            }\n        }else{\n            _this.content.innerHTML += obj\n        }\n\n    }\n\n    this.appendElmToContent = function(elm){\n        _this.content.appendChild(elm)\n    }\n\n    this.modalbg.addEventListener('mousedown', function(evt){\n        if(evt.target.classList.contains('modal-bg')){\n            _this.hide()\n        }\n    })\n\n    this.closebtn.addEventListener('mousedown', function(evt){\n        _this.hide()\n    })\n\n    container.appendChild(this.modalbg)\n\n}",
+        "start": 1534,
+        "end": 3802,
+        "loc": {
+          "start": {
+            "line": 75,
+            "column": 0
+          },
+          "end": {
+            "line": 166,
+            "column": 3
+          }
+        }
+      },
+      {
+        "type": "CommentLine",
+        "value": "var modalwin = new ModalWin()",
+        "start": 3804,
+        "end": 3835,
+        "loc": {
+          "start": {
+            "line": 168,
+            "column": 0
+          },
+          "end": {
+            "line": 168,
+            "column": 31
+          }
+        }
+      }
+    ]
+  },
+  "comments": [
+    {
+      "type": "CommentBlock",
+      "value": "\nclass UiElement{\n\n    constructor(){\n        this.type = \"uielm\"\n        this.disabled = false\n        this.elm\n        this.visible = true\n    }\n\n    show(){\n        this.visible = true\n        this.elm.style.visibility = 'visible'        \n    }\n\n    hide(){\n        this.visible = false\n        this.elm.style.visibility = 'hidden'\n    }\n\n    toggle(){\n\n    }\n\n    setContent(){\n\n    }\n\n    appendContent(){\n\n    }\n\n    export(){\n\n    }\n\n}\n\nclass ModalWin extends UiElement(){\n\n    constructor(){\n        super()\n\n        this.modalbg = document.createElement('div')\n        this.modalbg.classList.add('modal-bg')\n        this.modalwin = document.createElement('div')\n        this.modalwin.classList.add('modal-window')\n        this.header = document.createElement('div')\n        this.header.classList.add('modal-header')\n        this.content = document.createElement('div')\n        this.content.classList.add('modal-content')\n        this.footer = document.createElement('div')\n        this.footer.classList.add('modal-footer')\n        this.closebtn = document.createElement('input')\n        this.closebtn.type = 'button'\n        this.closebtn.classList.add('modal-closebtn')\n        this.closebtn.value = 'Sulje'\n    \n        this.footer.appendChild(this.closebtn)\n        this.modalwin.appendChild(this.header)\n        this.modalwin.appendChild(this.content)\n        this.modalwin.appendChild(this.footer)\n        this.modalbg.appendChild(this.modalwin)\n\n        this.elm = this.modalbg\n    }\n\n}",
+      "start": 0,
+      "end": 1505,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 68,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n*   ModalWindow\n*\n*",
+      "start": 1507,
+      "end": 1532,
+      "loc": {
+        "start": {
+          "line": 70,
+          "column": 0
+        },
+        "end": {
+          "line": 73,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "\nfunction ModalWindow(container){\n    var _this = this\n    this.visible = false\n\n    this.modalbg = document.createElement('div')\n    this.modalbg.classList.add('modal-bg')\n\n    this.modalwin = document.createElement('div')\n    this.modalwin.classList.add('modal-window')\n\n    this.header = document.createElement('div')\n    this.header.classList.add('modal-header')\n\n    this.content = document.createElement('div')\n    this.content.classList.add('modal-content')\n\n    this.footer = document.createElement('div')\n    this.footer.classList.add('modal-footer')\n\n    this.closebtn = document.createElement('input')\n    this.closebtn.type = 'button'\n    this.closebtn.classList.add('modal-closebtn')\n    this.closebtn.value = 'Sulje'\n\n    this.footer.appendChild(this.closebtn)\n    this.modalwin.appendChild(this.header)\n    this.modalwin.appendChild(this.content)\n    this.modalwin.appendChild(this.footer)\n    this.modalbg.appendChild(this.modalwin)\n\n    this.show = function(){\n        _this.visible = true\n        _this.modalbg.style.visibility = 'visible'\n    }\n\n    this.hide = function(){\n        _this.visible = false\n        _this.modalbg.style.visibility = 'hidden'\n    }\n\n    this.toggle = function(){\n        _this.visible = !_this.visible\n\n        if(_this.visible){\n            _this.show()\n        }else{\n            _this.hide()\n        }\n\n    }\n\n    this.setContent = function(obj){\n\n        if(obj.hasOwnProperty('header')){\n            _this.header.innerHTML = obj.header\n        }\n        if(obj.hasOwnProperty('content')){\n            _this.content.innerHTML = obj.content\n        }\n\n    }\n\n    this.appendContent = function(obj){\n\n        if(typeof(obj) == 'object'){\n            if(obj.hasOwnProperty('content')){\n                _this.content.innerHTML += obj.content\n            }\n        }else{\n            _this.content.innerHTML += obj\n        }\n\n    }\n\n    this.appendElmToContent = function(elm){\n        _this.content.appendChild(elm)\n    }\n\n    this.modalbg.addEventListener('mousedown', function(evt){\n        if(evt.target.classList.contains('modal-bg')){\n            _this.hide()\n        }\n    })\n\n    this.closebtn.addEventListener('mousedown', function(evt){\n        _this.hide()\n    })\n\n    container.appendChild(this.modalbg)\n\n}",
+      "start": 1534,
+      "end": 3802,
+      "loc": {
+        "start": {
+          "line": 75,
+          "column": 0
+        },
+        "end": {
+          "line": 166,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": "var modalwin = new ModalWin()",
+      "start": 3804,
+      "end": 3835,
+      "loc": {
+        "start": {
+          "line": 168,
+          "column": 0
+        },
+        "end": {
+          "line": 168,
+          "column": 31
+        }
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": "CommentBlock",
+      "value": "\nclass UiElement{\n\n    constructor(){\n        this.type = \"uielm\"\n        this.disabled = false\n        this.elm\n        this.visible = true\n    }\n\n    show(){\n        this.visible = true\n        this.elm.style.visibility = 'visible'        \n    }\n\n    hide(){\n        this.visible = false\n        this.elm.style.visibility = 'hidden'\n    }\n\n    toggle(){\n\n    }\n\n    setContent(){\n\n    }\n\n    appendContent(){\n\n    }\n\n    export(){\n\n    }\n\n}\n\nclass ModalWin extends UiElement(){\n\n    constructor(){\n        super()\n\n        this.modalbg = document.createElement('div')\n        this.modalbg.classList.add('modal-bg')\n        this.modalwin = document.createElement('div')\n        this.modalwin.classList.add('modal-window')\n        this.header = document.createElement('div')\n        this.header.classList.add('modal-header')\n        this.content = document.createElement('div')\n        this.content.classList.add('modal-content')\n        this.footer = document.createElement('div')\n        this.footer.classList.add('modal-footer')\n        this.closebtn = document.createElement('input')\n        this.closebtn.type = 'button'\n        this.closebtn.classList.add('modal-closebtn')\n        this.closebtn.value = 'Sulje'\n    \n        this.footer.appendChild(this.closebtn)\n        this.modalwin.appendChild(this.header)\n        this.modalwin.appendChild(this.content)\n        this.modalwin.appendChild(this.footer)\n        this.modalbg.appendChild(this.modalwin)\n\n        this.elm = this.modalbg\n    }\n\n}",
+      "start": 0,
+      "end": 1505,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 68,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n*   ModalWindow\n*\n*",
+      "start": 1507,
+      "end": 1532,
+      "loc": {
+        "start": {
+          "line": 70,
+          "column": 0
+        },
+        "end": {
+          "line": 73,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "\nfunction ModalWindow(container){\n    var _this = this\n    this.visible = false\n\n    this.modalbg = document.createElement('div')\n    this.modalbg.classList.add('modal-bg')\n\n    this.modalwin = document.createElement('div')\n    this.modalwin.classList.add('modal-window')\n\n    this.header = document.createElement('div')\n    this.header.classList.add('modal-header')\n\n    this.content = document.createElement('div')\n    this.content.classList.add('modal-content')\n\n    this.footer = document.createElement('div')\n    this.footer.classList.add('modal-footer')\n\n    this.closebtn = document.createElement('input')\n    this.closebtn.type = 'button'\n    this.closebtn.classList.add('modal-closebtn')\n    this.closebtn.value = 'Sulje'\n\n    this.footer.appendChild(this.closebtn)\n    this.modalwin.appendChild(this.header)\n    this.modalwin.appendChild(this.content)\n    this.modalwin.appendChild(this.footer)\n    this.modalbg.appendChild(this.modalwin)\n\n    this.show = function(){\n        _this.visible = true\n        _this.modalbg.style.visibility = 'visible'\n    }\n\n    this.hide = function(){\n        _this.visible = false\n        _this.modalbg.style.visibility = 'hidden'\n    }\n\n    this.toggle = function(){\n        _this.visible = !_this.visible\n\n        if(_this.visible){\n            _this.show()\n        }else{\n            _this.hide()\n        }\n\n    }\n\n    this.setContent = function(obj){\n\n        if(obj.hasOwnProperty('header')){\n            _this.header.innerHTML = obj.header\n        }\n        if(obj.hasOwnProperty('content')){\n            _this.content.innerHTML = obj.content\n        }\n\n    }\n\n    this.appendContent = function(obj){\n\n        if(typeof(obj) == 'object'){\n            if(obj.hasOwnProperty('content')){\n                _this.content.innerHTML += obj.content\n            }\n        }else{\n            _this.content.innerHTML += obj\n        }\n\n    }\n\n    this.appendElmToContent = function(elm){\n        _this.content.appendChild(elm)\n    }\n\n    this.modalbg.addEventListener('mousedown', function(evt){\n        if(evt.target.classList.contains('modal-bg')){\n            _this.hide()\n        }\n    })\n\n    this.closebtn.addEventListener('mousedown', function(evt){\n        _this.hide()\n    })\n\n    container.appendChild(this.modalbg)\n\n}",
+      "start": 1534,
+      "end": 3802,
+      "loc": {
+        "start": {
+          "line": 75,
+          "column": 0
+        },
+        "end": {
+          "line": 166,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": "var modalwin = new ModalWin()",
+      "start": 3804,
+      "end": 3835,
+      "loc": {
+        "start": {
+          "line": 168,
+          "column": 0
+        },
+        "end": {
+          "line": 168,
+          "column": 31
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "eof",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 3835,
+      "end": 3835,
+      "loc": {
+        "start": {
+          "line": 168,
+          "column": 31
+        },
+        "end": {
+          "line": 168,
+          "column": 31
+        }
+      }
+    }
+  ]
+}

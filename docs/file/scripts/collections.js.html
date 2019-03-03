@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">scripts/collections.js | gg_domtest</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  </ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">scripts/collections.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">class Group{
+
+    constructor(){
+        this.list = []
+        this.objects = new Map()
+        this.selectedObject
+    }
+
+    add(obj){
+        this.list.push(obj.id)
+        this.objects.set(obj.id, obj)
+    }
+
+    selectObject(id){
+        this.selectedObject = this.objects.get(id)
+        return this.selectedObject
+    }
+
+    deleteFromList(id){
+        for(var i = 0; i&lt;this.list.length; i++){
+            if(this.list[i] == id){
+                this.list.splice(i,1)
+                return this.list
+            }
+        }
+    }
+
+    export(){
+        var arr = []
+
+        this.objects.forEach(function(obj,key,map){
+            if(!obj.meta.disabled){
+                arr.push(obj.export())
+            }
+        })
+
+        return arr
+    }
+
+}
+
+class Team extends Group{
+
+    constructor(id, name, ai){
+        super()
+        
+        this.id = id
+        this.name = name 
+        this.ai = ai
+    }
+
+    setName(name){
+        this.name = name
+        return name
+    }
+
+    toggleAI(set){
+
+        if(set !== undefined){
+            if(set){
+                this.ai = true
+            }else{
+                this.ai = false
+            }
+        }else{
+            this.ai = !this.ai
+        }
+
+        if(this.ai){
+            doAIsequence()
+        }
+
+        return this.ai
+    }
+
+}
+
+class Obstacles extends Group{
+
+    constructor(obj){
+        super()
+
+        this.name = &apos;obs&apos;
+        this.info = obj
+    }
+
+}
+
+/**********************
+*    Collection
+*
+*********************
+
+var Collection = function(){
+    var this = this
+
+    this.list = []
+    this.objects = new Map()
+    this.selectedObject
+    this.name = &apos;collection&apos;
+
+    this.add = function(obj){
+        obj.id = this.name+&apos;&apos;+this.list.length
+        this.list.push(obj.id)
+        this.objects.set(obj.id, obj)
+    }
+
+    this.selectObject = function(id){
+        this.selectedObject = this.objects.get(&apos;id&apos;)
+        return this.selectedObject
+    }
+
+    this.deleteFromList = function(id){
+        for(var i = 0; i&lt;this.list.length; i++){
+            if(this.list[i] == id){
+                this.list[i].splice(i,1)
+                break
+            }
+        }
+    }
+
+    this.export = function(){
+        var arr = []
+
+        this.objects.forEach(function(obj,key,map){
+            if(!obj.meta.disabled){
+                arr.push(obj.export())
+            }
+        })
+
+        return arr
+    }
+
+}
+
+var Obstacles = function(obj){
+    Collection.call(this)
+    var this = this;
+    this.name = &apos;obs&apos;
+    this.info = obj
+}
+
+var Team = function(obj){
+    Collection.call(this)
+    var this = this;
+    this.info = obj
+    this.ai = false
+
+    this.toggleAI = function(set){
+
+        if(set !== undefined){
+            if(set){
+                this.ai = true
+            }else{
+                this.ai = false
+            }
+        }else{
+            this.ai = !this.ai
+        }
+
+        if(this.ai){
+            doAIsequence()
+        }
+
+        return this.ai
+    }
+*/
+    /*this_team.unitlist = []
+    this_team.units = new Map()
+    this_team.dead_units = new Map()
+
+    this.addUnit = function(obj){
+        this_team.unitlist.push(obj.id)
+        this_team.units.set(obj.id, obj)
+    }
+
+    this.removeUnit = function(obj){}
+
+    this.export = function(){
+
+        this_team.units.forEach(function(value,key,map){
+            if(!value.meta.disabled){
+                console.log(value)
+            }
+        })
+
+    }
+*/
+/*    
+    this.killUnit = function(Unit){
+        var unitToKill;
+
+        for(i=0; i&lt;this_team.unitlist.length;i++){
+            unitToKill = this_team.unitlist[i]
+
+            if(unitToKill.id == Unit.id){
+                this_team.unitlist.splice(i, 1)
+                break;
+            }
+        }
+
+        this_team.dead_units.set(Unit.id, Unit)
+        this_team.units.delete(Unit.id)
+
+    }
+
+    this.populateTeam = function(roster){
+        for(i = 0; i&lt;roster.length; i++){
+            this_team.addUnit(new unit(roster[i][&quot;race&quot;], roster[i][&quot;subtype&quot;], this_team, i)) 
+        }
+    }
+*/
+/*
+    this.placeUnit = function(unit, targetx, targety){
+
+        unit.setPos(targetx, targety)
+        this_team.units.set(unit.id, this_team.unitlist[i])
+
+    }
+*/
+/*
+    this.placeUnits = function(placement_type, set_id){
+        var randnum = 0;
+        var randtile = 0;
+
+        if(placement_type == &quot;pre&quot;){
+            this_team.unitlist[0].setPos(0,0)
+        }
+        else if(placement_type == &quot;random&quot;){
+
+                for(i = 0; i&lt;this_team.unitlist.length; i++){
+
+                    document.getElementById(&apos;gamearea&apos;).appendChild(this_team.unitlist[i].dom);
+                    randnum = Math.floor(Math.random() * board.unoccupied_tiles.length);
+                    randtile = board.unoccupied_tiles[randnum];
+
+                    this_team.unitlist[i].setPos(randtile.x, randtile.y);
+                    this_team.units.set(this_team.unitlist[i].id, this_team.unitlist[i]);
+                    board.unoccupied_tiles.splice(randnum, 1);
+                }
+            
+        }
+    }
+
+}*/
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

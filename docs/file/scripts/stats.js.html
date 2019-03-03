@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">scripts/stats.js | gg_domtest</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  </ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">scripts/stats.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">var human_names = [&quot;George&quot;, &quot;Paul&quot;, &quot;Joel&quot;, &quot;Margaret&quot;, &quot;Simo&quot;, &quot;Timo&quot;, &quot;Hasan&quot;, &quot;Alex&quot;, &quot;Tommy&quot;, &quot;Jarmo&quot;];
+
+function chooseName(namearr){
+    return namearr[Math.floor(Math.random()*namearr.length)];
+}
+
+
+
+/***
+*   Heroes
+*
+***/
+function HeroStats(cls, sex){
+
+    var _this = this
+
+    this.stats = {
+        &quot;list&quot;: [&quot;war&quot;,&quot;wiz&quot;,&quot;pal&quot;],
+        &quot;war&quot;: {
+            &quot;female&quot;: {},
+            &quot;male&quot;: {
+                &quot;meta&quot;: {
+                    &quot;disabled&quot;: false,
+                    &quot;type&quot;: &quot;Hero&quot;,          
+                    &quot;sheet-cls&quot;: &quot;hero_main_war_male&quot;,
+                    &quot;sheet-size&quot;: 256,
+                    &quot;width&quot;: 64,
+                    &quot;height&quot;: 128,
+                    &quot;flipped&quot;: 1             
+                },
+                &quot;stats&quot;: {
+                    &quot;alive&quot;: true,
+                    &quot;lvl&quot;: 0,
+                    &quot;lvl_max&quot;: 3,
+                    &quot;lvl_prog&quot;:[{&quot;dmg&quot;:11},{&quot;hp_max&quot;:53},{&quot;dex&quot;:7}],
+                    &quot;exp&quot;: 0,
+                    &quot;exp_max&quot;: [100,200,300],
+                    &quot;name&quot;: &quot;unit name&quot;,
+                    &quot;moves&quot;: 2,
+                    &quot;moves_max&quot;: 2,
+                    &quot;hp&quot;: 50,
+                    &quot;hp_max&quot;: 50,
+                    &quot;mp&quot;: 0,
+                    &quot;mp_max&quot;: 0,
+                    &quot;def&quot;: 0,
+                    &quot;dmg&quot;: 10,
+                    &quot;dex&quot;: 5,
+                    &quot;agi&quot;: 2,
+                    &quot;int&quot;: 10,
+                    &quot;range&quot;: 1.5,
+                    &quot;height&quot;: 1 
+                }
+            }       
+        }
+    }
+
+    this.getStats = function(cls, sex){
+        return _this.stats[cls][sex]
+    }
+    
+}
+
+/***
+*   Units
+*
+***/
+
+function UnitStats(){
+    var _this = this
+
+    this.stats = {
+        &quot;human&quot;:{
+            &quot;military&quot;:{
+                &quot;militia&quot;:{
+                    &quot;meta&quot;: {
+                        &quot;disabled&quot;: false,
+                        &quot;type&quot;: &quot;Human&quot;,
+                        &quot;subtype&quot;: &quot;Militia&quot;,            
+                        &quot;cls&quot;: &quot;militia&quot;,
+                        &quot;width&quot;: 64,
+                        &quot;height&quot;: 128,
+                        &quot;flipped&quot;: 1,
+                        &quot;imgpoint&quot;: {&quot;x&quot;:0, &quot;y&quot;:64},
+                        &quot;midpoint&quot;: {&quot;x&quot;:32, &quot;y&quot;:64}
+                    },
+                    &quot;stats&quot;: {
+                        &quot;alive&quot;: true,
+                        &quot;lvl&quot;: 0,
+                        &quot;lvl_max&quot;: 3,
+                        &quot;lvl_prog&quot;:[{&quot;dmg&quot;:11},{&quot;hp_max&quot;:53},{&quot;dex&quot;:7}],
+                        &quot;exp&quot;: 0,
+                        &quot;exp_max&quot;: [100,200,300],
+                        &quot;name&quot;: &quot;unit name&quot;,
+                        &quot;moves&quot;: 2,
+                        &quot;moves_max&quot;: 2,
+                        &quot;hp&quot;: 50,
+                        &quot;hp_max&quot;: 50,
+                        &quot;mp&quot;: 0,
+                        &quot;mp_max&quot;: 0,
+                        &quot;def&quot;: 0,
+                        &quot;dmg&quot;: 10,
+                        &quot;dex&quot;: 5,
+                        &quot;agi&quot;: 2,
+                        &quot;int&quot;: 10,
+                        &quot;range&quot;: 1.5,
+                        &quot;height&quot;: 1 
+                    }
+    
+                },
+                &quot;herbalist&quot;:{
+                    &quot;meta&quot;: {
+                        &quot;disabled&quot;: false,
+                        &quot;type&quot;: &quot;Human&quot;,
+                        &quot;subtype&quot;: &quot;Herbalist&quot;,            
+                        &quot;cls&quot;: &quot;herbalist&quot;,
+                        &quot;width&quot;: 64,
+                        &quot;height&quot;: 128,
+                        &quot;flipped&quot;: 1,
+                        &quot;imgpoint&quot;: {&quot;x&quot;:0, &quot;y&quot;:64},
+                        &quot;midpoint&quot;: {&quot;x&quot;:32, &quot;y&quot;:64}
+                    },
+                    &quot;stats&quot;: {
+                        &quot;alive&quot;: true,
+                        &quot;lvl&quot;: 0,
+                        &quot;lvl_max&quot;: 3,
+                        &quot;lvl_prog&quot;:[{&quot;hp_max&quot;:55},{&quot;dmg&quot;:15},{&quot;agi&quot;:7}],
+                        &quot;exp&quot;: 0,
+                        &quot;exp_max&quot;: [100,200,300],
+                        &quot;name&quot;: &quot;unit name&quot;,
+                        &quot;moves&quot;: 2,
+                        &quot;moves_max&quot;: 2,
+                        &quot;hp&quot;: 50,
+                        &quot;hp_max&quot;: 50,
+                        &quot;mp&quot;: 0,
+                        &quot;mp_max&quot;: 0,
+                        &quot;def&quot;: 0,
+                        &quot;dmg&quot;: 12,
+                        &quot;dex&quot;: 6,
+                        &quot;agi&quot;: 5,
+                        &quot;int&quot;: 10,
+                        &quot;range&quot;: 1.5,
+                        &quot;height&quot;: 1 
+                    }
+    
+                },        
+                &quot;woodsman&quot;:{
+                    &quot;meta&quot;: {
+                        &quot;disabled&quot;: false,
+                        &quot;type&quot;: &quot;Human&quot;,
+                        &quot;subtype&quot;: &quot;Woodsman&quot;,            
+                        &quot;cls&quot;: &quot;woodsman&quot;,
+                        &quot;width&quot;: 64,
+                        &quot;height&quot;: 128,
+                        &quot;flipped&quot;: 1,
+                        &quot;imgpoint&quot;: {&quot;x&quot;:0, &quot;y&quot;:64},
+                        &quot;midpoint&quot;: {&quot;x&quot;:32, &quot;y&quot;:64}
+                    },
+                    &quot;stats&quot;: {
+                        &quot;alive&quot;: true,
+                        &quot;lvl&quot;: 0,
+                        &quot;lvl_max&quot;: 3,
+                        &quot;lvl_prog&quot;:[{&quot;hp_max&quot;:55},{&quot;dmg&quot;:15},{&quot;agi&quot;:7}],
+                        &quot;exp&quot;: 0,
+                        &quot;exp_max&quot;: [100,200,300],
+                        &quot;name&quot;: &quot;unit name&quot;,
+                        &quot;moves&quot;: 2,
+                        &quot;moves_max&quot;: 2,
+                        &quot;hp&quot;: 50,
+                        &quot;hp_max&quot;: 50,
+                        &quot;mp&quot;: 0,
+                        &quot;mp_max&quot;: 0,
+                        &quot;def&quot;: 0,
+                        &quot;dmg&quot;: 12,
+                        &quot;dex&quot;: 6,
+                        &quot;agi&quot;: 5,
+                        &quot;int&quot;: 10,
+                        &quot;range&quot;: 1,
+                        &quot;height&quot;: 1 
+                    }
+    
+                },
+                &quot;archer&quot;:{
+                    &quot;meta&quot;: {
+                        &quot;disabled&quot;: false,
+                        &quot;type&quot;: &quot;Human&quot;,
+                        &quot;subtype&quot;: &quot;Archer&quot;,            
+                        &quot;cls&quot;: &quot;archer&quot;,
+                        &quot;width&quot;: 64,
+                        &quot;height&quot;: 128,
+                        &quot;flipped&quot;: 1,
+                        &quot;imgpoint&quot;: {&quot;x&quot;:0, &quot;y&quot;:64},
+                        &quot;midpoint&quot;: {&quot;x&quot;:32, &quot;y&quot;:64}
+                    },
+                    &quot;stats&quot;: {
+                        &quot;alive&quot;: true,
+                        &quot;lvl&quot;: 0,
+                        &quot;lvl_max&quot;: 3,
+                        &quot;lvl_prog&quot;:[{&quot;hp_max&quot;:55},{&quot;dmg&quot;:15},{&quot;agi&quot;:7}],
+                        &quot;exp&quot;: 0,
+                        &quot;exp_max&quot;: [100,200,300],
+                        &quot;name&quot;: &quot;unit name&quot;,
+                        &quot;moves&quot;: 2,
+                        &quot;moves_max&quot;: 2,
+                        &quot;hp&quot;: 50,
+                        &quot;hp_max&quot;: 50,
+                        &quot;mp&quot;: 0,
+                        &quot;mp_max&quot;: 0,
+                        &quot;def&quot;: 0,
+                        &quot;dmg&quot;: 12,
+                        &quot;dex&quot;: 6,
+                        &quot;agi&quot;: 5,
+                        &quot;int&quot;: 10,
+                        &quot;range&quot;: 3.5,
+                        &quot;height&quot;: 1 
+                    }
+    
+                },
+                &quot;soldier&quot;:{
+                    &quot;meta&quot;: {
+                        &quot;disabled&quot;: false,
+                        &quot;type&quot;: &quot;Human&quot;,
+                        &quot;subtype&quot;: &quot;Soldier&quot;,            
+                        &quot;cls&quot;: &quot;soldier&quot;,
+                        &quot;width&quot;: 64,
+                        &quot;height&quot;: 128,
+                        &quot;flipped&quot;: 1,
+                        &quot;imgpoint&quot;: {&quot;x&quot;:0, &quot;y&quot;:64},
+                        &quot;midpoint&quot;: {&quot;x&quot;:32, &quot;y&quot;:64}
+                    },
+                    &quot;stats&quot;: {
+                        &quot;alive&quot;: true,
+                        &quot;lvl&quot;: 0,
+                        &quot;lvl_max&quot;: 3,
+                        &quot;lvl_prog&quot;:[{&quot;hp_max&quot;:55},{&quot;dmg&quot;:15},{&quot;agi&quot;:7}],
+                        &quot;exp&quot;: 0,
+                        &quot;exp_max&quot;: [100,200,300],
+                        &quot;name&quot;: &quot;unit name&quot;,
+                        &quot;moves&quot;: 2,
+                        &quot;moves_max&quot;: 2,
+                        &quot;hp&quot;: 50,
+                        &quot;hp_max&quot;: 50,
+                        &quot;mp&quot;: 0,
+                        &quot;mp_max&quot;: 0,
+                        &quot;def&quot;: 0,
+                        &quot;dmg&quot;: 12,
+                        &quot;dex&quot;: 6,
+                        &quot;agi&quot;: 5,
+                        &quot;int&quot;: 10,
+                        &quot;range&quot;: 1,
+                        &quot;height&quot;: 1 
+                    }
+    
+                },
+                &quot;pikeman&quot;:{
+                    &quot;meta&quot;: {
+                        &quot;disabled&quot;: false,
+                        &quot;type&quot;: &quot;Human&quot;,
+                        &quot;subtype&quot;: &quot;Pikeman&quot;,            
+                        &quot;cls&quot;: &quot;pikeman&quot;,
+                        &quot;width&quot;: 64,
+                        &quot;height&quot;: 128,
+                        &quot;flipped&quot;: 1,
+                        &quot;imgpoint&quot;: {&quot;x&quot;:0, &quot;y&quot;:64},
+                        &quot;midpoint&quot;: {&quot;x&quot;:32, &quot;y&quot;:64}
+                    },
+                    &quot;stats&quot;: {
+                        &quot;alive&quot;: true,
+                        &quot;lvl&quot;: 0,
+                        &quot;lvl_max&quot;: 3,
+                        &quot;lvl_prog&quot;:[{&quot;hp_max&quot;:55},{&quot;dmg&quot;:15},{&quot;agi&quot;:7}],
+                        &quot;exp&quot;: 0,
+                        &quot;exp_max&quot;: [100,200,300],
+                        &quot;name&quot;: &quot;unit name&quot;,
+                        &quot;moves&quot;: 2,
+                        &quot;moves_max&quot;: 2,
+                        &quot;hp&quot;: 50,
+                        &quot;hp_max&quot;: 50,
+                        &quot;mp&quot;: 0,
+                        &quot;mp_max&quot;: 0,
+                        &quot;def&quot;: 0,
+                        &quot;dmg&quot;: 12,
+                        &quot;dex&quot;: 6,
+                        &quot;agi&quot;: 5,
+                        &quot;int&quot;: 10,
+                        &quot;range&quot;: 1.5,
+                        &quot;height&quot;: 1 
+                    }
+    
+                },
+                &quot;priest&quot;:{
+                    &quot;meta&quot;: {
+                        &quot;disabled&quot;: false,
+                        &quot;type&quot;: &quot;Human&quot;,
+                        &quot;subtype&quot;: &quot;Priest&quot;,            
+                        &quot;cls&quot;: &quot;priest&quot;,
+                        &quot;width&quot;: 64,
+                        &quot;height&quot;: 128,
+                        &quot;flipped&quot;: 1,
+                        &quot;imgpoint&quot;: {&quot;x&quot;:0, &quot;y&quot;:64},
+                        &quot;midpoint&quot;: {&quot;x&quot;:32, &quot;y&quot;:64}
+                    },
+                    &quot;stats&quot;: {
+                        &quot;alive&quot;: true,
+                        &quot;lvl&quot;: 0,
+                        &quot;lvl_max&quot;: 3,
+                        &quot;lvl_prog&quot;:[{&quot;hp_max&quot;:55},{&quot;dmg&quot;:15},{&quot;agi&quot;:7}],
+                        &quot;exp&quot;: 0,
+                        &quot;exp_max&quot;: [100,200,300],
+                        &quot;name&quot;: &quot;unit name&quot;,
+                        &quot;moves&quot;: 2,
+                        &quot;moves_max&quot;: 2,
+                        &quot;hp&quot;: 50,
+                        &quot;hp_max&quot;: 50,
+                        &quot;mp&quot;: 0,
+                        &quot;mp_max&quot;: 0,
+                        &quot;def&quot;: 0,
+                        &quot;dmg&quot;: 12,
+                        &quot;dex&quot;: 6,
+                        &quot;agi&quot;: 5,
+                        &quot;int&quot;: 10,
+                        &quot;range&quot;: 3.5,
+                        &quot;height&quot;: 1 
+                    }
+    
+                },
+                &quot;cavalry&quot;:{
+                    &quot;meta&quot;: {
+                        &quot;disabled&quot;: false,
+                        &quot;type&quot;: &quot;Human&quot;,
+                        &quot;subtype&quot;: &quot;Cavalry&quot;,            
+                        &quot;cls&quot;: &quot;cavalry&quot;,
+                        &quot;width&quot;: 64,
+                        &quot;height&quot;: 128,
+                        &quot;flipped&quot;: 1,
+                        &quot;imgpoint&quot;: {&quot;x&quot;:0, &quot;y&quot;:64},
+                        &quot;midpoint&quot;: {&quot;x&quot;:32, &quot;y&quot;:64}
+                    },
+                    &quot;stats&quot;: {
+                        &quot;alive&quot;: true,
+                        &quot;lvl&quot;: 0,
+                        &quot;lvl_max&quot;: 3,
+                        &quot;lvl_prog&quot;:[{&quot;hp_max&quot;:55},{&quot;dmg&quot;:15},{&quot;agi&quot;:7}],
+                        &quot;exp&quot;: 0,
+                        &quot;exp_max&quot;: [100,200,300],
+                        &quot;name&quot;: &quot;unit name&quot;,
+                        &quot;moves&quot;: 3,
+                        &quot;moves_max&quot;: 3,
+                        &quot;hp&quot;: 50,
+                        &quot;hp_max&quot;: 50,
+                        &quot;mp&quot;: 0,
+                        &quot;mp_max&quot;: 0,
+                        &quot;def&quot;: 0,
+                        &quot;dmg&quot;: 12,
+                        &quot;dex&quot;: 6,
+                        &quot;agi&quot;: 5,
+                        &quot;int&quot;: 10,
+                        &quot;range&quot;: 1.5,
+                        &quot;height&quot;: 1 
+                    }
+    
+                }             
+            }
+        },
+        &quot;undead&quot;:{
+            &quot;legion&quot;:{
+                &quot;zombie&quot;:{
+                    &quot;meta&quot;: {
+                        &quot;disabled&quot;: false,
+                        &quot;type&quot;: &quot;Undead&quot;,
+                        &quot;subtype&quot;: &quot;Legion&quot;,            
+                        &quot;cls&quot;: &quot;&quot;,
+                        &quot;width&quot;: 64,
+                        &quot;height&quot;: 128,
+                        &quot;flipped&quot;: 1,
+                        &quot;imgpoint&quot;: {&quot;x&quot;:0, &quot;y&quot;:64},
+                        &quot;midpoint&quot;: {&quot;x&quot;:32, &quot;y&quot;:64}
+                    },
+                    &quot;stats&quot;: {
+                        &quot;alive&quot;: true,
+                        &quot;lvl&quot;: 0,
+                        &quot;lvl_max&quot;: 3,
+                        &quot;lvl_prog&quot;:[{&quot;dmg&quot;:11},{&quot;hp_max&quot;:53},{&quot;dex&quot;:7}],
+                        &quot;exp&quot;: 0,
+                        &quot;exp_max&quot;: [100,200,300],
+                        &quot;name&quot;: &quot;unit name&quot;,
+                        &quot;moves&quot;: 2,
+                        &quot;moves_max&quot;: 2,
+                        &quot;hp&quot;: 50,
+                        &quot;hp_max&quot;: 50,
+                        &quot;mp&quot;: 0,
+                        &quot;mp_max&quot;: 0,
+                        &quot;def&quot;: 0,
+                        &quot;dmg&quot;: 10,
+                        &quot;dex&quot;: 5,
+                        &quot;agi&quot;: 2,
+                        &quot;int&quot;: 10,
+                        &quot;range&quot;: 1.5,
+                        &quot;height&quot;: 1 
+                    }
+                },
+                &quot;bombie&quot;:{
+                    &quot;meta&quot;: {
+                        &quot;disabled&quot;: false,
+                        &quot;type&quot;: &quot;Undead&quot;,
+                        &quot;subtype&quot;: &quot;Legion&quot;,            
+                        &quot;cls&quot;: &quot;&quot;,
+                        &quot;width&quot;: 64,
+                        &quot;height&quot;: 128,
+                        &quot;flipped&quot;: 1,
+                        &quot;imgpoint&quot;: {&quot;x&quot;:0, &quot;y&quot;:64},
+                        &quot;midpoint&quot;: {&quot;x&quot;:32, &quot;y&quot;:64}
+                    },
+                    &quot;stats&quot;: {
+                        &quot;alive&quot;: true,
+                        &quot;lvl&quot;: 0,
+                        &quot;lvl_max&quot;: 3,
+                        &quot;lvl_prog&quot;:[{&quot;hp_max&quot;:55},{&quot;dmg&quot;:15},{&quot;agi&quot;:7}],
+                        &quot;exp&quot;: 0,
+                        &quot;exp_max&quot;: [100,200,300],
+                        &quot;name&quot;: &quot;unit name&quot;,
+                        &quot;moves&quot;: 2,
+                        &quot;moves_max&quot;: 2,
+                        &quot;hp&quot;: 50,
+                        &quot;hp_max&quot;: 50,
+                        &quot;mp&quot;: 0,
+                        &quot;mp_max&quot;: 0,
+                        &quot;def&quot;: 0,
+                        &quot;dmg&quot;: 12,
+                        &quot;dex&quot;: 6,
+                        &quot;agi&quot;: 5,
+                        &quot;int&quot;: 10,
+                        &quot;range&quot;: 1.5,
+                        &quot;height&quot;: 1 
+                    }
+    
+                },        
+                &quot;bambie&quot;:{
+                    &quot;meta&quot;: {
+                        &quot;disabled&quot;: false,
+                        &quot;type&quot;: &quot;Undead&quot;,
+                        &quot;subtype&quot;: &quot;Legion&quot;,            
+                        &quot;cls&quot;: &quot;&quot;,
+                        &quot;width&quot;: 64,
+                        &quot;height&quot;: 128,
+                        &quot;flipped&quot;: 1,
+                        &quot;imgpoint&quot;: {&quot;x&quot;:0, &quot;y&quot;:64},
+                        &quot;midpoint&quot;: {&quot;x&quot;:32, &quot;y&quot;:64}
+                    },
+                    &quot;stats&quot;: {
+                        &quot;alive&quot;: true,
+                        &quot;lvl&quot;: 0,
+                        &quot;lvl_max&quot;: 3,
+                        &quot;lvl_prog&quot;:[{&quot;hp_max&quot;:55},{&quot;dmg&quot;:15},{&quot;agi&quot;:7}],
+                        &quot;exp&quot;: 0,
+                        &quot;exp_max&quot;: [100,200,300],
+                        &quot;name&quot;: &quot;unit name&quot;,
+                        &quot;moves&quot;: 2,
+                        &quot;moves_max&quot;: 2,
+                        &quot;hp&quot;: 50,
+                        &quot;hp_max&quot;: 50,
+                        &quot;mp&quot;: 0,
+                        &quot;mp_max&quot;: 0,
+                        &quot;def&quot;: 0,
+                        &quot;dmg&quot;: 12,
+                        &quot;dex&quot;: 6,
+                        &quot;agi&quot;: 5,
+                        &quot;int&quot;: 10,
+                        &quot;range&quot;: 1.5,
+                        &quot;height&quot;: 1 
+                    }
+    
+                },
+                &quot;undead1&quot;:{
+                    &quot;meta&quot;: {
+                        &quot;disabled&quot;: false,
+                        &quot;type&quot;: &quot;Undead&quot;,
+                        &quot;subtype&quot;: &quot;Legion&quot;,            
+                        &quot;cls&quot;: &quot;&quot;,
+                        &quot;width&quot;: 64,
+                        &quot;height&quot;: 128,
+                        &quot;flipped&quot;: 1,
+                        &quot;imgpoint&quot;: {&quot;x&quot;:0, &quot;y&quot;:64},
+                        &quot;midpoint&quot;: {&quot;x&quot;:32, &quot;y&quot;:64}
+                    },
+                    &quot;stats&quot;: {
+                        &quot;alive&quot;: true,
+                        &quot;lvl&quot;: 0,
+                        &quot;lvl_max&quot;: 3,
+                        &quot;lvl_prog&quot;:[{&quot;hp_max&quot;:55},{&quot;dmg&quot;:15},{&quot;agi&quot;:7}],
+                        &quot;exp&quot;: 0,
+                        &quot;exp_max&quot;: [100,200,300],
+                        &quot;name&quot;: &quot;unit name&quot;,
+                        &quot;moves&quot;: 2,
+                        &quot;moves_max&quot;: 2,
+                        &quot;hp&quot;: 50,
+                        &quot;hp_max&quot;: 50,
+                        &quot;mp&quot;: 0,
+                        &quot;mp_max&quot;: 0,
+                        &quot;def&quot;: 0,
+                        &quot;dmg&quot;: 12,
+                        &quot;dex&quot;: 6,
+                        &quot;agi&quot;: 5,
+                        &quot;int&quot;: 10,
+                        &quot;range&quot;: 3.5,
+                        &quot;height&quot;: 1 
+                    }
+    
+                },
+                &quot;undead2&quot;:{
+                    &quot;meta&quot;: {
+                        &quot;disabled&quot;: false,
+                        &quot;type&quot;: &quot;Undead&quot;,
+                        &quot;subtype&quot;: &quot;Soldier&quot;,            
+                        &quot;cls&quot;: &quot;&quot;,
+                        &quot;width&quot;: 64,
+                        &quot;height&quot;: 128,
+                        &quot;flipped&quot;: 1,
+                        &quot;imgpoint&quot;: {&quot;x&quot;:0, &quot;y&quot;:64},
+                        &quot;midpoint&quot;: {&quot;x&quot;:32, &quot;y&quot;:64}
+                    },
+                    &quot;stats&quot;: {
+                        &quot;alive&quot;: true,
+                        &quot;lvl&quot;: 0,
+                        &quot;lvl_max&quot;: 3,
+                        &quot;lvl_prog&quot;:[{&quot;hp_max&quot;:55},{&quot;dmg&quot;:15},{&quot;agi&quot;:7}],
+                        &quot;exp&quot;: 0,
+                        &quot;exp_max&quot;: [100,200,300],
+                        &quot;name&quot;: &quot;unit name&quot;,
+                        &quot;moves&quot;: 2,
+                        &quot;moves_max&quot;: 2,
+                        &quot;hp&quot;: 50,
+                        &quot;hp_max&quot;: 50,
+                        &quot;mp&quot;: 0,
+                        &quot;mp_max&quot;: 0,
+                        &quot;def&quot;: 0,
+                        &quot;dmg&quot;: 12,
+                        &quot;dex&quot;: 6,
+                        &quot;agi&quot;: 5,
+                        &quot;int&quot;: 10,
+                        &quot;range&quot;: 1,
+                        &quot;height&quot;: 1 
+                    }
+    
+                },
+                &quot;undead3&quot;:{
+                    &quot;meta&quot;: {
+                        &quot;disabled&quot;: false,
+                        &quot;type&quot;: &quot;Undead&quot;,
+                        &quot;subtype&quot;: &quot;Pikeman&quot;,            
+                        &quot;cls&quot;: &quot;&quot;,
+                        &quot;width&quot;: 64,
+                        &quot;height&quot;: 128,
+                        &quot;flipped&quot;: 1,
+                        &quot;imgpoint&quot;: {&quot;x&quot;:0, &quot;y&quot;:64},
+                        &quot;midpoint&quot;: {&quot;x&quot;:32, &quot;y&quot;:64}
+                    },
+                    &quot;stats&quot;: {
+                        &quot;alive&quot;: true,
+                        &quot;lvl&quot;: 0,
+                        &quot;lvl_max&quot;: 3,
+                        &quot;lvl_prog&quot;:[{&quot;hp_max&quot;:55},{&quot;dmg&quot;:15},{&quot;agi&quot;:7}],
+                        &quot;exp&quot;: 0,
+                        &quot;exp_max&quot;: [100,200,300],
+                        &quot;name&quot;: &quot;unit name&quot;,
+                        &quot;moves&quot;: 2,
+                        &quot;moves_max&quot;: 2,
+                        &quot;hp&quot;: 50,
+                        &quot;hp_max&quot;: 50,
+                        &quot;mp&quot;: 0,
+                        &quot;mp_max&quot;: 0,
+                        &quot;def&quot;: 0,
+                        &quot;dmg&quot;: 12,
+                        &quot;dex&quot;: 6,
+                        &quot;agi&quot;: 5,
+                        &quot;int&quot;: 10,
+                        &quot;range&quot;: 3.5,
+                        &quot;height&quot;: 1 
+                    }
+    
+                },
+                &quot;undead4&quot;:{
+                    &quot;meta&quot;: {
+                        &quot;disabled&quot;: false,
+                        &quot;type&quot;: &quot;Undead&quot;,
+                        &quot;subtype&quot;: &quot;Priest&quot;,            
+                        &quot;cls&quot;: &quot;&quot;,
+                        &quot;width&quot;: 64,
+                        &quot;height&quot;: 128,
+                        &quot;flipped&quot;: 1,
+                        &quot;imgpoint&quot;: {&quot;x&quot;:0, &quot;y&quot;:64},
+                        &quot;midpoint&quot;: {&quot;x&quot;:32, &quot;y&quot;:64}
+                    },
+                    &quot;stats&quot;: {
+                        &quot;alive&quot;: true,
+                        &quot;lvl&quot;: 0,
+                        &quot;lvl_max&quot;: 3,
+                        &quot;lvl_prog&quot;:[{&quot;hp_max&quot;:55},{&quot;dmg&quot;:15},{&quot;agi&quot;:7}],
+                        &quot;exp&quot;: 0,
+                        &quot;exp_max&quot;: [100,200,300],
+                        &quot;name&quot;: &quot;unit name&quot;,
+                        &quot;moves&quot;: 2,
+                        &quot;moves_max&quot;: 2,
+                        &quot;hp&quot;: 50,
+                        &quot;hp_max&quot;: 50,
+                        &quot;mp&quot;: 0,
+                        &quot;mp_max&quot;: 0,
+                        &quot;def&quot;: 0,
+                        &quot;dmg&quot;: 12,
+                        &quot;dex&quot;: 6,
+                        &quot;agi&quot;: 5,
+                        &quot;int&quot;: 10,
+                        &quot;range&quot;: 3.5,
+                        &quot;height&quot;: 1 
+                    }
+    
+                },
+                &quot;undead5&quot;:{
+                    &quot;meta&quot;: {
+                        &quot;disabled&quot;: false,
+                        &quot;type&quot;: &quot;Undead&quot;,
+                        &quot;subtype&quot;: &quot;Giant&quot;,            
+                        &quot;cls&quot;: &quot;&quot;,
+                        &quot;width&quot;: 64,
+                        &quot;height&quot;: 128,
+                        &quot;flipped&quot;: 1,
+                        &quot;imgpoint&quot;: {&quot;x&quot;:0, &quot;y&quot;:64},
+                        &quot;midpoint&quot;: {&quot;x&quot;:32, &quot;y&quot;:64}
+                    },
+                    &quot;stats&quot;: {
+                        &quot;alive&quot;: true,
+                        &quot;lvl&quot;: 0,
+                        &quot;lvl_max&quot;: 3,
+                        &quot;lvl_prog&quot;:[{&quot;hp_max&quot;:55},{&quot;dmg&quot;:15},{&quot;agi&quot;:7}],
+                        &quot;exp&quot;: 0,
+                        &quot;exp_max&quot;: [100,200,300],
+                        &quot;name&quot;: &quot;unit name&quot;,
+                        &quot;moves&quot;: 2,
+                        &quot;moves_max&quot;: 2,
+                        &quot;hp&quot;: 150,
+                        &quot;hp_max&quot;: 150,
+                        &quot;mp&quot;: 0,
+                        &quot;mp_max&quot;: 0,
+                        &quot;def&quot;: 0,
+                        &quot;dmg&quot;: 22,
+                        &quot;dex&quot;: 2,
+                        &quot;agi&quot;: 2,
+                        &quot;int&quot;: 2,
+                        &quot;range&quot;: 1.5,
+                        &quot;height&quot;: 3 
+                    }
+    
+                }             
+            }
+        }
+    }
+
+    this.getStats = function(race, faction, type){
+        return _this.stats[race][faction][type];
+    }    
+}
+
+var races = {
+    &quot;racelist&quot;: [&quot;human&quot;,&quot;undead&quot;],
+    &quot;human&quot;: {
+        &quot;name&quot;: &quot;Humans&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;factionlist&quot;: [&quot;military&quot;],
+        &quot;military&quot;: {
+            &quot;name&quot;: &quot;Human military&quot;,
+            &quot;description&quot;: &quot;Human military description&quot;,
+            &quot;sheet-cls&quot;: &quot;human_military_blue&quot;,
+            &quot;sheet-size&quot;: 256,
+            &quot;units&quot;:
+            [&quot;militia&quot;,&quot;herbalist&quot;,&quot;woodsman&quot;,
+            &quot;archer&quot;,&quot;soldier&quot;,&quot;pikeman&quot;,&quot;priest&quot;,&quot;cavalry&quot;]
+        },
+        &quot;imperium&quot;: {
+            &quot;name&quot;: &quot;Human imperium&quot;,
+            &quot;description&quot;: &quot;Human imperium description&quot;,
+            &quot;sheet-cls&quot;: &quot;&quot;,
+            &quot;sheet-size&quot;: 256
+        }
+        
+    },
+
+    &quot;undead&quot;: {
+        &quot;name&quot;: &quot;The undead&quot;,
+        &quot;description&quot;: &quot;The undead are scary&quot;,
+        &quot;factionlist&quot;: [&quot;legion&quot;],
+        &quot;legion&quot;:{
+            &quot;name&quot;: &quot;Undead legion&quot;,
+            &quot;description&quot;: &quot;Undead legion description&quot;,
+            &quot;sheet-cls&quot;: &quot;undead_legion&quot;,
+            &quot;sheet-size&quot;: 256,
+            &quot;units&quot;:
+            [&quot;zombie&quot;,&quot;bombie&quot;,&quot;bambie&quot;,
+            &quot;undead1&quot;,&quot;undead2&quot;,&quot;undead3&quot;,&quot;undead4&quot;,&quot;undead5&quot;]            
+        },
+        &quot;deathcult&quot;:{
+            &quot;name&quot;: &quot;Death cult&quot;,
+            &quot;description&quot;: &quot;Cult ruling the dead&quot;,
+            &quot;sheet-cls&quot;: &quot;&quot;,
+            &quot;sheet-size&quot;: 256                
+        }
+    
+    }
+
+}
+
+
+/***
+*   Obstacles
+*
+***/
+
+function getObsStats(type, subtype){
+    console.log(&apos;type:&apos;+type+&apos; subtype:&apos;+subtype )
+    console.log(obsStats[type][subtype])
+    return obsStats[type][subtype]
+}
+
+var obsStats = 
+{
+    &quot;list&quot;: [&quot;tree&quot;],
+    &quot;tree&quot;:{
+        &quot;list&quot;: [&quot;green&quot;, &quot;barren&quot;],
+        
+        &quot;green&quot;:{
+            &quot;meta&quot;:{
+                &quot;disabled&quot;: false,
+                &quot;type&quot;: &quot;Tree&quot;,          
+                &quot;sheet-cls&quot;: &quot;trees_green&quot;,
+                &quot;sheet-size&quot;: 256,
+                &quot;width&quot;: 64,
+                &quot;height&quot;: 128,
+                &quot;flipped&quot;: 1,
+                &quot;imgpoint&quot;: {&quot;x&quot;:0, &quot;y&quot;:64},
+                &quot;midpoint&quot;: {&quot;x&quot;:32, &quot;y&quot;:64}
+            },
+            &quot;stats&quot;:{
+                &quot;hp&quot;: 100,
+                &quot;hp_max&quot;: 100,
+                &quot;height&quot;: 3,
+                &quot;block&quot;: 1
+            }
+        },
+        &quot;barren&quot;:{
+            &quot;meta&quot;:{
+                &quot;disabled&quot;: false,
+                &quot;type&quot;: &quot;Tree&quot;,          
+                &quot;sheet-cls&quot;: &quot;trees_barren&quot;,
+                &quot;sheet-size&quot;: 256,
+                &quot;width&quot;: 64,
+                &quot;height&quot;: 128,
+                &quot;flipped&quot;: 1,
+                &quot;imgpoint&quot;: {&quot;x&quot;:0, &quot;y&quot;:64},
+                &quot;midpoint&quot;: {&quot;x&quot;:32, &quot;y&quot;:64}
+            },
+            &quot;stats&quot;:{
+                &quot;hp&quot;: 70,
+                &quot;hp_max&quot;: 70,
+                &quot;height&quot;: 3,
+                &quot;block&quot;: 0.7
+            }
+        }
+    }   
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
